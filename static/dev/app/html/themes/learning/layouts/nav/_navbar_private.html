@@ -1,0 +1,62 @@
+<!-- Fixed navbar -->
+<div class="navbar navbar-main navbar-primary navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="#sidebar-menu" data-toggle="sidebar-menu" class="toggle pull-left visible-xs"><i class="fa fa-ellipsis-v"></i></a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#sidebar-chat" data-toggle="sidebar-menu" class="toggle pull-right visible-xs"><i class="fa fa-comments"></i></a>
+            <a class="navbar-brand" href="index.html">Learning</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="nav navbar-nav">
+                <li{% if page.slug == 'tutors' %} class="active"{% endif %}><a href="tutors.html">Tutors</a></li>
+                <li{% if page.slug == 'survey' %} class="active"{% endif %}><a href="survey.html">Survey</a></li>
+                <li{% if page.slug == 'library' or page.slug == 'library-grid' or page.slug == 'lesson' %} class="active"{% endif %}><a href="library-grid.html">Library</a></li>
+                <li class="dropdown">
+                    <a href="buttons.html"  class="dropdown-toggle" data-toggle="dropdown">UI <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li{% if (page.slug == 'buttons') %} class="active"{% endif %}><a href="buttons.html"><i class="fa fa-th"></i> Buttons</a></li>
+                        <li{% if (page.slug == 'icons') %} class="active"{% endif %}><a href="icons.html"><i class="fa fa-paint-brush"></i> Icons</a></li>
+                        <li{% if (page.slug == 'progress') %} class="active"{% endif %}><a href="progress.html"><i class="fa fa-tasks"></i> Progress</a></li>
+                        <li{% if (page.slug == 'grid') %} class="active"{% endif %}><a href="grid.html"><i class="fa fa-columns"></i> Grid</a></li>
+                        <li{% if (page.slug == 'forms') %} class="active"{% endif %}><a href="forms.html"><i class="fa fa-sliders"></i> Forms</a></li>
+                        <li{% if (page.slug == 'tables') %} class="active"{% endif %}><a href="tables.html"><i class="fa fa-table"></i> Tables</a></li>
+                        <li{% if (page.slug == 'tabs') %} class="active"{% endif %}><a href="tabs.html"><i class="fa fa-circle-o"></i> Tabs</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../index.html">Themes</a></li>
+                <li data-toggle="tooltip" data-placement="bottom" title="A few Color Examples. Download includes CSS Files for all color examples & the tools to Generate any Color combination. This Color-Switcher is for previewing purposes only.">
+                   {% include "app/html/common/components/skins.html" { theme: 4 } %}
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden-xs">
+                    <a href="#sidebar-chat" data-toggle="sidebar-menu">
+                        <i class="fa fa-comments"></i>
+                    </a>
+                </li>
+                <!-- User -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle user" data-toggle="dropdown">
+                        <img src="images/people/110/guy-5.jpg" alt="Bill" class="img-circle" width="40"/>
+                        Bill <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="user-private-profile.html">Profile</a></li>
+                        <li><a href="user-private-messages.html">Messages</a></li>
+                        <li><a href="login.html">Logout</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div><!-- /.navbar-collapse -->
+
+    </div>
+</div>

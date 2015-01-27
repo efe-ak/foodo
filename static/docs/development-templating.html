@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html class="st-layout ls-top-navbar ls-bottom-footer show-sidebar sidebar-l2" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>ThemeKit</title>
+    <!-- Compressed Vendor BUNDLE
+    Includes vendor (3rd party) styling such as the customized Bootstrap and other 3rd party libraries used for the current theme/module -->
+    <link href="css/vendor.min.css" rel="stylesheet">
+    <!-- Compressed Theme BUNDLE
+    Note: The bundle includes all the custom styling required for the current theme, however
+    it was tweaked for the current theme/module and does NOT include ALL of the standalone modules;
+    The bundle was generated using modern frontend development tools that are provided with the package
+    To learn more about the development process, please refer to the documentation. -->
+    <link href="css/theme-bundle.min.css" rel="stylesheet">
+    <!-- Compressed Theme CORE
+    This variant is to be used when loading the separate styling modules -->
+    <!-- <link href="css/theme.core.min.css" rel="stylesheet"> -->
+    <!-- Standalone Modules
+    As a convenience, we provide the entire UI framework broke down in separate modules
+    Some of the standalone modules may have not been used with the current theme/module
+    but ALL modules are 100% compatible -->
+    <!-- <link href="css/module-essentials.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-layout.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-sidebar.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-sidebar-skins.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-navbar.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-media.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-timeline.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-cover.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-chat.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-charts.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-maps.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-colors-alerts.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-colors-background.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-colors-buttons.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-colors-calendar.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-colors-progress-bars.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-colors-text.min.css" rel="stylesheet" /> -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- If you don't need support for Internet Explorer <= 8 you can safely remove these -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="docs">
+    <!-- Wrapper required for sidebar transitions -->
+    <div class="st-container">
+        <!-- Top Navbar -->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#sidebar-menu" data-effect="st-effect-1" data-toggle="sidebar-menu" class="toggle pull-left visible-xs"><i class="fa fa-bars"></i></a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand hidden-xs" href="index.html">Documentation</a>
+                </div>
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="index.html">Overview</a>
+                        </li>
+                        <li class="dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="development-structure.html">File Structure</a>
+                                </li>
+                                <li><a href="development-environment.html">Environment</a>
+                                </li>
+                                <li><a href="development-automation.html">Automation</a>
+                                </li>
+                                <li class="active"><a href="development-templating.html">Templating</a>
+                                </li>
+                                <li><a href="development-assets.html">Assets</a>
+                                </li>
+                                <li><a href="development-css-reference.html">CSS Reference</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- //Top Navbar -->
+        <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark sidebar-visible-desktop" id="sidebar-menu">
+            <div id="menu">
+                <ul class="nav sidebar-menu sm-active-item-bg">
+                    <li class="active"><a href="#intro">1. Templating</a>
+                    </li>
+                    <li><a href="#structure">2. Structure</a>
+                    </li>
+                    <li><a href="#usage">3. Basic usage</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- content push wrapper -->
+        <div class="st-pusher" id="content">
+            <!-- this is the wrapper for the content -->
+            <div class="st-content">
+                <!-- extra div for emulating position:fixed of the menu -->
+                <div class="st-content-inner">
+                    <div class="container-fluid">
+                        <div class="page-header">
+                            <h1>Template Engine</h1>
+                        </div>
+                        <h2>Introduction</h2>
+                        <div class="panel panel-default" id="intro">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">What is a template engine and why should you care?</h3>
+                            </div>
+                            <div class="panel-body">
+                                In a general way, a template engine is a web publishing tool that uses a template processor to combine web pages to form finished web pages. In practice, we can work with templates in various formats, apply any kind of filters and transformations to those templates and process the templates in valid HTML output. By using a template engine, we are still building static HTML pages, but in a productive, organised and efficient way.
+                            </div>
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Swig</h3>
+                            </div>
+                            <div class="panel-body">
+                                <p>Meet <a href="https://github.com/paularmstrong/swig" target="_blank">Swig</a>, one of the best template engines for node.js. Swig allows you to create pages, layouts, extend layouts from pages, include reusable partials in your templates, create macros (think of these as reusable snippets of functionality) and a lot more.</p>
+                                <h4>Features</h4>
+                                <ol>
+                                    <li>It's blazing fast.</li>
+                                    <li>Object-Oriented template inheritance.</li>
+                                    <li>Apply filters and transformations to output in your templates.</li>
+                                    <li>Automatically escapes all output for safe HTML rendering.</li>
+                                    <li>Lots of iteration and conditionals supported.</li>
+                                    <li>Robust without the bloat.</li>
+                                    <li>Extendable and customizable.</li>
+                                    <li><a href="http://paularmstrong.github.io/swig/" target="_blank">Great documentation</a>.</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <hr/>
+                        <h2 id="structure">File Structure</h2>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Structure</h3>
+                            </div>
+                            <div class="panel-body">
+                                All the various application source templates, layouts, partials and other related files are structured within the <code>dev/app/html</code> directory.
+                            </div>
+                            <div class="panel-body-lrb">
+                                <div class="highlight">
+                                    <pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">common</span>&gt;</span>                    <span class="hljs-comment">&lt;!-- Common Resources --&gt;</span>
+├── <span class="hljs-tag">&lt;<span class="hljs-title">components</span>&gt;</span>            <span class="hljs-comment">&lt;!-- Common Components used in all Themes --&gt;</span>
+│   ├── <span class="hljs-tag">&lt;<span class="hljs-title">cover</span>&gt;</span>             <span class="hljs-comment">&lt;!-- Common Cover Components --&gt;</span>
+│   ├── <span class="hljs-tag">&lt;<span class="hljs-title">timeline</span>&gt;</span>          <span class="hljs-comment">&lt;!-- Common Timeline Components --&gt;</span>
+│   ├── <span class="hljs-tag">&lt;<span class="hljs-title">weather_icons</span>&gt;</span>     <span class="hljs-comment">&lt;!-- Weather Icons Component SVGs --&gt;</span>
+│   ├── chat.html           <span class="hljs-comment">&lt;!-- Chat Sidebar Component --&gt;</span>
+│   ├── messages.html       <span class="hljs-comment">&lt;!-- Messages Component --&gt;</span>
+│   ├── pricing-box.html
+│   ├── skins.html          <span class="hljs-comment">&lt;!-- Dynamic Skins Chooser used in navbars --&gt;</span>
+│
+├── <span class="hljs-tag">&lt;<span class="hljs-title">layouts</span>&gt;</span>               <span class="hljs-comment">&lt;!-- Common Layouts used in all Themes --&gt;</span>
+│   └── login_social.html   <span class="hljs-comment">&lt;!-- Social Login Layout (used in all themes) --&gt;</span>
+│
+├── <span class="hljs-tag">&lt;<span class="hljs-title">pages</span>&gt;</span>                 <span class="hljs-comment">&lt;!-- Common Pages used in all Themes --&gt;</span>
+│   ├── buttons.html
+│   ├── forms.html
+│   ├── grid.html
+│   ├── icons.html
+│   ├── pricing.html
+│   ├── profile.html
+│   ├── progress.html
+│   └── tables.html
+│
+<span class="hljs-tag">&lt;<span class="hljs-title">docs</span>&gt;</span> <span class="hljs-comment">&lt;!-- Pages, Layout, Partials and Components Used to generate this Documentation --&gt;</span>
+├── <span class="hljs-tag">&lt;<span class="hljs-title">components</span>&gt;</span>        <span class="hljs-comment">&lt;!-- Documentation Components --&gt;</span>
+├── _layout.html        <span class="hljs-comment">&lt;!-- Documentation Layout --&gt;</span>
+├── _navbar.html        <span class="hljs-comment">&lt;!-- Documentation Navbar --&gt;</span>
+├── _sidebar_dev.html   <span class="hljs-comment">&lt;!-- Documentation Development Suite Sidebar --&gt;</span>
+├── _sidebar_index.html <span class="hljs-comment">&lt;!-- Documentation Package Overview Sidebar --&gt;</span>
+├── index.html          <span class="hljs-comment">&lt;!-- Documentation Package Overview Page --&gt;</span>
+├── dev.html            <span class="hljs-comment">&lt;!-- Documentation Development Suite Page --&gt;</span>
+│
+<span class="hljs-tag">&lt;<span class="hljs-title">macros</span>&gt;</span> <span class="hljs-comment">&lt;!-- Macros or Reusable snippets of functionality --&gt;</span>
+├── utils.html
+│
+<span class="hljs-tag">&lt;<span class="hljs-title">themes</span>&gt;</span> <span class="hljs-comment">&lt;!-- Pages, Layouts, Partials and Components used for specific Themes --&gt;</span>
+│
+├── <span class="hljs-tag">&lt;<span class="hljs-title">1</span>&gt;</span> <span class="hljs-comment">&lt;!-- Theme 1 (Social) --&gt;</span>
+│   ├── _layout.html    <span class="hljs-comment">&lt;!-- Theme 1 Layout --&gt;</span>
+│   ├── _navbar.html    <span class="hljs-comment">&lt;!-- Theme 1 Navbar --&gt;</span>
+│   ├── _sidebar.html   <span class="hljs-comment">&lt;!-- Theme 1 Sidebar --&gt;</span>
+│   │
+│   │   <span class="hljs-comment">&lt;!-- Common pages --&gt;</span>
+│   ├── buttons.html
+│   │
+│   │   <span class="hljs-comment">&lt;!-- buttons.html is one of the common pages used in every theme,
+│   │        configured to use the Theme 1 custom layout, but
+│   │        loads the page content from app/html/common/pages/buttons.html --&gt;</span>
+│   │
+│   │   <span class="hljs-comment">&lt;!-- all of the common pages from app/html/common/pages are included
+│   │        in the Theme 1 the same way as buttons.html above --&gt;</span>
+│   │
+│   │   <span class="hljs-comment">&lt;!-- Theme 1 specific pages --&gt;</span>
+│   ├── index.html          <span class="hljs-comment">&lt;!-- Theme 1 Homepage Timeline --&gt;</span>
+│   ├── messages.html       <span class="hljs-comment">&lt;!-- Theme 1 Messages Page --&gt;</span>
+│   ├── profile.html        <span class="hljs-comment">&lt;!-- Theme 1 Profile Page --&gt;</span>
+│   ├── timeline-list.html  <span class="hljs-comment">&lt;!-- Theme 1 Timeline List Page --&gt;</span>
+│   └── users.html          <span class="hljs-comment">&lt;!-- Theme 1 Users Page --&gt;</span>
+│
+├── <span class="hljs-tag">&lt;<span class="hljs-title">2</span>&gt;</span> <span class="hljs-comment">&lt;!-- Theme 2 (Social) --&gt;</span>
+│   ├── <span class="hljs-tag">&lt;<span class="hljs-title">layouts</span>&gt;</span>               <span class="hljs-comment">&lt;!-- Theme 2 Layouts --&gt;</span>
+│   │   ├── <span class="hljs-tag">&lt;<span class="hljs-title">includes</span>&gt;</span>          <span class="hljs-comment">&lt;!-- Theme 2 Layouts Includes --&gt;</span>
+│   │   ├── <span class="hljs-tag">&lt;<span class="hljs-title">nav</span>&gt;</span>               <span class="hljs-comment">&lt;!-- Theme 2 Navbar Partials --&gt;</span>
+│   │   ├── <span class="hljs-tag">&lt;<span class="hljs-title">sidebar</span>&gt;</span>           <span class="hljs-comment">&lt;!-- Theme 2 Sidebar Partials --&gt;</span>
+│   │   ├── _default.html       <span class="hljs-comment">&lt;!-- Theme 2 Layout used in general purpose pages --&gt;</span>
+│   │   ├── _user_private.html  <span class="hljs-comment">&lt;!-- Theme 2 Layout used by user's private pages --&gt;</span>
+│   │   └── _user_public.html   <span class="hljs-comment">&lt;!-- Theme 2 Layout used by user's public pages --&gt;</span>
+│   │
+│   │   <span class="hljs-comment">&lt;!-- Common pages (same as Theme 1) --&gt;</span>
+│   │   <span class="hljs-comment">&lt;!-- Theme 2 specific pages --&gt;</span>
+│   ├── user-private-blank.html         <span class="hljs-comment">&lt;!-- Theme 2 User Private starter page --&gt;</span>
+│   ├── user-private-messages.html      <span class="hljs-comment">&lt;!-- Theme 2 User Private Messages page --&gt;</span>
+│   ├── user-private-profile.html       <span class="hljs-comment">&lt;!-- Theme 2 User Private Profile page --&gt;</span>
+│   ├── user-private-timeline.html      <span class="hljs-comment">&lt;!-- Theme 2 User Private Timeline page --&gt;</span>
+│   ├── user-private-users.html         <span class="hljs-comment">&lt;!-- Theme 2 User Private Friends page --&gt;</span>
+│   ├── user-public-blank.html          <span class="hljs-comment">&lt;!-- Theme 2 User Public starter page --&gt;</span>
+│   ├── user-public-profile.html        <span class="hljs-comment">&lt;!-- Theme 2 User Public Profile page --&gt;</span>
+│   └── user-public-users.html          <span class="hljs-comment">&lt;!-- Theme 2 User Public Friends page --&gt;</span>
+│
+├── <span class="hljs-tag">&lt;<span class="hljs-title">3</span>&gt;</span> <span class="hljs-comment">&lt;!-- Theme 3 (Social: Fixed Layout) --&gt;</span>
+│   ├── <span class="hljs-tag">&lt;<span class="hljs-title">layouts</span>&gt;</span> <span class="hljs-comment">&lt;!-- Theme 3 Layouts (same as Theme 2) --&gt;</span>
+│   │
+│   │   <span class="hljs-comment">&lt;!-- Common pages (same as Theme 1) --&gt;</span>
+│   │   <span class="hljs-comment">&lt;!-- Theme 3 specific pages (Same as Theme 2, with the addition of the following extra pages) --&gt;</span>
+│   └── user-public-timeline.html       <span class="hljs-comment">&lt;!-- Theme 3 User Public Timeline page --&gt;</span>
+│
+├── <span class="hljs-tag">&lt;<span class="hljs-title">4</span>&gt;</span> <span class="hljs-comment">&lt;!-- Theme 4 (Learning) --&gt;</span>
+│   ├── <span class="hljs-tag">&lt;<span class="hljs-title">layouts</span>&gt;</span> <span class="hljs-comment">&lt;!-- Theme 4 Layouts (same as Theme 3 with the addition of a "sidebar"
+│   │                  subdirectory to hold sidebar partials) --&gt;</span>
+│   │
+│   │   <span class="hljs-comment">&lt;!-- Common pages (see Theme 1 for the common page list) --&gt;</span>
+│   │   <span class="hljs-comment">&lt;!-- Theme 4 specific pages --&gt;</span>
+│   ├── index.html               <span class="hljs-comment">&lt;!-- Theme 4 Home page --&gt;</span>
+│   ├── tutors.html              <span class="hljs-comment">&lt;!-- Theme 4 Tutors page --&gt;</span>
+│   ├── survey.html              <span class="hljs-comment">&lt;!-- Theme 4 Survey page --&gt;</span>
+│   ├── library.html             <span class="hljs-comment">&lt;!-- Theme 4 Library List page --&gt;</span>
+│   ├── library-grid.html        <span class="hljs-comment">&lt;!-- Theme 4 Library Grid page --&gt;</span>
+│   └── lesson.html              <span class="hljs-comment">&lt;!-- Theme 4 Lesson page --&gt;</span>
+│
+index.html <span class="hljs-comment">&lt;!-- Choose theme page used in the Demo --&gt;</span></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        <h2 id="usage">Basic Usage</h2>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <h4>Layouts
+                                    <small>layout.html</small>
+                                </h4>
+                            </div>
+                            <div class="panel-body-lrb">
+                                <div class="highlight">
+                                    <pre><code class="hljs django"><span class="xml"><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span> <span class="hljs-attribute">lang</span>=<span class="hljs-value">"en"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">"utf-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">http-equiv</span>=<span class="hljs-value">"X-UA-Compatible"</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">"IE=edge"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"viewport"</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">"width=device-width, initial-scale=1"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span></span><span class="hljs-variable">{{ site.name }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Styling --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"css/default.css"</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Declare a template block in which you can inject
+         content from a page that is extending this layout --&gt;</span>
+    </span><span class="hljs-template_tag">{% <span class="hljs-keyword">block</span> content %}</span><span class="xml"></span><span class="hljs-template_tag">{% <span class="hljs-keyword">endblock</span> %}</span><span class="xml">
+    <span class="hljs-comment">&lt;!-- Vendor Scripts Bundle --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"js/vendor.min.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- App Scripts Bundle --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"js/docs.min.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span></span></code></pre>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <h4>Pages
+                                    <small>index.html</small>
+                                </h4>
+                            </div>
+                            <div class="panel-body-lrb">
+                                <div class="highlight">
+                                    <pre><code class="hljs nimrod">&lt;!-- <span class="hljs-type">Simple</span> page example <span class="hljs-keyword">of</span> a <span class="hljs-keyword">template</span> that inherits the layout.html <span class="hljs-keyword">template</span> example above --&gt;
+{% extends 'layout.html' %}
+{% <span class="hljs-keyword">block</span> content %}
+    &lt;p&gt;<span class="hljs-type">This</span> <span class="hljs-keyword">is</span> just an awesome page.&lt;/p&gt;
+{% endblock %}
+</code></pre>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <h4>Partials</h4>
+                            </div>
+                            <div class="panel-body-lrb">
+                                <div class="highlight">
+                                    <pre><code class="hljs django"><span class="xml"><span class="hljs-comment">&lt;!-- partial.html --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>I like </span><span class="hljs-variable">{{ food }}</span><span class="xml"> and </span><span class="hljs-variable">{{ drink }}</span><span class="xml">.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- page.html --&gt;</span>
+</span><span class="hljs-template_tag">{% <span class="hljs-keyword">extends</span> 'layout.html' %}</span><span class="xml">
+</span><span class="hljs-template_tag">{% <span class="hljs-keyword">block</span> content %}</span><span class="xml">
+    </span><span class="hljs-template_tag">{% set my_obj = { food: 'tacos', drink: 'horchata' } %}</span><span class="xml">
+    </span><span class="hljs-template_tag">{% <span class="hljs-keyword">include</span> "./partial.html" <span class="hljs-keyword">with</span> my_obj %}</span><span class="xml">
+    // =&gt; I like tacos and horchata.
+</span><span class="hljs-template_tag">{% <span class="hljs-keyword">endblock</span> %}</span><span class="xml">
+</span></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Footer -->
+                        <div class="footer">
+                            <strong>ThemeKit</strong> v3.6.1 &copy; Copyright 2015
+                        </div>
+                        <!-- // Footer -->
+                    </div>
+                </div>
+                <!-- /st-content-inner -->
+            </div>
+            <!-- /st-content -->
+        </div>
+        <!-- /st-pusher -->
+    </div>
+    <!-- /st-container -->
+    <!-- Inline Script for colors and config objects; used by various external scripts; -->
+    <script>
+    var colors = {
+        "danger-color": "#e74c3c",
+        "success-color": "#81b53e",
+        "warning-color": "#f0ad4e",
+        "inverse-color": "#2c3e50",
+        "info-color": "#2d7cb5",
+        "default-color": "#6e7882",
+        "default-light-color": "#cfd9db",
+        "purple-color": "#9D8AC7",
+        "mustard-color": "#d4d171",
+        "lightred-color": "#e15258",
+        "body-bg": "#f6f6f6"
+    };
+    var config = {
+        debug: true,
+        theme: "docs",
+        skins: {
+            "default": {
+                "primary-color": "#16ae9f"
+            }
+        }
+    };
+    </script>
+    <!-- Separate Vendor Script Bundles -->
+    <script src="js/vendor-core.min.js"></script>
+    <!-- <script src="js/vendor-tables.min.js"></script> -->
+    <script src="js/vendor-forms.min.js"></script>
+    <!-- <script src="js/vendor-media.min.js"></script> -->
+    <!-- <script src="js/vendor-player.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-all.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-flot.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-easy-pie.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-morris.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-sparkline.min.js"></script> -->
+    <!-- <script src="js/vendor-maps.min.js"></script> -->
+    <!-- <script src="js/vendor-tree.min.js"></script> -->
+    <!-- <script src="js/vendor-nestable.min.js"></script> -->
+    <!-- Compressed Vendor Scripts Bundle
+    Includes all of the 3rd party JavaScript libraries above.
+    The bundle was generated using modern frontend development tools that are provided with the package
+    To learn more about the development process, please refer to the documentation.
+    Do not use it simultaneously with the separate bundles above. -->
+    <!-- <script src="js/vendor-bundle-all.min.js"></script> -->
+    <!-- Compressed App Scripts Bundle
+    Includes Custom Application JavaScript used for the current theme/module;
+    Do not use it simultaneously with the standalone modules below. -->
+    <script src="js/module-bundle-main.min.js"></script>
+    <!-- Standalone Modules
+    As a convenience, we provide the entire UI framework broke down in separate modules
+    Some of the standalone modules may have not been used with the current theme/module
+    but ALL the modules are 100% compatible -->
+    <!-- <script src="js/module-essentials.min.js"></script> -->
+    <!-- <script src="js/module-layout.min.js"></script> -->
+    <!-- <script src="js/module-sidebar.min.js"></script> -->
+    <!-- <script src="js/module-navbar.min.js"></script> -->
+    <!-- <script src="js/module-media.min.js"></script> -->
+    <!-- <script src="js/module-player.min.js"></script> -->
+    <!-- <script src="js/module-timeline.min.js"></script> -->
+    <!-- <script src="js/module-chat.min.js"></script> -->
+    <!-- <script src="js/module-maps.min.js"></script> -->
+    <!-- <script src="js/module-charts-all.min.js"></script> -->
+    <!-- <script src="js/module-charts-flot.min.js"></script> -->
+    <!-- <script src="js/module-charts-easy-pie.min.js"></script> -->
+    <!-- <script src="js/module-charts-morris.min.js"></script> -->
+    <!-- <script src="js/module-charts-sparkline.min.js"></script> -->
+    <!-- [docs] Core Theme Script:
+        Includes the custom JavaScript for this theme/module;
+        The file has to be loaded in addition to the UI modules above;
+        module-bundle-main.js already includes theme-core.js so this should be loaded
+        ONLY when using the standalone modules; -->
+    <!-- <script src="js/theme-core.min.js"></script> -->
+</body>
+</html>

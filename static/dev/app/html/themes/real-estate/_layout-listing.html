@@ -1,0 +1,43 @@
+{% include "app/vendor/layout/html/_header.html" { htmlClass: 'st-layout ls-top-navbar ls-bottom-footer show-sidebar sidebar-l-sum-13 ' } %}
+
+<!-- Wrapper required for sidebar transitions -->
+<div class="st-container">
+
+	{% include "app/html/themes/real-estate/_navbar.html" %}
+
+	<!-- Sidebar component with st-effect-1 (set on the toggle button within the navbar) -->
+	{% include "app/html/themes/real-estate/_sidebar-filter.html" { sidebarOptions: "left sidebar-size-3 sidebar-offset-1 sidebar-skin-white sidebar-visible-desktop", sidebarData: "id=sidebar-filter" } %}
+
+	<!-- Sidebar component with st-effect-1 (set on the toggle button within the navbar) -->
+	{% include "app/html/themes/real-estate/_sidebar.html" { sidebarOptions: "left sidebar-size-1 sidebar-mini-reveal sidebar-offset-0 sidebar-skin-dark sidebar-visible-desktop", sidebarData: "id=sidebar-menu data-type=collapse" } %}
+
+	<!-- content push wrapper -->
+	<div class="st-pusher">
+
+		<!-- this is the wrapper for the content -->
+		<div class="st-content">
+
+			<!-- extra div for emulating position:fixed of the menu -->
+			<div class="st-content-inner padding-top-none" id="content">
+
+				{% if page.slug !== "listing-map" %}
+					{% include "app/html/themes/real-estate/_navbar-listing.html" { navbarOptions: "navbar-static-top" } %}
+				{% endif %}
+
+				<div class="container-fluid">
+					{% block content %}{% endblock %}
+				</div>
+
+			</div>
+			<!-- /st-content-inner -->
+
+		</div>
+		<!-- /st-content -->
+
+	</div>
+	<!-- /st-pusher -->
+
+	{% include "app/vendor/layout/html/_footer_copyright.html" %}
+
+</div>
+{% include "app/vendor/layout/html/_footer_scripts.html" %}

@@ -1,0 +1,623 @@
+{% extends "app/html/themes/docs/_layout.html" %}
+
+{% block sidebar %}
+    {% include "app/html/themes/docs/_sidebar_dev.html" %}
+{% endblock %}
+
+{% block content %}
+
+    <h1 class="h3">Development Suite</h1>
+
+    <div class="panel panel-default" id="structure">
+        <div class="panel-body">
+            The structure of the <code>dev</code> directory, that holds all the source files used to build the <code>dist</code> directory.
+        </div>
+        <div class="panel-heading">Development Branch Structure</div>
+        <div class="panel-body-lrb">
+            <div class="highlight">
+<pre>{% highlight %}
+{% include "app/html/themes/docs/components/_dev_structure.html" %}
+{% endhighlight %}</pre>
+            </div>
+        </div>
+        <div class="panel-body">
+            <p>To make use of the development suite, depending on the specific functionality you'd like, you need to have installed node with npm, ruby, bower, grunt, gem, and bundler.</p>
+            <p class="margin-none"><strong>Easy alternative:</strong> If you'd like to experiment with the development suite but not bother with installing and configuring all these various tools, you can use the included Vagrant Environment - a dedicated virtual environment with everything you need pre-installed. You'll get a fully isolated virtual machine and be up &amp; running in minutes.
+                See more about <a href="dev.html">how to use Vagrant</a> on the development suite documentation.</p>
+        </div>
+    </div>
+
+    <div class="panel panel-default" id="vagrant">
+        <div class="panel-body">
+            <h2 class="margin-none">Vagrant</h2>
+        </div>
+        <div class="panel-heading">
+            <h3 class="panel-title">What is Vagrant and why should you use it</h3>
+        </div>
+        <div class="panel-body">
+            <p>Simple put: Vagrant is Development environments made easy. VAGRANT WILL CHANGE HOW YOU WORK.</p>
+            <p>Download and install Vagrant within minutes on Mac OS X, Windows, or a popular distribution of Linux. No complicated setup process, just a simple to use OS-standard installer. The only requirement besides Vagrant is VirtualBox, and it is just as simple to install.</p>
+            <p class="margin-none">
+                Go to <a target="_blank" href="https://www.vagrantup.com/downloads.html">Vagrant Downloads page</a> and
+                <a target="_blank" href="https://www.virtualbox.org/wiki/Downloads">VirtualBox Downloads page</a>
+            </p>
+        </div>
+        <div class="panel-heading">
+            <h3 class="panel-title">Minimal configuration</h3>
+        </div>
+        <div class="panel-body">
+            <p class="margin-none">Open <code>vagrant/Social.yaml</code> in any text editor and provide the full path to the package root directory within the <code>synced_folder.from</code> config key and optionally personalise the memory and the CPUs for the virtual machine.</p>
+        </div>
+        <div class="panel-body-lrb">
+            <div class="highlight">
+<pre>{% highlight 'ruby' %}
+---
+ip: "192.168.10.10" # no need to change the IP address, unless it's already in use on your network;
+memory: 4096        # optionally change the memory;
+cpus: 4             # optionally change the CPUs;
+
+synced_folder:
+    from: /full/path/to/social/root     # this MUST reflect YOUR path to the package root;
+    to: /home/vagrant/social            # you can ignore this;
+    type: nfs                           # nfs (good performance 2 way sync);
+                                        # vboxsf (2 way sync, known issues with large number of files);
+                                        # rsync (good performance; 1 way sync; syncing is not automatic - must use vagrant rsync-auto);
+                                        # https://docs.vagrantup.com/v2/synced-folders/basic_usage.html
+
+# you won't be able to ssh into the box without the next two files;
+authorize: /Users/YourUsername/.ssh/id_rsa.pub
+keys:
+- /Users/UserUsername/.ssh/id_rsa
+{% endhighlight %}</pre>
+            </div>
+        </div>
+        <div class="panel-heading">
+            <h3 class="panel-title">What's next?</h3>
+        </div>
+        <div class="panel-body">
+            <p>Next, from a <em>Terminal</em>, within the root folder of the Social package, run:</p>
+            <p><code>vagrant up</code></p>
+            <p>Sit and watch as in just a few moments you'll have a fully running virtual machine in VirtualBox running Ubuntu Server 14.04 LTS with the latest front-end development tools pre-installed. You can SSH into this machine with <code>vagrant ssh</code>, and when you're done playing around, you can remove all traces of it with <code>vagrant destroy</code>.</p>
+            <p><strong>Now imagine every project you've ever worked on being this easy to set up.</strong></p>
+            <p class="margin-none">With Vagrant, <code>vagrant up</code> is all you need to work on any project, to install every dependency that project needs, and to set up any networking and synced folders so you can continue working from the comfort of your own machine.</p>
+        </div>
+    </div>
+
+    <div class="panel panel-default" id="grunt">
+        <div class="panel-body">
+            <h2 class="margin-none">Grunt</h2>
+        </div>
+        <div class="panel-heading">
+            <h3 class="panel-title">What is Grunt and why should you use it</h3>
+        </div>
+        <div class="panel-body">
+            Simply put, Grunt is a JavaScript task runner.
+            Why use it? In one word: automation. The less work you have to do when performing repetitive tasks like minification, compilation, unit testing, linting, etc, the easier your job becomes. After you've configured it through a Gruntfile, a task runner can do most of that mundane work for you—and your team—with basically zero effort.
+        </div>
+        <div class="panel-heading">
+            <h3 class="panel-title">Grunt Structure</h3>
+        </div>
+        <div class="panel-body">
+            <p><code>Gruntfile.js</code>  - main grunt file, loads the available tasks</p>
+            <p><code>grunt/config.js</code> - main configuration file available to any task</p>
+            <p class="margin-none"><code>grunt/tasks</code> - stores the available grunt tasks</p>
+        </div>
+        <div class="panel-heading">
+            <h3 class="panel-title">Available Grunt Tasks</h3>
+        </div>
+        <div class="list-group">
+        <div class="list-group-item">
+            <ul class="list-unstyled">
+                <li><code>autoprefixer</code> (Parse CSS and add vendor prefixes to CSS rules&nbsp;automatically)</li>
+                <li>
+                    <ul class="ul1">
+                        <li><code>autoprefixer:core</code> (adds vendor prefixes to dist/theme/$current_theme/css/default.css)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="list-group-item">
+            <ul class="list-unstyled">
+                <li><code>browserify</code> (Browserify looks at a single JavaScript file, and follows the require dependency tree, and bundles them into a new file.)</li>
+                <li>
+                    <ul class="ul1">
+                        <li>Builds the application scripts bundle for the current theme from dev/app/js/themes/$current_theme/main.js into dist/themes/$current_theme/js/scripts.js</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="list-group-item">
+            <ul class="list-unstyled">
+                <li><code>browser-sync</code> (Time-saving synchronised browser testing with built-in http server, code sync and action sync across multiple devices)</li>
+                <li>
+                    <ul class="ul1">
+                        <li><code>browserSyncInit:dist</code> (starts http server and opens dist/$current_theme/index.html)</li>
+                        <li><code>browserSyncInit:docs</code> (starts http server and opens docs/index.html)</li>
+                        <li><code>browserSyncReload</code> (trigger a page reload for changes on dev/app/html files)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="list-group-item">
+            <ul class="list-unstyled">
+                <li><code>build</code> (Build the various parts of the application in one go)</li>
+                <li>
+                    <ul class="ul1">
+                        <li><code>build:dist</code> (compiles jekyll to html, generates vendor scripts bundle, compiles less to css, concatenates files, adds css vendor prefixes, minifies the css and javascript and copies all the files to dist)</li>
+                        <li><code>build:dist_sass</code> (same as build:dist except it will compile sass to css instead of less)</li>
+                        <li><code>build:docs</code> (compiles only the docs to html)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="list-group-item">
+            <ul class="list-unstyled">
+                <li><code>clean</code> (Clean files and folders)</li>
+                <li>
+                    <ul class="ul1">
+                        <li><code>clean:dist</code> (cleans generated html files from dist)</li>
+                        <li><code>clean:docs</code> (cleans generated html files from docs)</li>
+                        <li><code>clean:devsite</code> (cleans generated html files from dev/_site)</li>
+                        <li><code>clean:sass</code> (cleans all files within dev/app/scss)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="list-group-item">
+            <ul class="list-unstyled">
+                <li><code>concat</code> (Concatenate files)</li>
+                <li>
+                    <ul class="ul1">
+                        <li><code>concat:vendor_css</code> (concatenates all vendor css files from the config into a bundle in dist/$current_theme/css/_vendor.bundle.css)</li>
+                        <li><code>concat:app_css_default_theme</code> (concatenates dist/$current_theme/css/_vendor.bundle.css with dist/$current_theme/css/default.css and overrides the later with the concatenated result)</li>
+                        <li><code>concat:concat_css_skins</code> (special task that concatenates all skins with&nbsp;dist/$current_theme/css/_vendor.bundle.css overriding the skin file)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="list-group-item">
+            <ul class="list-unstyled">
+                <li><code>copy</code> (Copy files and folders)</li>
+                <li>
+                    <ul class="ul1">
+                        <li><code>copy:fontawesome</code> (copy Font Awesome fonts from bower to dist/$current_theme/fonts)</li>
+                        <li><code>copy:pictoicons_font</code> (copy Picto Icons fonts from bower to dist/$current_theme/fonts)</li>
+                        <li><code>copy:glyphicons</code> (copy Glyphicons fonts from bower to dist/$current_theme/fonts)</li>
+                        <li><code>copy:images</code> (copy images from dev/app/images to dist/$current_theme/images)</li>
+                        <li><code>copy:dist</code> (copy jekyll generated html files from app/_site/pages/themes/$current_theme to dist/$current_theme)</li>
+                        <li><code>copy:sass</code> (copy converted sass from dev/tmp/converter-sass/app to dev/app)</li>
+                        <li><code>copy:demo</code> (copy html files from app/_site used for demo purposes to dist)</li>
+                        <li><code>copy:docs</code> (copy jekyll generated html files from app/_site/docs to docs)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="list-group-item">
+            <ul class="list-unstyled">
+                <li><code>cssmin</code> (Compress CSS files)</li>
+                <li>
+                    <ul class="ul1">
+                        <li><code>cssmin:minify</code> (compress all CSS files from dist/$current_theme/css and save them within the same location with .min.css extension)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="list-group-item">
+            <ul class="list-unstyled">
+                <li><code>default</code> (the default task to run when running grunt without specifying a task)</li>
+                <li>
+                    <ul class="ul1">
+                        <li>by default it runs&nbsp;&ldquo;watch-less&rdquo; which will start http server and watch for changes in jekyll, javascript and less files;</li>
+                        <li>change to &ldquo;watch-sass&rdquo; to watch for sass files instead of less;</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="list-group-item">
+            <ul class="list-unstyled">
+                <li><code>discover</code></li>
+                <li>
+                    <ul class="ul1">
+                        <li>special task for automatically generating a scripts vendor bundle from all the installed bower components</code> (using wiredep)</li>
+                        <li>creates dist/$current_theme/js/vendor.js and a minified version vendor.min.js</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="list-group-item">
+            <ul class="list-unstyled">
+                <li><code>jekyll</code> (Compiles Jekyll templates to HTML)</li>
+                <li>
+                    <ul class="ul1">
+                        <li class="text-muted">Deprecated in favor of <code>swig</code> since 3.2.0</li>
+                        <li><code>jekyll:dist</code> (compiles all jekyll files to html)</li>
+                        <li><code>jekyll:watch</code> (same as above but used in context with file watchers)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="list-group-item">
+            <ul class="list-unstyled">
+                <li><code>jshint</code> (Validate JavaScript files)</li>
+                <li>
+                    <ul class="ul1">
+                        <li><code>jshint:all</code> (validate all js files in dev/app/js)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="list-group-item">
+            <ul class="list-unstyled">
+                <li><code>less</code> (compile LESS to CSS)</li>
+                <li>
+                    <ul class="ul1">
+                        <li><code>less:theme_default</code> (compiles any non-partial LESS file from dev/app/less/themes/$current_theme and saves the CSS to dist/$current_theme/css)</li>
+                        <li><code>less:skins</code> (compiles any LESS file from dev/app/less/skins/$current_theme/ and saves the CSS to dist/$current_theme/css)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="list-group-item">
+            <ul class="list-unstyled">
+                <li><code>sass</code></li>
+                <li>
+                    <ul class="ul1">
+                        <li><code>sass:theme_default</code> (compiles any non-partial SASS or SCSS file from dev/app/scss/themes/$current_theme and saves the CSS to dist/$current_theme/css)</li>
+                        <li><code>sass:skins</code> (compiles any SASS or SCSS file from dev/app/scss/skins/$current_theme/ and saves the CSS to dist/$current_theme/css)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="list-group-item">
+            <ul class="list-unstyled">
+                <li><code>shell</code> (execute shell commands)</li>
+                <li>
+                    <ul class="ul1">
+                        <li><code>shell:convert_less_to_sass</code> (convert the entire dev/app/less structure to SASS and saves the converted files to tmp/converter-sass/app)</li>
+                        <li><code>shell:vagrant_rsync</code> (not recommended unless you know what you&rsquo;re doing - used to obtain faster syncs when using vagrant with a rsync filesystem)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="list-group-item">
+            <ul class="list-unstyled">
+                <li><code>swig</code> (Compiles Swig templates to HTML)</li>
+                <li>
+                    <ul class="ul1">
+                        <li><code>swig:dist</code> (compiles swig templates for the current theme to html)</li>
+                        <li><code>swig:docs</code> (compiles swig templates for the documentation to html)</li>
+                        <li><code>swig:index</code> (compiles swig templates used for demo purposes to html)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="list-group-item">
+            <ul class="list-unstyled">
+                <li><code>uglify</code> (Compress JavaScript files)</li>
+                <li>
+                    <ul class="ul1">
+                        <li><code>uglify:app</code> (compress dist/$current_theme/js/scripts.js to scripts.min.js)</li>
+                        <li><code>uglify:vendor</code> (compress dist/$current_theme/js/vendor.js to vendor.min.js)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="list-group-item">
+            <ul class="list-unstyled">
+                <li><code>watch</code> (Run predefined tasks whenever watched file patterns are added, changed or deleted)</li>
+                <li>
+                    <ul class="ul1">
+                        <li><code>watch:less_theme_default</code> (watches LESS files for changes in dev/app/less/themes/$current_theme, dev/app/less/common, dev/app/less/vendor and dev/app/less and compiles to CSS,&nbsp;concatenates the CSS with the vendor CSS, minifies the CSS and injects the new CSS into the browser without a page reload)</li>
+                        <li><code>watch:less_skins</code> (watches LESS files for changes in app/less/skins/$current_theme and compiles to CSS, concatenates the CSS with the vendor CSS, minifies the CSS and injects the new CSS into the browser without a page reload)</li>
+                        <li><code>watch:sass_theme_default</code> (watch:less_theme_default equivalent for SASS)</li>
+                        <li><code>watch:sass_skins</code> (watch:less_skins equivalent for SASS)</li>
+                        <li><code>watch:js</code> (watches JS files for changes in dev/app/js, compiles a vendor scripts bundle, compiles the application scripts bundle, validates the JS and minifies the resulting JavaScript)</li>
+                        <li><code>watch:app</code> (watches html files for changes in dev/app/html and cleans dist, cleans docs, compiles jekyll to html, copies compiled dist, docs and demo files and reloads the browser)</li>
+                        <li><code>watch:docs</code> (similar to watch:app except it watches the dev/app/html/docs folder for changes)</li>
+                        <li><code>watch:vagrant_rsync</code> (This watcher can achieve much faster syncs than vagrant rsync-auto when using vagrant with rsync synced folders, by using shell:vagrant_rsync task, however it's not recommended unless you know what you're doing.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="panel-heading">
+            <h3 class="panel-title">Task options</h3>
+        </div>
+        <div class="panel-body">
+            <p>Most of the grunt tasks accept the following options:</p>
+            <p><code>--theme [theme_number]</code>: sets the current working theme (by default is <em>1</em>)</p>
+            <p><code>--dist [dist_folder_name]</code>: sets the dist folder name for placing static files resulted from the current task (by default it is <em>dist</em>)</p>
+            <p><strong>Example:</strong></p>
+            <p class="margin-none"><code>grunt build:dist --theme 2 --dist my_dist</code> will run the build:dist task for the theme 2 and save the static files within the my_dist folder.</p>
+        </div>
+        <div class="panel-heading">
+            <h3 class="panel-title">Common tasks</h3>
+        </div>
+        <div class="panel-body">
+            <p>All the grunt tasks will be executed from a <em>Terminal</em> within the <code>dev</code> directory.</p>
+            <ol>
+                <li>
+                    <strong>Building a theme:</strong><br/>
+                    <p><code>grunt build:dist --theme 1</code></p>
+                </li>
+                <li>
+                    <strong>Compiling LESS to CSS and minifying the CSS:</strong><br/>
+                    <p><code>grunt less:default_theme cssmin --theme 1</code></p>
+                </li>
+                <li>
+                    <strong>Compiling Sass to CSS and minifying the CSS:</strong><br/>
+                    <p><code>grunt sass:default_theme cssmin --theme 1</code></p>
+                </li>
+                <li>
+                    <strong>Compiling LESS to CSS for all the theme skins and minifying the CSS:</strong><br/>
+                    <p><code>grunt less:skins cssmin --theme 1</code></p>
+                </li>
+                <li>
+                    <strong>Compiling every available LESS file for the theme to CSS, including the skins and minifying the CSS:</strong><br/>
+                    <p><code>grunt less cssmin --theme 1</code></p>
+                </li>
+                <li>
+                    <strong>Starting the http server on theme 1 and watch for any changes:</strong><br/>
+                    <p><code>grunt --theme 1</code> will open your default browser to http://localhost:3000/dist/themes/1/index.html, watch for any file changes and consecutively trigger other tasks to compile CSS, Jekyll to HTML, etc, while reloading the page in the browser or even inject the new CSS when it's done processing.</p>
+                </li>
+                <li>
+                    <strong>Starting the http server on the docs and watch for any changes within docs and JavaScript files:</strong><br/>
+                    <p><code>grunt browserSyncInit:docs switchwatch:docs:js --theme 1</code> will open your default browser to http://localhost:3000/docs/index.html, watch for any file changes and consecutively trigger other tasks to compile Jekyll to HTML, concatenate and minify JavaScript and finally reload the page in the browser when it's done processing.</p>
+                </li>
+                <li>
+                    <strong>Validate application scripts for theme 1, bundle everything in one file and minify:</strong><br/>
+                    <p><code>grunt jshint browserify uglify:app --theme 1</code></p>
+                </li>
+                <li>
+                    <strong>Automatically create a vendor scripts bundle for theme 1 from all the installed bower components and minify the concatenated JavaScript:</strong><br/>
+                    <p class="strong"><code>grunt discover --theme 1</code></p>
+                    <p>The task will create <code>dist/themes/1/js/vendor.js</code> and the minified version <code>vendor.min.js</code> within the same folder.</p>
+                    <p><strong>Note</strong>: Because it's parsing bower components, scripts dependency order is maintained within the concatenated file automatically.</p>
+                    <p>You can exclude packages from being included in the bundle from <code>dev/grunt/config.js</code>:</p>
+                    <div class="highlight">
+<pre>{% highlight 'js' %}
+discover: {
+    exclude: [
+        'names',
+        'to_exclude',
+        'from_the_bundle'
+    ]
+}
+{% endhighlight %}</pre>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="panel panel-default" id="templating">
+        <div class="panel-body">
+            <h2 class="margin-none">Template engine</h2>
+        </div>
+        <div class="panel-heading">
+            <h3 class="panel-title">What is a template engine and why should you care?</h3>
+        </div>
+        <div class="panel-body">
+            In a general way, a template engine is a web publishing tool that uses a template processor to combine web pages to form finished web pages.
+            In practice, we can work with templates in various formats, apply any kind of filters and transformations to those templates and process the templates in valid HTML output. By using a template engine, we are still building static HTML pages, but in a productive, organised and efficient way.
+        </div>
+        <div class="panel-heading">
+            <h3 class="panel-title">Swig</h3>
+        </div>
+        <div class="panel-body">
+            <p>Meet <a href="https://github.com/paularmstrong/swig" target="_blank">Swig</a>, one of the best template engines for node.js. Swig allows you to create pages, layouts, extend layouts from pages, include reusable partials in your templates, create macros (think of these as reusable snippets of functionality) and a lot more.</p>
+            <h4>Features</h4>
+            <ol>
+                <li>It's blazing fast.</li>
+                <li>Object-Oriented template inheritance.</li>
+                <li>Apply filters and transformations to output in your templates.</li>
+                <li>Automatically escapes all output for safe HTML rendering.</li>
+                <li>Lots of iteration and conditionals supported.</li>
+                <li>Robust without the bloat.</li>
+                <li>Extendable and customizable.</li>
+                <li><a href="http://paularmstrong.github.io/swig/" target="_blank">Great documentation</a>.</li>
+            </ol>
+        </div>
+        <div class="panel-heading">
+            <h3 class="panel-title">Structure</h3>
+        </div>
+        <div class="panel-body">
+            All the various application source templates, layouts, partials and other related files are structured within the <code>dev/app/html</code> directory.
+        </div>
+        <div class="panel-body-lrb">
+            <div class="highlight">
+<pre>{% highlight %}
+{% include "app/html/themes/docs/components/_dev_html_structure.html" %}
+{% endhighlight %}</pre>
+            </div>
+        </div>
+        <div class="panel-heading">
+            <h3 class="panel-title">Basic Usage</h3>
+        </div>
+        <div class="panel-body">
+            <h4>Layouts <small>layout.html</small></h4>
+        </div>
+        <div class="panel-body-lrb">
+            <div class="highlight">
+<pre>{% highlight %}{% raw %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ site.name }}</title>
+
+    <!-- Styling -->
+    <link href="css/default.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Declare a template block in which you can inject
+         content from a page that is extending this layout -->
+
+    {% block content %}{% endblock %}
+
+    <!-- Vendor Scripts Bundle -->
+    <script src="js/vendor.min.js"></script>
+
+    <!-- App Scripts Bundle -->
+    <script src="js/docs.min.js"></script>
+
+</body>
+</html>
+{% endraw %}{% endhighlight %}</pre>
+            </div>
+        </div>
+
+        <div class="panel-body">
+            <h4>Pages <small>index.html</small></h4>
+        </div>
+        <div class="panel-body-lrb">
+            <div class="highlight">
+<pre>{% highlight %}{% raw %}
+<!-- Simple page example of a template that inherits the layout.html template example above -->
+
+{% extends 'layout.html' %}
+
+{% block content %}
+    <p>This is just an awesome page.</p>
+{% endblock %}
+{% endraw %}{% endhighlight %}</pre>
+            </div>
+        </div>
+
+        <div class="panel-body">
+            <h4>Partials</h4>
+        </div>
+        <div class="panel-body-lrb">
+            <div class="highlight">
+<pre>{% highlight %}{% raw %}
+<!-- partial.html -->
+<p>I like {{ food }} and {{ drink }}.</p>
+
+<!-- page.html -->
+
+{% extends 'layout.html' %}
+
+{% block content %}
+    {% set my_obj = { food: 'tacos', drink: 'horchata' } %}
+    {% include "./partial.html" with my_obj %}
+    // => I like tacos and horchata.
+{% endblock %}
+{% endraw %}{% endhighlight %}</pre>
+            </div>
+        </div>
+
+    </div>
+
+    <hr/>
+    <h3  id="javascript">JavaScript</h3>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">Application scripts</h4>
+        </div>
+        <div class="panel-body">
+            <p class="margin-none">All the various custom application scripts are bundled in a single file at <code>dist/&lt;theme_name&gt;/js/scripts.js</code> &amp; also into a minified version <code>scripts.min.js</code> within the same directory.</p>
+        </div>
+        <div class="panel-heading">
+            <h4 class="panel-title">Vendor scripts</h4>
+        </div>
+        <div class="panel-body">
+            <p>All the vendor and 3rd party javascript files are bundled into a single file at <code>dist&lt;theme&gt;/js/vendor.js</code> &amp; also into a minified version <code>vendor.min.js</code> within the same directory.</p>
+            <p class="margin-none">Here's a breakdown of plugins we used as well as the exact version, branch, tag or commit of each library:</p>
+        </div>
+        <div class="panel-body-lrb">
+            <div class="highlight">
+<pre>{% highlight 'html' %}
+├── Grid-A-Licious#b7a75df04d                       <!-- Javascript Grids -->
+├── animated-climacons#a2c1d33e43                   <!-- Animated Weather Icons  -->
+├── bootstrap#3.2.0                                 <!-- Bootstrap Front-end framework -->
+├── bootstrap-sass#3.2.0 (latest is 3.2.0+2)        <!-- Bootstrap SASS -->
+├── bootstrap-select#1.6.3                          <!-- Forms Select for Bootstrap -->
+├── bootstrap3-datepicker#1.2.1                     <!-- Datepicker for Bootstrap -->
+├── datatables#1.10.3                               <!-- Javascript Tables -->
+├── datatables-plugins#f99d15aa1d                   <!-- Javascript Table Plugins (required by datatables) -->
+├── font-awesome#4.2.0                              <!-- Font Awesome Icons -->
+├── handlebars#2.0.0                                <!-- Javascript Template Engine -->
+├── holderjs#2.3.2 (latest is 2.4.0)                <!-- Image Holder -->
+├── jquery-minicolors#2.1.7                         <!-- Javascript Color Picker -->
+├── jquery.breakpoints#9310e15aea                   <!-- Javascript breakpoints for your responsive design -->
+├── jquery.cookie#1.4.1                             <!-- Jquery Cookie -->
+├── jquery.nicescroll#be4f1a2bfe                    <!-- Jquery NiceScroll (scroll) -->
+├── morrisjs#0.5.1                                  <!-- Charts -->
+├── seiyria-bootstrap-slider#4.0.8                  <!-- Bootstrap Sliders -->
+{% endhighlight %}</pre>
+            </div>
+        </div>
+        <div class="panel-body">
+            <strong>PRO TIP:</strong> You can get an updated list of all the various libraries installed and also check for available updates for each library in seconds, anytime! Just go into a <em>Terminal</em> to the <code>dev</code> directory and type <code>bower list</code>.
+        </div>
+    </div>
+    <hr/>
+    <h3 id="stylesheet">Styling</h3>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <p>This amazing theme supports CSS pre-processing, not just from one, but two of the top industry-approved and mass-adopted CSS pre-processors: <strong>Less</strong> and <strong>Sass (CSS with superpowers)</strong></strong>.</p>
+            <p class="margin-none">All the styling source is located within <code>dev/app/less</code> or <code>dev/app/scss</code> directories and are broken down in the following:</p>
+        </div>
+        <div class="panel-body-lrb">
+            <div class="highlight">
+<pre>{% highlight %}
+{% include "app/html/themes/docs/components/_style_structure.html" %}
+{% endhighlight %}</pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default" id="css-ref">
+        <div class="panel-body">
+            <h2 class="margin-none">CSS reference</h2>
+        </div>
+        <div class="panel-heading">
+            <h3 class="panel-title">General Helpers</h3>
+        </div>
+        <div class="panel-body">
+            <p><code>.margin-none</code> - disables margin on any element</p>
+            <p><code>.padding-none</code> - disables padding on any element</p>
+            <p><code>.relative</code> - adds position relative to any element</p>
+            <p><code>.overflow-hidden</code> - adds position relative and overflow hidden on any element</p>
+            <p><code>.display-inline-block</code> - adds display inline-block to any element</p>
+            <p class="margin-none"><code>.display-none</code> - hides any element</p>
+        </div>
+        <div class="panel-heading">
+            <h3 class="panel-title">Colour Helpers</h3>
+        </div>
+        <div class="panel-body">
+            <p><code>.bg-primary</code> - applies the color of <code>@primary-color</code> variable as background</p>
+            <p><code>.bg-default</code> - applies <code>#f6f6f6</code> as background and <code>#808080</code> as text color</p>
+            <p><code>.bg-white</code> - applies <code>#fff</code> as background</p>
+            <p><code>.bg-purple</code> - applies the color of <code>@purple-color</code> variable as background</p>
+            <p><code>.bg-brown</code> - applies the color of <code>@brown-color</code> variable as background</p>
+            <p><code>.bg-danger</code> - applies the color of <code>@danger-color</code> variable as background</p>
+            <p><code>.bg-lightred</code> - applies the color of <code>@lightred-color</code> variable as background</p>
+            <p><code>.bg-gray-dark</code> - applies background-color <code>#555</code> and color <code>#fff</code></p>
+            <p class="margin-none"><code>.bg-transparent</code> - removes the background from any element</p>
+        </div>
+        <div class="panel-heading">
+            <h3 class="panel-title">Sidebars</h3>
+        </div>
+        <div class="panel-body">
+            <p><code>.sidebar</code> - required for any sidebar element</p>
+            <p><code>.left</code> or <code>.right</code> - required for any sidebar element for positioning the sidebar to the left or to the right of the page.</p>
+            <p><code>.sidebar-size-1</code> - applies a width of <code>56px</code> to the sidebar and hides all content within the sidebar except the icons</p>
+            <p><code>.sidebar-size-2</code> - applies a width of <code>200px</code> to the sidebar</p>
+            <p><code>.sidebar-size-3</code> - applies a width of <code>250px</code> to the sidebar</p>
+            <p><code>.sidebar-offset-$size</code> - required for any sidebar element; where <code>$size</code> can be any of the sidebar sizes (e.g. 1, 2 or 3); sets the position of the sidebar in relation to other sidebar elements and the rest of the layout and allows multiple sidebars to be placed in specific placements on each side; for example a sidebar element with <code>.left</code> and <code>.sidebar-offset-2</code> will leave a gap for another <code>.sidebar-size-2</code> element, starting from the left of the screen.</p>
+            <p class="margin-none"><code>.sidebar-visible-desktop</code> - must be applied on the sidebar element in order to display the sidebar on desktop screens as sidebars are not visible by default;</p>
+        </div>
+        <div class="panel-heading">
+            <h3 class="panel-title">Sidebar Skins</h3>
+        </div>
+        <div class="panel-body">
+            <p><code>.sidebar-skin-dark</code></p>
+            <p><code>.sidebar-skin-white</code></p>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,66 @@
+.media-heading-margin(@index: 10) when (@index >= 0) {
+	@class: ~".media-heading-@{index}";
+	@margin: ~"@{index}px";
+	&@{class} {
+		margin-top: @margin;
+		margin-bottom: @margin;
+	}
+	.media-heading-margin(@index, 10);
+	.media-heading-margin(@index - 1);
+}
+
+.media-heading-margin(@top: 10, @bottom: 10) when (@top >= 0) and (@bottom >= 0) and not (@top = @bottom) {
+	@class: ~".media-heading-@{top}-@{bottom}";
+	@marginTop: ~"@{top}px";
+	@marginBottom: ~"@{bottom}px";
+	&@{class} {
+		margin-top: @marginTop;
+		margin-bottom: @marginBottom;
+	}
+	.media-heading-margin(@top, @bottom - 1);
+}
+
+.media-heading-margin(@top: 10, @bottom: 10) when (@top = @bottom) {
+	.media-heading-margin(@top, @bottom - 1);
+}
+
+.media-clearfix() {
+	> .pull-left, > .pull-right {
+		float: none !important;
+		text-align: center;
+		margin-bottom: @grid-gutter-width/2;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.media-object {
+		width: 100%;
+	}
+}
+
+.media-heading {
+	margin-bottom: 10px;
+	> a {
+		color: @text-color;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+.media-heading-margin();
+
+@media (max-width: @screen-xs) {
+	.media-clearfix-xs-min {
+		.media-clearfix();
+	}
+}
+@media (max-width: @screen-xs-max) {
+	.media-clearfix-xs {
+		.media-clearfix();
+	}
+}
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+	.media-clearfix-sm {
+		.media-clearfix();
+	}
+}

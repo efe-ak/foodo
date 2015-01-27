@@ -1,0 +1,6 @@
+{% extends "app/html/themes/navbar/_layout.html" %}
+
+{% block content %}
+    {% set tpl = "app/vendor/navbar/html/" + page.basename %}
+    {% include tpl %}
+{% endblock %}

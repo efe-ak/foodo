@@ -1,0 +1,46 @@
+<div class="sidebar sidebar-chat{% if sidebarOptions %} {{ sidebarOptions }}{% endif %}"{% if sidebarData %} {{ sidebarData }}{% endif %}>
+    <div class="split-vertical">
+        <div class="tabbable tabs-icons tabs-highlight-bottom">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#sidebar-tabs-activity" data-toggle="tab"><i class="fa fa-bar-chart-o"></i></a></li>
+                <li><a href="#sidebar-tabs-chat" data-toggle="tab"><i class="fa fa-comments"></i></a></li>
+            </ul>
+        </div>
+        <div class="split-vertical-body">
+            <div class="split-vertical-cell">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="sidebar-tabs-activity">
+                        <div data-scrollable>
+                            {% include "app/html/themes/music/sidebar/_activity.html" %}
+                            {% include "app/html/themes/music/sidebar/_top-plays.html" %}
+                            <h4 class="category">Discover Music</h4>
+                            <div class="sidebar-block">
+                                <p>Build for music enthusiasts, our platform has lots of ways to help you find music you'll love and artists you'll fall in love with.</p>
+                                <a class="btn btn-primary" href="discover.html"><i class="fa fa-fw fa-search"></i> Search</a>
+                            </div>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <div class="sidebar-block">
+                                <p>End of scrollable content</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="sidebar-tabs-chat">
+                        {% include "app/vendor/chat/html/_chat.html" %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% include "app/vendor/chat/html/_window.html" %}

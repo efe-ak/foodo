@@ -1,0 +1,157 @@
+{% extends "app/html/themes/docs/_layout.html" %}
+
+{% block sidebar %}
+    <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark sidebar-visible-desktop" id="sidebar-menu">
+        <div id="menu">
+            <ul class="nav sidebar-menu sm-active-item-bg">
+                <li class="active"><a href="#general-helpers">1. General Helpers</a></li>
+                <li><a href="#base-colour-helpers">2. Base Colour Helpers</a></li>
+                <li><a href="#sidebars">3. Sidebars</a></li>
+                <li><a href="#sidebar-size">4. Sidebar Size</a></li>
+                <li><a href="#sidebar-visibility">5. Sidebar Visibility</a></li>
+                <li><a href="#sidebar-page-layout">6. Sidebar Page Layout</a></li>
+                <li><a href="#sidebar-skins">7. Sidebar Skins</a></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+
+    <div class="page-header">
+        <h1>CSS Reference</h1>
+    </div>
+
+    <div class="panel panel-default" id="general-helpers">
+        <div class="panel-heading">
+            <h3 class="panel-title">General Helpers</h3>
+        </div>
+        <div class="list-group">
+            <div class="list-group-item"><code>.margin-none</code> - disables margin on any element</div>
+            <div class="list-group-item"><code>.padding-none</code> - disables padding on any element</div>
+            <div class="list-group-item"><code>.relative</code> - adds position relative to any element</div>
+            <div class="list-group-item"><code>.overflow-hidden</code> - adds position relative and overflow hidden on any element</div>
+            <div class="list-group-item"><code>.display-inline-block</code> - adds display inline-block to any element</div>
+            <div class="list-group-item"><code>.display-none</code> - hides any element</div>
+        </div>
+    </div>
+
+    <div class="panel panel-default" id="base-colour-helpers">
+        <div class="panel-heading">
+            <h3 class="panel-title">Base Colour Helpers</h3>
+        </div>
+        <div class="list-group">
+            <div class="list-group-item"><code>.bg-primary</code> - applies the color of <code>@primary-color</code> variable as background</div>
+            <div class="list-group-item"><code>.bg-default</code> - applies <code>#f6f6f6</code> as background and <code>#808080</code> as text color</div>
+            <div class="list-group-item"><code>.bg-white</code> - applies <code>#fff</code> as background</div>
+            <div class="list-group-item"><code>.bg-purple</code> - applies the color of <code>@purple-color</code> variable as background</div>
+            <div class="list-group-item"><code>.bg-brown</code> - applies the color of <code>@brown-color</code> variable as background</div>
+            <div class="list-group-item"><code>.bg-danger</code> - applies the color of <code>@danger-color</code> variable as background</div>
+            <div class="list-group-item"><code>.bg-lightred</code> - applies the color of <code>@lightred-color</code> variable as background</div>
+            <div class="list-group-item"><code>.bg-gray-dark</code> - applies background-color <code>#555</code> and color <code>#fff</code></div>
+            <div class="list-group-item"><code>.bg-transparent</code> - removes the background from any element</div>
+        </div>
+    </div>
+
+    <div class="panel panel-default" id="sidebars">
+        <div class="panel-heading">
+            <h3 class="panel-title">Sidebars</h3>
+        </div>
+        <div class="list-group">
+            <div class="list-group-item"><code>.sidebar</code> - the base class required for any sidebar element - it applies directly on the sidebar element;</div>
+            <div class="list-group-item"><code>.left</code> or <code>.right</code> - required for any sidebar element for positioning the sidebar to the left or to the right of the page.</div>
+        </div>
+    </div>
+
+    <div class="panel panel-default" id="sidebar-size">
+        <div class="panel-heading">
+            <h3 class="panel-title">Sidebar Sizes (All screen sizes)</h3>
+        </div>
+        <div class="list-group">
+            <div class="list-group-item"><code>.sidebar-size-1</code> - applies a width of <code>56px</code> to the sidebar and hides all content within the sidebar except the main menu icons</div>
+            <div class="list-group-item"><code>.sidebar-size-2</code> - applies a width of <code>200px</code> to the sidebar</div>
+            <div class="list-group-item"><code>.sidebar-size-3</code> - applies a width of <code>250px</code> to the sidebar</div>
+            <div class="list-group-item"><code>.sidebar-offset-$size</code> - required for any sidebar element; where <code>$size</code> can be any of the sidebar sizes (e.g. 1, 2 or 3); sets the position of the sidebar in relation to other sidebar elements and the rest of the layout and allows multiple sidebars to be placed in specific placements on each side; for example a sidebar element with <code>.left</code> and <code>.sidebar-offset-2</code> will leave a gap for another <code>.sidebar-size-2</code> element, starting from the left of the screen.</div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Sidebar Sizes (Only small to medium screens)</h3>
+        </div>
+        <div class="list-group">
+            <div class="list-group-item"><code>.sidebar-size-sm-1</code> - same as <code>.sidebar-size-1</code> except it only applies for small to medium screens</div>
+            <div class="list-group-item"><code>.sidebar-size-sm-2</code> - same as <code>.sidebar-size-2</code> except it only applies for small to medium screens</div>
+            <div class="list-group-item"><code>.sidebar-size-sm-3</code> - same as <code>.sidebar-size-3</code> except it only applies for small to medium screens</div>
+            <div class="list-group-item"><code>.sidebar-offset-sm-$size</code> - required for any sidebar element using one of the "sm" size classes above;</div>
+        </div>
+    </div>
+
+    <div class="panel panel-default" id="sidebar-visibility">
+        <div class="panel-heading">
+            <h3 class="panel-title">Sidebar Visibility</h3>
+        </div>
+        <div class="list-group">
+            <div class="list-group-item">Sidebars are not visible by default and such we must apply specific screen-size classes to enable their visibility.</div>
+            <div class="list-group-item"><code>.show-sidebar</code> - must be applied directly on the <code>&lt;html&gt;</code> element in order to display any sidebars, on any screen size; this class is not only used for the sidebar visibility, but also updates the layout around sidebars in order to accommodate them.</div>
+            <div class="list-group-item"><code>.sidebar-visible-desktop</code> - must be applied on the sidebar element in order to display the sidebar on desktop screens when <code>.show-sidebar</code> is applied to the <code>&lt;html&gt;</code> element;</div>
+            <div class="list-group-item"><code>.sidebar-visible-mobile</code> - must be applied on the sidebar element in order to display the sidebar on mobile when <code>.show-sidebar</code> is applied to the <code>&lt;html&gt;</code> element;</div>
+        </div>
+    </div>
+
+    <div class="panel panel-default" id="sidebar-page-layout">
+        <div class="panel-heading">
+            <h3 class="panel-title">Sidebar Page Layout</h3>
+        </div>
+        <div class="list-group">
+            <div class="list-group-item">When using sidebars, we must let the rest of the layout know where the sidebars are positioned on the page in order to accommodate them. The following classes must be used in conjunction with the <code>.show-sidebar</code> class and must also be applied on the <code>&lt;html&gt;</code> element.</div>
+            <div class="list-group-item"><strong>Single Sidebars on side.</strong> The following classes will be used when there are single sidebars on each side e.g. one sidebar on the left side and/or one sidebar on the right side. <code>$size</code> can be any valid sidebar size: 1, 2 or 3;</div>
+            <div class="list-group-item"><code>.sidebar-l$size</code> - used for left sidebars on any screen size</div>
+            <div class="list-group-item"><code>.sidebar-r$size</code> - used for right sidebars on any screen size</div>
+            <div class="list-group-item"><code>.sidebar-l$size-sm</code> - used for left sidebars on small to medium screen sizes</div>
+            <div class="list-group-item"><code>.sidebar-r$size-sm</code> - used for right sidebars on small to medium screen sizes</div>
+            <div class="list-group-item"><strong>Multiple Sidebars on side.</strong> The following classes will be used when there are multiple sidebars on each side. <code>$sizes</code> is a number formed from concatenating any of the valid sidebar sizes (1, 2 or 3) used for the corresponding side, respecting the order of the sidebars from left to right. For example, when there are 2 sidebars on the left, first sidebar of size 1 and second sidebar of size 2, we will use <code>.sidebar-l-sum-12</code>. If on the same page, there is another sidebar on the right of size 2, we will also use the <code>.sidebar-r2</code> class.</div>
+            <div class="list-group-item"><code>.sidebar-l-sum-$sizes</code> - used for left sidebars on any screen size</div>
+            <div class="list-group-item"><code>.sidebar-r-sum-$sizes</code> - used for right sidebars on any screen size</div>
+            <div class="list-group-item"><code>.sidebar-l-sum-sm-$sizes</code> - used for left sidebars on small to medium screen sizes</div>
+            <div class="list-group-item"><code>.sidebar-r-sum-sm-$sizes</code> - used for right sidebars on small to medium screen sizes</div>
+        </div>
+    </div>
+
+    <div class="panel panel-default" id="sidebar-skins">
+        <div class="panel-heading">
+            <h3 class="panel-title">Base Sidebar Skins</h3>
+        </div>
+        <div class="list-group">
+            <div class="list-group-item"><code>.sidebar-skin-dark</code></div>
+            <div class="list-group-item"><code>.sidebar-skin-white</code></div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Full Colour Sidebar Skins</h3>
+        </div>
+        <div class="list-group">
+            <div class="list-group-item"><code>.sidebar-skin-red</code></div>
+            <div class="list-group-item"><code>.sidebar-skin-green</code></div>
+            <div class="list-group-item"><code>.sidebar-skin-blue</code></div>
+            <div class="list-group-item"><code>.sidebar-skin-brown</code></div>
+            <div class="list-group-item"><code>.sidebar-skin-deep-purple</code></div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">White Sidebar Skins with accent colours</h3>
+        </div>
+        <div class="list-group">
+            <div class="list-group-item"><code>.sidebar-skin-white-red</code></div>
+            <div class="list-group-item"><code>.sidebar-skin-white-green</code></div>
+            <div class="list-group-item"><code>.sidebar-skin-white-blue</code></div>
+            <div class="list-group-item"><code>.sidebar-skin-white-brown</code></div>
+            <div class="list-group-item"><code>.sidebar-skin-white-deep-purple</code></div>
+        </div>
+    </div>
+
+{% endblock %}

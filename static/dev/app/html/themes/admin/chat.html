@@ -1,0 +1,103 @@
+{% extends "app/html/themes/admin/_layout-chat.html" %}
+
+{% block content %}
+
+    <div class="container-fluid">
+        <!-- Messages -->
+
+            <div class="panel panel-default share">
+                <div class="input-group">
+                    <div class="input-group-btn">
+                        <a class="btn btn-primary" href="#">
+                            <i class="fa fa-envelope"></i> Send
+                        </a>
+                    </div>
+
+                    <!-- /btn-group -->
+                    <input type="text" class="form-control share-text" placeholder="Write message...">
+                </div>
+
+                <!-- /input-group -->
+            </div>
+            <div class="media">
+                <div class="pull-left media-object">
+                    <a href="#">
+                        <img src="images/people/110/woman-5.jpg" width="60" alt="woman" class="img-rounded">
+                    </a>
+                </div>
+                <div class="media-body message">
+                    <div class="panel panel-default">
+                        <div class="panel-heading panel-heading-white">
+                            <div class="pull-right">
+                                <small class="text-muted">2 min ago</small>
+                            </div>
+                            <a href="#">Mary D.</a>
+                        </div>
+                        <div class="panel-body">
+                            Hi Bill,
+                            <br> Is it ok if we schedule the meeting tomorrow?
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="media">
+                <div class="pull-right media-object">
+                    <img src="images/people/110/guy-5.jpg" width="60" alt="guy" class="img-rounded">
+                </div>
+                <div class="media-body message">
+                    <div class="panel panel-default">
+                        <div class="panel-heading panel-heading-white">
+                            <div class="pull-right">
+                                <small class="text-muted">10 min ago</small>
+                            </div>
+                            <a href="#">Me</a>
+                        </div>
+                        <div class="panel-body">
+                            Are we still on for Today?
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="media">
+                <div class="pull-left media-object">
+                    <img src="images/people/110/woman-5.jpg" width="60" alt="woman" class="img-rounded">
+                </div>
+                <div class="media-body message">
+                    <div class="panel panel-default">
+                        <div class="panel-heading panel-heading-white">
+                            <div class="pull-right">
+                                <small class="text-muted">1 day ago</small>
+                            </div>
+                            <a href="#">Mary D.</a>
+                        </div>
+                        <div class="panel-body">
+                            Cool. It's settled. Tomorrow will discuss the project.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="media">
+                <div class="pull-right media-object">
+                    <img src="images/people/110/guy-5.jpg" width="60" alt="guy" class="img-rounded">
+                </div>
+                <div class="media-body message">
+                    <div class="panel panel-default">
+                        <div class="panel-heading panel-heading-white">
+                            <div class="pull-right">
+                                <small class="text-muted">3 days ago</small>
+                            </div>
+                            <a href="#">Me</a>
+                        </div>
+                        <div class="panel-body">
+                            I suggest a meeting on Tuesday. What do you think?
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <!-- /Messages -->
+
+    </div>
+
+{% endblock %}

@@ -1,0 +1,13 @@
+{% include "app/vendor/layout/html/_header.html" { htmlClass: 'ls-top-navbar show-sidebar sidebar-l1 sidebar-r-sum-12' } %}
+{% include "app/html/themes/admin/_navbar.html" %}
+{% include "app/html/themes/admin/_sidebar.html" { sidebarOptions: "left sidebar-size-1 sidebar-mini sidebar-offset-0 sidebar-skin-blue sidebar-visible-mobile sidebar-visible-desktop", sidebarData: "data-type=dropdown" } %}
+{% include "app/html/themes/admin/_sidebar.html" { sidebarId: 2, sidebarOptions: "right sidebar-size-1 sidebar-mini sidebar-offset-2 sidebar-skin-white sidebar-visible-desktop", sidebarData: "data-type=dropdown" } %}
+{% include "app/html/themes/admin/_sidebar.html" { sidebarId: 3, sidebarOptions: "right sidebar-size-2 sidebar-offset-0 sidebar-skin-white sidebar-visible-desktop", sidebarData: "data-type=dropdown" } %}
+
+<div id="content">
+    <div class="container-fluid">
+        {% include "app/vendor/layout/html/samples/_layouts.html" { fixed: false } %}
+    </div>
+</div>
+
+{% include "app/vendor/layout/html/_footer_scripts.html" %}

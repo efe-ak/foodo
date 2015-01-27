@@ -1,0 +1,344 @@
+{% extends "app/html/themes/admin/_layout.html" %}
+
+{% block content %}
+	<h1 class="text-h2 page-section-heading">User</h1>
+
+	<div class="row" data-toggle="isotope">
+		<div class="item col-md-4 col-xs-12">
+			<!-- widget -->
+			{% include "app/vendor/social/html/timeline/timeline-blocks/profile.html" %}
+		</div>
+		<div class="item col-md-4 col-sm-6 col-xs-12">
+			<!-- widget -->
+			<div class="panel panel-default profile-user-box">
+				<div class="avatar">
+					<img src="images/people/110/guy-5.jpg" alt="" class="img-circle">
+					<h3>Adrian Demian</h3>
+					<a href="#" class="btn btn-success">Following <i class="fa fa-check-circle fa-fw"></i></a>
+				</div>
+				<div class="profile-icons margin-none">
+					<span><i class="fa fa-users"></i> 372</span> <span><i class="fa fa-photo"></i> 43</span> <span><i class="fa fa-video-camera"></i> 3 </span>
+				</div>
+				<div class="panel-body">
+					<div class="expandable expandable-indicator-white expandable-trigger">
+						<div class="expandable-content">
+							<p>Hi! I'm Adrian the Senior UI Designer at <strong>MOSAICPRO</strong>. We hope you enjoy the design and quality of Social.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut autem delectus dolorum necessitatibus neque odio quam quas qui quod soluta? Aliquid eius esse minima.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item col-md-4 col-sm-6 col-xs-12">
+			<!-- widget -->
+			{% include "app/vendor/social/html/timeline/timeline-blocks/friends.html" %}
+		</div>
+		<div class="item col-md-4 col-sm-6 col-xs-12">
+			<!-- widget -->
+			<div class="panel panel-default">
+				<div class="panel-heading panel-heading-gray">
+					<a href="#" class="btn btn-primary btn-xs pull-right">Add <i class="fa fa-plus"></i></a>
+					<i class="icon-user-1"></i> Friends
+				</div>
+				<div class="panel-body">
+					<ul class="list-unstyled friends-list">
+						<li><a href="#"><img src="images/people/110/guy-6.jpg" alt="image" class="img-responsive"/></a></li>
+						<li><a href="#"><img src="images/people/110/woman-3.jpg" alt="image" class="img-responsive"/></a></li>
+						<li><a href="#"><img src="images/people/110/guy-2.jpg" alt="image" class="img-responsive"/></a></li>
+						<li><a href="#"><img src="images/people/110/guy-9.jpg" alt="image" class="img-responsive"/></a></li>
+						<li><a href="#"><img src="images/people/110/woman-9.jpg" alt="image" class="img-responsive"/></a></li>
+						<li><a href="#"><img src="images/people/110/guy-4.jpg" alt="image" class="img-responsive"/></a></li>
+						<li><a href="#"><img src="images/people/110/guy-1.jpg" alt="image" class="img-responsive"/></a></li>
+						<li><a href="#"><img src="images/people/110/woman-4.jpg" alt="image" class="img-responsive"/></a></li>
+						<li><a href="#"><img src="images/people/110/guy-6.jpg" alt="image" class="img-responsive"/></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h1 class="text-h2 page-section-heading">Weather</h1>
+
+	<div class="row" data-toggle="isotope">
+		<div class="item col-lg-4 col-md-6 col-xs-12">
+			<div class="panel panel-default">
+				{% include "app/vendor/social/html/timeline/timeline-blocks/_weather-elements.html" %}
+			</div>
+		</div>
+		<div class="item col-lg-4 col-md-6 col-xs-12">
+			<div class="panel panel-default weather-svg">
+				<div class="list">
+					<div class="list-item">
+						<div class="text-h6">Today</div>
+						{% include "app/html/common/components/weather_icons/svg/cloudDrizzleSunFill.html" %}
+					</div>
+					<div class="list-item">
+						<div class="text-h6">Tomorrow</div>
+						{% include "app/html/common/components/weather_icons/svg/sun.html" %}
+					</div>
+					<div class="list-item">
+						<div class="text-h6">Saturday</div>
+						{% include "app/html/common/components/weather_icons/svg/cloudRainFill.html" %}
+					</div>
+				</div>
+				<div class="cover overlay cover-image-full">
+					<img src="images/place1-full.jpg" alt="cover">
+					<div class="overlay overlay-full overlay-bg-black">
+						<div class="v-top">
+							<div class="text-h5">
+								<span class="fa fa-fw fa-star text-primary"></span>
+								<span class="fa fa-fw fa-star text-primary"></span>
+								<span class="fa fa-fw fa-star text-primary"></span>
+								<span class="fa fa-fw fa-star-o text-white"></span>
+								<span class="fa fa-fw fa-star-o text-white"></span>
+							</div>
+						</div>
+						<div class="v-center today">
+							{% include "app/html/common/components/weather_icons/svg/cloudDrizzleSunFillAlt.html" %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item col-lg-4 col-md-6 col-xs-12">
+			<div class="panel panel-default weather-svg">
+				<div class="cover overlay cover-image-full">
+					<img src="images/place2-full.jpg" alt="cover">
+					<div class="overlay overlay-full overlay-bg-black">
+						<div class="v-top">
+							<div class="pull-right">
+								<a href="#"><i class="fa fa-cog"></i></a>
+							</div>
+							<a href="#">Miami, Florida, US</a>
+							<p class="small">24&deg; C - Sunny</p>
+						</div>
+						<div class="v-center today">
+							{% include "app/html/common/components/weather_icons/svg/sunFill.html" %}
+						</div>
+					</div>
+					<div class="overlay overlay-bg-black padding-none">
+						<div class="list">
+							<div class="list-item">
+								<div class="text-h6">Mon</div>
+								{% include "app/html/common/components/weather_icons/svg/cloudDrizzleSunFill.html" %}
+							</div>
+							<div class="list-item">
+								<div class="text-h6">Tue</div>
+								{% include "app/html/common/components/weather_icons/svg/sun.html" %}
+							</div>
+							<div class="list-item">
+								<div class="text-h6">Wed</div>
+								{% include "app/html/common/components/weather_icons/svg/cloudRainFill.html" %}
+							</div>
+							<div class="list-item">
+								<div class="text-h6">Thu</div>
+								{% include "app/html/common/components/weather_icons/svg/cloudDrizzleSunFill.html" %}
+							</div>
+							<div class="list-item">
+								<div class="text-h6">Fri</div>
+								{% include "app/html/common/components/weather_icons/svg/sun.html" %}
+							</div>
+							<div class="list-item">
+								<div class="text-h6">Sat</div>
+								{% include "app/html/common/components/weather_icons/svg/cloudRainFill.html" %}
+							</div>
+							<div class="list-item">
+								<div class="text-h6">Sun</div>
+								{% include "app/html/common/components/weather_icons/svg/cloudRainFill.html" %}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h2 class="page-section-heading">Charts</h2>
+
+	<div class="row" data-toggle="isotope">
+		<div class="item col-md-4 col-sm-6 col-xs-12">
+			<div class="panel panel-default text-center">
+				<div class="panel-body">
+					<div data-percent="85" data-size="95" class="easy-pie inline-block primary" data-scale-color="false"
+						 data-track-color="#efefef" data-line-width="6">
+						<div class="value text-center">
+							<span class="strong"><i class="icon-graph-up-1 fa-3x text-default"></i></span>
+						</div>
+					</div>
+					<h3 class="text-center margin-none">Sales Target: <span class="text-primary">85%</span></h3>
+				</div>
+			</div>
+		</div>
+		<div class="item col-md-4 col-sm-6 col-xs-12">
+			<div class="panel panel-default text-center">
+				<div class="panel-heading">
+					<h4 class="panel-title">Overall Performance</h4>
+					<p class="text-h2 text-primary margin-none"><strong>+309</strong></p>
+				</div>
+				<div class="panel-body">
+					<div class="sparkline-bar" sparkHeight="66">
+						<span class="hide">0:10,7:3,5:5,6:4,3:7,7:3,5:5,6:4,2:8,3:7,7:3,5:5,0:10</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item col-md-4 col-sm-6 col-xs-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<div class="row text-center border-bottom">
+						<div class="col-md-6">
+							<h4 class="panel-title">Gross Revenue</h4>
+							<p class="text-h2 text-warning">10,201.00</p>
+						</div>
+						<div class="col-md-6">
+							<h4 class="panel-title"> Net Revenue</h4>
+
+							<p class="text-h2 text-success">10,201.00</p>
+						</div>
+					</div>
+				</div>
+				<div class="panel-footer">
+					<div id="line-holder" class="flotchart-holder" style="height:200px"></div>
+				</div>
+			</div>
+		</div>
+		<div class="item col-md-4 col-sm-6 col-xs-12">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<div id="chart_horizontal_bars" class="flotchart-holder" style="height:200px"></div>
+				</div>
+			</div>
+		</div>
+		<div class="item col-md-4 col-sm-6 col-xs-12">
+			<div class="panel panel-default">
+				<div class="media sparkline-stats">
+					<div class="pull-left">
+						<div class="panel-body">
+							<div class="sparkline-bar" data-colors="true">
+								<span>6,5,8,6,1</span>
+							</div>
+						</div>
+					</div>
+					<div class="media-body">
+						<ul class="list-group">
+							<li class="list-group-item"><i class="fa fa-fw fa-square text-primary"></i> <strong>5,931</strong> Visits</li>
+							<li class="list-group-item"><i class="fa fa-fw fa-square text-success"></i> <strong>402</strong> Conversions</li>
+							<li class="list-group-item"><i class="fa fa-fw fa-square text-danger"></i> <strong>402</strong> Conversions</li>
+							<li class="list-group-item"><i class="fa fa-fw fa-square text-muted"></i> <strong>15,120</strong> Pageviews</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h2 class="page-section-heading">Other</h2>
+
+	<div class="row" data-toggle="isotope">
+		<div class="item col-md-6 col-sm-6 col-xs-12">
+			{% include "app/vendor/dashboard/html/leaderboard.html" %}
+		</div>
+		<div class="item col-md-6 col-xs-12">
+			{% include "app/vendor/dashboard/html/notifications-timeline.html" %}
+		</div>
+		<div class="item col-md-6 col-xs-12">
+			<div class="panel panel-default">
+				<table class="table table-striped margin-none">
+					<thead>
+					<tr>
+						<th>Box office</th>
+						<th class="text-center">Cash</th>
+						<th class="text-right" style="width: 100px;">Trend</th>
+					</tr>
+					</thead>
+					<tbody>
+					{% for movie in movies %}
+					<tr>
+						<td><strong class="text-muted">{{ loop.index }}.</strong> <a href="#" class="text-primary">{{ movie.name }}</a> </td>
+						<td class="text-right">&euro;{{ movie.value }}</td>
+						<td class="text-right">
+							<div class="sparkline-line" style="width: 100px;" sparkHeight="20" sparkWidth="100%"
+								 data-data="[ {{ movie.data }} ]">
+							</div>
+						</td>
+					</tr>
+					{% endfor %}
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="item col-sm-6 col-xs-12">
+			{% include "app/vendor/dashboard/html/recent-tickets.html" %}
+		</div>
+	</div>
+
+	<h1 class="text-h2 page-section-heading">Media</h1>
+
+	<div class="row" data-toggle="isotope">
+		<div class="item col-md-4 col-xs-12">
+			<div class="panel gallery-grid">
+				<div class="cover overlay hover cover-image-full">
+					<img src="images/place1-full.jpg" alt="cover">
+					<a href="#showImageModal" data-toggle="modal" class="overlay overlay-full overlay-hover overlay-bg-black">
+						<span class="v-center">
+							<span class="btn btn-white btn-lg btn-circle"><i class="fa fa-plus"></i></span>
+						</span>
+					</a>
+				</div>
+				<div class="panel-body">
+					<div class="expandable expandable-indicator-white expandable-trigger">
+						<div class="expandable-content">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dolore expedita facere fuga ipsum laboriosam minima minus molestias quaerat qui repudiandae, similique vitae. Animi fuga minima nemo, nulla officia quam!</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aut eligendi ex, explicabo hic impedit maxime necessitatibus nobis porro sapiente sint, vitae. Facere itaque nihil nostrum pariatur quo temporibus unde.</p>
+						</div>
+					</div>
+				</div>
+				<div class="btn-group btn-group-footer btn-group-justified">
+					<a href="#" class="btn"><i class="fa fa-heart"></i> Like</a>
+					<a href="#" class="btn"><i class="fa fa-user"></i> Share</a>
+				</div>
+			</div>
+		</div>
+		<div class="item col-md-4 col-xs-12">
+			<div class="panel">
+				<iframe src="//player.vimeo.com/video/50522981?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="100%" height="271" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				<div class="panel-body">
+					<p class="margin-none">Vimeo Video</p>
+				</div>
+				<div class="btn-group btn-group-footer btn-group-justified">
+					<a href="#" class="btn"><i class="fa fa-heart"></i> Like</a>
+					<a href="#" class="btn"><i class="fa fa-user"></i> Share</a>
+				</div>
+			</div>
+		</div>
+		<div class="item col-md-4 col-xs-12">
+			<div class="panel">
+				<iframe width="100%" height="315" src="//www.youtube-nocookie.com/embed/Ycv5fNd4AeM?rel=0" frameborder="0" allowfullscreen></iframe>
+				<div class="panel-body">
+					<p class="margin-none">Youtube Video</p>
+				</div>
+				<div class="btn-group btn-group-footer btn-group-justified">
+					<a href="#" class="btn"><i class="fa fa-heart"></i> Like</a>
+					<a href="#" class="btn"><i class="fa fa-user"></i> Share</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
+
+
+{% block footer %}
+
+	<!-- Modal -->
+	<div class="modal fade image-gallery-item" id="showImageModal" tabindex="-1" role="dialog"  aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-header">
+				On my way to the top
+			</div>
+			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			<img class="img-responsive" src="images/place1-full.jpg" alt="Place">
+		</div>
+	</div>
+
+{% endblock %}

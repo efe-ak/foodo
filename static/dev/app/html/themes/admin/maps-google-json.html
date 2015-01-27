@@ -1,0 +1,13 @@
+{% extends "app/html/themes/admin/_layout.html" %}
+
+{% block content %}
+
+    <div class="maps-google-fs" data-toggle="google-maps" data-file="js/data/google_maps/markers.json"></div>
+    <div class="map-overlay-panel map-overlay-top">
+        <h4 class="page-section-heading">Loading markers from JSON</h4>
+        Load markers on map from an external JSON file - the most likely format for any server side implementation - with easy &amp; readable JSON samples; provide a path to the JSON file by using the HTML5 attribute <code>data-file="js/data/markers.json"</code> directly on the map element.
+    </div>
+
+    {% include "app/vendor/maps/html/_map_templates.html" %}
+
+{% endblock %}

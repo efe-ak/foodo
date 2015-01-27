@@ -1,0 +1,13 @@
+{% extends "app/html/themes/social-3/layouts/_user_public.html" %}
+
+{% block content %}
+    <div class="panel panel-default share">
+        <div class="input-group">
+            <div class="input-group-btn">
+                <a class="btn btn-primary" href="#"><i class="fa fa-envelope"></i>Send</a>
+            </div><!-- /btn-group -->
+            <input type="text" class="form-control share-text" placeholder="Write message..."/>
+        </div><!-- /input-group -->
+    </div>
+    {% include "app/html/common/pages/profile.html" %}
+{% endblock %}

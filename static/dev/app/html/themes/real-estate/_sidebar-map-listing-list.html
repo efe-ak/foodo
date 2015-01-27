@@ -1,0 +1,26 @@
+<div class="sidebar{% if sidebarOptions %} {{ sidebarOptions }}{% endif %}"{% if sidebarData %} {{ sidebarData }}{% endif %}>
+    <div data-scrollable>
+
+        {% include "app/html/themes/real-estate/_sidebar-map-listing/_featured.html" %}
+
+        <h4 class="category">Properties</h4>
+        <div class="sidebar-block sidebar-block-full">
+            {% include "app/html/themes/real-estate/_listing-panel.html" { propertyUrl: 'map-property.html', image: "photodune-378874-real-estate-xs.jpg" } %}
+            {% include "app/html/themes/real-estate/_listing-panel.html" { propertyUrl: 'map-property.html', image: "photodune-195203-houses-xs.jpg" } %}
+            {% include "app/html/themes/real-estate/_listing-panel.html" { propertyUrl: 'map-property.html', image: "photodune-196089-house-xs.jpg" } %}
+            {% include "app/html/themes/real-estate/_listing-panel.html" { propertyUrl: 'map-property.html', image: "photodune-197173-residential-home-xs.jpg" } %}
+            {% include "app/html/themes/real-estate/_listing-panel.html" { propertyUrl: 'map-property.html', image: "photodune-3979102-superb-backyard-xs.jpg" } %}
+        </div>
+
+        <div class="sidebar-block equal-padding">
+            <ul class="pagination margin-none">
+                <li class="disabled"><a href="#">&laquo;</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">&raquo;</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<div class="sidebar{% if sidebarOptions %} {{ sidebarOptions }}{% endif %}" {% if sidebarData %} {{ sidebarData }}{% endif %}>
+    <h4 class="category">Genre</h4>
+    <ul class="sidebar-block list-group list-group-menu list-group-minimal">
+        <li class="list-group-item"><a href="index.html"><span class="badge pull-right">1000+</span> All genres</a></li>
+        <li class="list-group-item"><a href="index.html"><span class="badge pull-right">40+</span> Jazz</a></li>
+        <li class="list-group-item"><a href="index.html"><span class="badge pull-right">60+</span> Dance</a></li>
+        <li class="list-group-item active"><a href="index.html"><span class="badge pull-right">30+</span> Pop</a></li>
+        <li class="list-group-item"><a href="index.html"><span class="badge pull-right">15+</span> Hip Hop</a></li>
+        <li class="list-group-item"><a href="index.html"><span class="badge pull-right">25+</span> Country</a></li>
+    </ul>
+
+    <h4 class="category"> Release Date</h4>
+    <div class="sidebar-block">
+        <div class="dropdown">
+            <button class="btn btn-primary btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                Last 30 days
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <h4 class="category"><i class="fa fa-fw fa-dollar"></i> Price</h4>
+    <div class="sidebar-block">
+        <div class="form-group input-group margin-none">
+            <div class="row margin-none">
+                <div class="col-xs-6 padding-none">
+                    <input class="form-control" type="text" placeholder="Min .."/>
+                </div>
+                <div class="col-xs-6 padding-none">
+                    <input class="form-control" type="text" placeholder="Max .."/>
+                </div>
+            </div>
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-primary"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,21 @@
+<div class="weather-svg">
+	<div class="list">
+		<div class="list-item">
+			<div class="text-h6">Today</div>
+			{% include "app/html/common/components/weather_icons/svg/cloudDrizzleSunFill.html" %}
+		</div>
+		<div class="list-item">
+			<div class="text-h6">Tomorrow</div>
+			{% include "app/html/common/components/weather_icons/svg/sun.html" %}
+		</div>
+		<div class="list-item">
+			<div class="text-h6">Saturday</div>
+			{% include "app/html/common/components/weather_icons/svg/cloudRainFill.html" %}
+		</div>
+	</div>
+	<div class="today text-center">
+		{% include "app/html/common/components/weather_icons/svg/cloudDrizzleSunFill.html" %}
+		<div class="clearfix"></div>
+		<div class="details">Today: <strong>10&deg; C</strong></div>
+	</div>
+</div>

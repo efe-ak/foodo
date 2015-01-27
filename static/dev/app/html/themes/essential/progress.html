@@ -1,0 +1,6 @@
+{% extends "app/html/themes/essential/_layout.html" %}
+
+{% block content %}
+    {% set tpl = "app/vendor/ui/html/" + page.basename %}
+    {% include tpl %}
+{% endblock %}

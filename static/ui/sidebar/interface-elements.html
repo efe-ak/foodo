@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html class="st-layout ls-top-navbar ls-bottom-footer show-sidebar sidebar-l2 sidebar-r2" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>ThemeKit</title>
+    <!-- Compressed Vendor BUNDLE
+    Includes vendor (3rd party) styling such as the customized Bootstrap and other 3rd party libraries used for the current theme/module -->
+    <link href="css/vendor.min.css" rel="stylesheet">
+    <!-- Compressed Theme BUNDLE
+    Note: The bundle includes all the custom styling required for the current theme, however
+    it was tweaked for the current theme/module and does NOT include ALL of the standalone modules;
+    The bundle was generated using modern frontend development tools that are provided with the package
+    To learn more about the development process, please refer to the documentation. -->
+    <!-- <link href="css/theme.bundle.min.css" rel="stylesheet"> -->
+    <!-- Compressed Theme CORE
+    This variant is to be used when loading the separate styling modules -->
+    <link href="css/theme-core.min.css" rel="stylesheet">
+    <!-- Standalone Modules
+    As a convenience, we provide the entire UI framework broke down in separate modules
+    Some of the standalone modules may have not been used with the current theme/module
+    but ALL modules are 100% compatible -->
+    <link href="css/module-essentials.min.css" rel="stylesheet" />
+    <link href="css/module-layout.min.css" rel="stylesheet" />
+    <link href="css/module-sidebar.min.css" rel="stylesheet" />
+    <link href="css/module-sidebar-skins.min.css" rel="stylesheet" />
+    <link href="css/module-navbar.min.css" rel="stylesheet" />
+    <!-- <link href="css/module-media.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-timeline.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-cover.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-chat.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-charts.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-maps.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-colors-alerts.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-colors-background.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-colors-buttons.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-colors-calendar.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-colors-progress-bars.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-colors-text.min.css" rel="stylesheet" /> -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- If you don't need support for Internet Explorer <= 8 you can safely remove these -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Wrapper required for sidebar transitions -->
+    <div class="st-container">
+        <!-- Fluid navbar -->
+        <div class="navbar navbar-main navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#sidebar-menu" data-toggle="sidebar-menu" class="toggle pull-left visible-xs">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <a class="navbar-brand" href="index.html">Sidebar Kit</a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse" id="collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../../index.html">Themes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Load Sidebar as Content -->
+        <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark sidebar-visible-desktop" id="sidebar-menu">
+            <div data-scrollable>
+                <div class="category">Regular Buttons</div>
+                <div class="sidebar-block">
+                    <button class="btn btn-block btn-white">White</button>
+                    <button class="btn btn-block btn-default">Default</button>
+                    <button class="btn btn-block btn-success">Success</button>
+                    <button class="btn btn-block btn-warning">Warning</button>
+                    <button class="btn btn-block btn-danger">Danger</button>
+                </div>
+                <div class="category">Stacked Buttons</div>
+                <div class="sidebar-block">
+                    <button class="btn btn-block btn-default btn-icon-stacked"><i class="fa fa-2x fa-facebook"></i> <span>Join using <br>Facebook</span>
+                    </button>
+                    <button class="btn btn-block btn-primary btn-icon-stacked"><i class="fa fa-2x fa-twitter"></i> <span>Join using your<br>Twitter Account</span>
+                    </button>
+                    <button class="btn btn-block btn-info btn-icon-stacked"><i class="fa fa-2x fa-dribbble"></i> <span>Join using your<br>Dribble Account</span>
+                    </button>
+                </div>
+                <!-- Progress Bars -->
+                <div class="category">Progress Bars</div>
+                <div class="sidebar-block">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                            <span class="sr-only">60% Complete</span>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                            <span class="sr-only">40% Complete</span>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100" style="width: 74%;">
+                            <span class="sr-only">74% Complete</span>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100" style="width: 56%;">
+                            <span class="sr-only">56% Complete</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="category">Ratings</div>
+                <div class="sidebar-block text-center">
+                    <div class="rating">
+                        <span class="star"></span>
+                        <span class="star filled"></span>
+                        <span class="star filled"></span>
+                        <span class="star filled"></span>
+                        <span class="star filled"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar right sidebar-size-2 sidebar-offset-0 sidebar-skin-white sidebar-visible-desktop">
+            <div data-scrollable>
+                <div class="category">Regular Buttons</div>
+                <div class="sidebar-block">
+                    <button class="btn btn-block btn-white">White</button>
+                    <button class="btn btn-block btn-default">Default</button>
+                    <button class="btn btn-block btn-success">Success</button>
+                    <button class="btn btn-block btn-warning">Warning</button>
+                    <button class="btn btn-block btn-danger">Danger</button>
+                </div>
+                <div class="category">Stacked Buttons</div>
+                <div class="sidebar-block">
+                    <button class="btn btn-block btn-default btn-icon-stacked"><i class="fa fa-2x fa-facebook"></i> <span>Join using <br>Facebook</span>
+                    </button>
+                    <button class="btn btn-block btn-primary btn-icon-stacked"><i class="fa fa-2x fa-twitter"></i> <span>Join using your<br>Twitter Account</span>
+                    </button>
+                    <button class="btn btn-block btn-info btn-icon-stacked"><i class="fa fa-2x fa-dribbble"></i> <span>Join using your<br>Dribble Account</span>
+                    </button>
+                </div>
+                <!-- Progress Bars -->
+                <div class="category">Progress Bars</div>
+                <div class="sidebar-block">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                            <span class="sr-only">60% Complete</span>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                            <span class="sr-only">40% Complete</span>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100" style="width: 74%;">
+                            <span class="sr-only">74% Complete</span>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100" style="width: 56%;">
+                            <span class="sr-only">56% Complete</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="category">Ratings</div>
+                <div class="sidebar-block text-center">
+                    <div class="rating">
+                        <span class="star"></span>
+                        <span class="star filled"></span>
+                        <span class="star filled"></span>
+                        <span class="star filled"></span>
+                        <span class="star filled"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- content push wrapper -->
+        <div class="st-pusher" id="content">
+            <!-- this is the wrapper for the content -->
+            <div class="st-content">
+                <!-- extra div for emulating position:fixed of the menu -->
+                <div class="st-content-inner">
+                    <div class="container-fluid">
+                        <div class="jumbotron text-center margin-none bg-transparent">
+                            <h1>Sidebar Kit</h1>
+                            <p>The Sidebar KIT provides a large range of elements compatible for residing in any sidebar, starting with simple buttons, dropdown and collapsible menu types, to form elements, categories and custom widget areas.</p>
+                        </div>
+                        <div data-toggle="gridalicious">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Sidebar Menus</h4>
+                                </div>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <a href="menu-collapse.html">
+                                            <strong>Menu Collapse</strong>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="menu-dropdown.html">
+                                            <strong>Menu Dropdown</strong>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="tree-view.html">
+                                            <strong>Sidebar Tree Views</strong>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="list-group.html">
+                                            <strong>Sidebar List Groups</strong>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Sidebar Elements</h4>
+                                </div>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <a href="tabs.html">
+                                            <strong>Sidebar Tabs</strong>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item active">
+                                        <a href="interface-elements.html">
+                                            <strong>UI Elements</strong>
+                                        </a> (buttons, dropdowns, progress, etc ...)</li>
+                                    <li class="list-group-item">
+                                        <a href="form-components.html">
+                                            <strong>Form Components</strong>
+                                        </a>(inputs, filters, sliders, etc ...)</li>
+                                    <li class="list-group-item">
+                                        <a href="profile-sidebar.html">
+                                            <strong>Profile Sidebar</strong>
+                                        </a> (user avatar, about, photos, activity)</li>
+                                    <li class="list-group-item">
+                                        <a href="branding.html">
+                                            <strong>Sidebar Branding</strong>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Sidebar Transitions</h4>
+                                </div>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <a href="transitions.html">
+                                            <strong>Sidebar Transitions</strong>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /st-content-inner -->
+            </div>
+            <!-- /st-content -->
+        </div>
+        <!-- /st-pusher -->
+        <!-- Footer -->
+        <div class="footer">
+            <strong>ThemeKit</strong> v3.6.1 &copy; Copyright 2015
+        </div>
+        <!-- // Footer -->
+    </div>
+    <!-- /st-container -->
+    <!-- Inline Script for colors and config objects; used by various external scripts; -->
+    <script>
+    var colors = {
+        "danger-color": "#e74c3c",
+        "success-color": "#81b53e",
+        "warning-color": "#f0ad4e",
+        "inverse-color": "#2c3e50",
+        "info-color": "#2d7cb5",
+        "default-color": "#6e7882",
+        "default-light-color": "#cfd9db",
+        "purple-color": "#9D8AC7",
+        "mustard-color": "#d4d171",
+        "lightred-color": "#e15258",
+        "body-bg": "#f6f6f6"
+    };
+    var config = {
+        debug: true,
+        theme: "sidebar",
+        skins: {
+            "default": {
+                "primary-color": "#16ae9f"
+            }
+        }
+    };
+    </script>
+    <!-- Separate Vendor Script Bundles -->
+    <script src="js/vendor-core.min.js"></script>
+    <!-- <script src="js/vendor-tables.min.js"></script> -->
+    <script src="js/vendor-forms.min.js"></script>
+    <!-- <script src="js/vendor-media.min.js"></script> -->
+    <!-- <script src="js/vendor-player.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-all.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-flot.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-easy-pie.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-morris.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-sparkline.min.js"></script> -->
+    <!-- <script src="js/vendor-maps.min.js"></script> -->
+    <script src="js/vendor-tree.min.js"></script>
+    <!-- <script src="js/vendor-nestable.min.js"></script> -->
+    <!-- Compressed Vendor Scripts Bundle
+    Includes all of the 3rd party JavaScript libraries above.
+    The bundle was generated using modern frontend development tools that are provided with the package
+    To learn more about the development process, please refer to the documentation.
+    Do not use it simultaneously with the separate bundles above. -->
+    <!-- <script src="js/vendor-bundle-all.min.js"></script> -->
+    <!-- Compressed App Scripts Bundle
+    Includes Custom Application JavaScript used for the current theme/module;
+    Do not use it simultaneously with the standalone modules below. -->
+    <!-- <script src="js/module-bundle-main.min.js"></script> -->
+    <!-- Standalone Modules
+    As a convenience, we provide the entire UI framework broke down in separate modules
+    Some of the standalone modules may have not been used with the current theme/module
+    but ALL the modules are 100% compatible -->
+    <script src="js/module-essentials.min.js"></script>
+    <script src="js/module-layout.min.js"></script>
+    <script src="js/module-sidebar.min.js"></script>
+    <script src="js/module-navbar.min.js"></script>
+    <!-- <script src="js/module-media.min.js"></script> -->
+    <!-- <script src="js/module-player.min.js"></script> -->
+    <!-- <script src="js/module-timeline.min.js"></script> -->
+    <!-- <script src="js/module-chat.min.js"></script> -->
+    <!-- <script src="js/module-maps.min.js"></script> -->
+    <!-- <script src="js/module-charts-all.min.js"></script> -->
+    <!-- <script src="js/module-charts-flot.min.js"></script> -->
+    <!-- <script src="js/module-charts-easy-pie.min.js"></script> -->
+    <!-- <script src="js/module-charts-morris.min.js"></script> -->
+    <!-- <script src="js/module-charts-sparkline.min.js"></script> -->
+</body>
+</html>

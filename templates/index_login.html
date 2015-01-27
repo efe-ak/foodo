@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+<link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon" />
+    <title>FOODO
+    </title>
+
+   
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href= {% static "css/bootstrap.min.css" %} rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/static/css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+
+        <div class="container">
+
+                <div id="dolgusler" style="margin-left:-10px">
+                
+                <form id="login_form" method="post" action="/login/" style="margin-top: 10px">
+
+                    {% csrf_token %}
+                    <span style="color:white">Username: <input type="text" name="username" value="" size="20" style="color:black" /> </span>
+                    <span style="color:white">Password: <input type="password" name="password" value="" size="20" style="color:black" /> </span>
+
+                    <input type="submit" value="SIGN IN" />
+                    <br> 
+
+
+                    </form>
+                <a class="navbar-brand pull-right" href="#page-top" style="position: relative; bottom: 10px; margin-top: -35px; margin-bottom: -10px; right:-1em;">FOODO</a>
+                </div>
+                <h6 style="color:orange">  Username or Password Invalid, Please Try Again </h6>
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <!--The three things (About, Sign/Up Login tabs) on top were deleted for this intro page-->
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header DA GREEN PART WID DA GUY -->
+    <header style="background-color:#25ad9f">
+
+
+        <div class="container">
+              
+        <p style="color:white" id="yazi">FOODO is designed to share our <em>foodly</em> moments. Share your moment. Discover the  food trending, hot food of the day and more. Enjoy.</p>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <img src="/static/img/portfolio/fookicon.png" id="introimage"/>
+                    <div class="intro-text">
+                        <span class="skills">We are connecting the world through Food.</span>
+                        <span
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>Sign up to Foodo now! It is Easy. It is Free.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                    {% if registered %}
+                    {% else %}
+                    <form action="/foodo/register/" id="user_form" method="post" enctype="multipart/form-data" novalidate>
+                        {% csrf_token %}
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Username</label>
+                                <input type="text" class="form-control" placeholder="Choose a Unique Username" id="username" required data-validation-required-message="Please enter your name." name="username">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control" placeholder="Email Address" id="email" name="email" required data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Password</label>
+                                <input type="password" class="form-control" name="password" placeholder="Password" id="password" required data-validation-required-message="Please enter your phone number.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Enter Password Again</label>
+                                <input type="password" class="form-control" name="passwordconfirm" placeholder="Confirm Password" id="passwordconfirm" required data-validation-required-message="Please enter your phone number.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+
+
+                                <button type="submit" name="submit" class="btn btn-success btn-lg">Sign Up!</button>
+                            </div>
+                        </div>
+                    </form>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>FOODO is developed by the JET Dev Team</h3>
+                        <p>from Massachusetts Institute of Technology, Cambridge, MA<br></p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>FOOD Around the World</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <img src="/static/img/portfolio/fookicon.png/"" height="50" width="50"/>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Thanks</h3>
+                        <p>JET Dev Team thanks all the resources that made FOODO possible</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below" style="background-color:#25ad9f; color:#2c3e50" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <em>Connecting the world through Food</em><br>
+            <strong>FOODO</strong> v1.0.0 &copy; Copyright 2015
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="/static/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/static/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="/static/js/classie.js"></script>
+    <script src="/static/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="/static/js/jqBootstrapValidation.js"></script>
+    <!-- 
+    <script src="/static/js/contact_me.js"></script>
+     -->
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/static/js/freelancer.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+{% include "app/vendor/layout/html/_header.html" { htmlClass: 'st-layout ls-top-navbar ls-bottom-footer show-sidebar sidebar-l-sum-12 sidebar-r3 app-mobile' } %}
+
+<!-- Wrapper required for sidebar transitions -->
+<div class="st-container">
+
+    {% include "app/html/themes/admin/_navbar.html" { navbarBrand: "" } %}
+
+    <!-- Sidebar component -->
+    {% include "app/html/themes/admin/_sidebar-email.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-1 sidebar-skin-white sidebar-visible-desktop", sidebarData: "id=email-menu" } %}
+
+    <!-- Sidebar component -->
+    {% include "app/html/themes/admin/_sidebar-email-items.html" { sidebarOptions: "right sidebar-size-3 sidebar-offset-0 sidebar-skin-white sidebar-visible-desktop", sidebarData: "id=email-items-menu" } %}
+
+    <!-- Sidebar component with st-effect-1 (set on the toggle button within the navbar) -->
+    {% include "app/vendor/chat/html/chat.html" { sidebarOptions: "right sidebar-size-2 sidebar-offset-0 chat-skin-white", sidebarData: "id=sidebar-chat" } %}
+
+    <!-- content push wrapper -->
+    <div class="st-pusher">
+
+        <!-- sidebar effects INSIDE of st-pusher: -->
+        <!-- st-effect-3, st-effect-6, st-effect-7, st-effect-8, st-effect-14 -->
+
+        <!-- Sidebar component with st-effect-3 (set on the toggle button within the navbar) -->
+        {% include "app/html/themes/admin/_sidebar.html" { sidebarOptions: "left sidebar-size-1 sidebar-mini sidebar-offset-0 sidebar-skin-blue sidebar-visible-desktop", sidebarData: "id=sidebar-menu data-type=dropdown" } %}
+
+        <!-- this is the wrapper for the content -->
+        <div class="st-content">
+
+            <!-- extra div for emulating position:fixed of the menu -->
+            <div class="st-content-inner" id="content">
+
+                {% block content %}{% endblock %}
+
+            </div><!-- /st-content-inner -->
+
+        </div><!-- /st-content -->
+
+    </div><!-- /st-pusher -->
+
+    {% include "app/vendor/layout/html/_footer_copyright.html" %}
+
+</div>
+
+{% include "app/vendor/layout/html/_footer_scripts.html" %}

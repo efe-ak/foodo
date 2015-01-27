@@ -1,0 +1,68 @@
+.sidebar-chat.chat-skin-white {
+	background: @chat-white-background;
+	border-left: 1px solid darken(@chat-white-background, 7%);
+
+	.chat-search {
+		background: @chat-white-search-background;
+		input {
+			border-color: @chat-white-search-input-border;
+			background: @chat-white-search-input-background;
+			.placeholder(@chat-white-search-placeholder-color);
+			color: @chat-white-search-input-color;
+		}
+	}
+
+	.chat-filter {
+		color: #dfdfdf;
+		background: @chat-white-filter-background;
+		border-top: 1px solid;
+		border-color: @chat-white-filter-border;
+		li {
+			a {
+				color: @chat-white-filter-link;
+				&:hover {
+					background: @chat-white-filter-link-hover-background;
+					color: @chat-white-filter-link-hover-color;
+				}
+			}
+			&.active a, &.active a:hover {
+				background: @primary-color;
+				color: #fff;
+			}
+		}
+	}
+
+	.chat-contacts {
+		li {
+			border-color: @chat-white-item-border-bottom;
+			a small {
+				color: @chat-white-item-text-color;
+			}
+			.contact-name {
+				color: @chat-white-item-contact-color;
+			}
+			&.online {
+				.status {
+					background: @chat-item-circle-online;
+				}
+			}
+			&.away {
+				.status {
+					background: @chat-item-circle-away;
+				}
+			}
+			&.busy {
+				.status {
+					background: @chat-item-circle-busy;
+				}
+			}
+
+			small {
+				color: #797979;
+			}
+			> a:hover {
+				background: @chat-white-item-hover-background;
+			}
+		}
+	}
+}

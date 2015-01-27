@@ -1,0 +1,46 @@
+<!-- Fixed navbar -->
+<div class="navbar navbar-main {{ navbarOptions or 'navbar-default navbar-fixed-top' }}" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">ThemeKit</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="main-nav">
+			<ul class="nav navbar-nav">
+				<li><a href="../../index.html">Themes</a></li>
+				<li class="dropdown active">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li class="dropdown-header">Website pages</li>
+						<li{% if page.slug == "front-home-slider" %} class="active"{% endif %}><a href="front-home-slider.html">Home + Slider</a></li>
+						<li{% if page.slug == "front-home-map" %} class="active"{% endif %}><a href="front-home-map.html">Home + Map</a></li>
+						<li class="dropdown-header">Application pages</li>
+						<li{% if page.slug == "index" %} class="active"{% endif %}><a href="index.html">Full Screen Map</a></li>
+						<li{% if page.slug == "map-listing" %} class="active"{% endif %}><a href="map-listing.html">Map + Listing</a></li>
+						<li{% if page.slug == "map-property" %} class="active"{% endif %}><a href="map-property.html">Map + Property</a></li>
+						<li{% if page.slug == "map-edit" %} class="active"{% endif %}><a href="map-edit.html">Map + Edit</a></li>
+						<li{% if page.slug == "listing" %} class="active"{% endif %}><a href="listing.html">Listing Single</a></li>
+						<li{% if page.slug == "property" %} class="active"{% endif %}><a href="property.html">Property Single</a></li>
+					</ul>
+				</li>
+			</ul>
+			<form class="navbar-form navbar-left margin-none">
+				{% include "app/vendor/navbar/html/_search_1.html" { btnClass: "btn-inverse" } %}
+			</form>
+			<ul class="nav navbar-nav navbar-right">
+				{% include "app/vendor/navbar/html/_login.html" %}
+				{% include "app/vendor/navbar/html/_signup.html" %}
+				{% include "app/vendor/navbar/html/_user.html" %}
+			</ul>
+		</div>
+		<!-- /.navbar-collapse -->
+
+	</div>
+</div>

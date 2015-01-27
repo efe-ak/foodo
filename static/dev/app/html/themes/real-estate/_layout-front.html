@@ -1,0 +1,9 @@
+{% include "app/vendor/layout/html/_header.html" { htmlClass: 'ls-top-navbar-large ls-bottom-footer hide-sidebar' } %}
+
+{% include "app/html/themes/real-estate/_navbar-front.html" { navbarOptions: 'navbar-skin-cover navbar-static-top navbar-absolute-top navbar-size-large' } %}
+
+<div id="content">{% block content %}{% endblock %}</div>
+
+{% include "app/vendor/layout/html/_footer_copyright.html" %}
+
+{% include "app/vendor/layout/html/_footer_scripts.html" %}

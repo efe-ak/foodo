@@ -1,0 +1,68 @@
+.sidebar-chat.chat-skin-dark {
+    background: @chat-dark-background;
+    border-left: 1px solid darken(@chat-dark-background, 7%);
+
+    .chat-search {
+        background: @chat-dark-search-background;
+        input {
+            border-color: @chat-dark-search-input-border;
+            background: @chat-dark-search-input-background;
+            .placeholder(@chat-dark-search-placeholder-color);
+            color: @chat-dark-search-input-color;
+        }
+    }
+
+    .chat-filter {
+        color: #dfdfdf;
+        background: @chat-dark-filter-background;
+        border-top: 1px solid;
+        border-color: @chat-dark-filter-border;
+        li {
+            a {
+                color: @chat-dark-filter-link;
+                &:hover {
+                    background: @chat-dark-filter-link-hover-background;
+                    color: @chat-dark-filter-link-hover-color;
+                }
+            }
+            &.active a, &.active a:hover {
+                background: @primary-color;
+                color: #fff;
+            }
+        }
+    }
+
+    .chat-contacts {
+        li {
+            border-color: @chat-dark-item-border-bottom;
+            a small {
+                color: @chat-dark-item-text-color;
+            }
+            .contact-name {
+                color: @chat-dark-item-contact-color;
+            }
+            &.online {
+                .status {
+                    background: @chat-item-circle-online;
+                }
+            }
+            &.away {
+                .status {
+                    background: @chat-item-circle-away;
+                }
+            }
+            &.busy {
+                .status {
+                    background: @chat-item-circle-busy;
+                }
+            }
+
+            small {
+                color: #797979;
+            }
+            > a:hover {
+                background: @chat-dark-item-hover-background;
+            }
+        }
+    }
+}

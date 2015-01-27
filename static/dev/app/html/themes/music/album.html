@@ -1,0 +1,113 @@
+{% extends "app/html/themes/music/_layout-album.html" %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col-lg-8">
+            {% include "app/vendor/media/html/player/cover-with-playlist.html" %}
+
+            <h4>Comments</h4>
+            <form>
+                <div class="form-group input-group">
+                    <input type="text" class="form-control" placeholder="Your comment ..">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button"><i class="fa fa-plus"></i></button>
+                    </span>
+                </div>
+            </form>
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="media">
+                        <a class="pull-left" href=""><img class="media-object" src="images/people/50/guy-2.jpg" alt="people"/></a>
+                        <div class="media-body">
+                            <small class="text-grey-300 pull-right">2 minutes ago</small>
+                            <h4 class="margin-bottom-none">Andrew B.</h4>
+                            <p class="margin-none">Great album release! Definitely a purchase</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="media">
+                        <a class="pull-left" href=""><img class="media-object" src="images/people/50/woman-5.jpg" alt="people"/></a>
+                        <div class="media-body">
+                            <small class="text-grey-300 pull-right">2 hours ago</small>
+                            <h4 class="margin-bottom-none">Jane D.</h4>
+                            <p class="margin-none">Awesome album! +1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">What's Hot</h4>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <div class="media">
+                            <a class="pull-left" href=""><img src="images/50/autumn-woman-fall.jpg" alt="cover" class="media-object" width="45" /></a>
+                            <div class="pull-right">
+                                <a class="btn btn-pink-500 btn-circle btn-stroke btn-sm" href="#"><i class="fa fa-play"></i></a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="">Bloom</a></h4>
+                                <p class="text-grey-500 margin-none">Woodland (2011)</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="media">
+                            <a class="pull-left" href=""><img src="images/50/portrait-of-man-with-guitar.jpg" alt="cover" class="media-object" width="45" /></a>
+                            <div class="pull-right">
+                                <a class="btn btn-pink-500 btn-circle btn-stroke btn-sm" href="#"><i class="fa fa-play"></i></a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="">Dreams</a></h4>
+                                <p class="text-grey-500 margin-none">Shinning (2014)</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="media">
+                            <a class="pull-left" href=""><img src="images/50/young-couple-in-love.jpg" alt="cover" class="media-object" width="45" /></a>
+                            <div class="pull-right">
+                                <a class="btn btn-pink-500 btn-circle btn-stroke btn-sm" href="#"><i class="fa fa-play"></i></a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="">Something</a></h4>
+                                <p class="text-grey-500 margin-none">Different (2014)</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="media">
+                            <a class="pull-left" href=""><img src="images/50/fashion-beauty-portrait-sexy-girl.jpg" alt="cover" class="media-object" width="45" /></a>
+                            <div class="pull-right">
+                                <a class="btn btn-pink-500 btn-circle btn-stroke btn-sm" href="#"><i class="fa fa-play"></i></a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="">Angels</a></h4>
+                                <p class="text-grey-500 margin-none">Heaven (2014)</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h4>Discover Music</h4>
+                    <p>Build for music enthusiasts, our platform has lots of ways to help you find music you'll love and artists you'll fall in love with.</p>
+                    <a class="btn btn-primary" href="discover.html"><i class="fa fa-fw fa-search"></i> Search</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}

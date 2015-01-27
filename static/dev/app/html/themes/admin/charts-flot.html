@@ -1,0 +1,49 @@
+{% extends "app/html/themes/admin/_layout.html" %}
+
+{% block content %}
+
+    <h1>Flot Charts</h1>
+    <!-- Simple chart -->
+    {% include "app/vendor/charts/html/flot/simple.html" %}
+    <!-- // Simple chart END -->
+
+    <!-- Lines chart -->
+    {% include "app/vendor/charts/html/flot/mixed-1.html" %}
+    <!-- // Lines chart END -->
+
+    <!-- Lines chart -->
+    {% include "app/vendor/charts/html/flot/line-2.html" %}
+    <!-- // Lines chart END -->
+    {% include "app/vendor/charts/html/flot/line-1.html" %}
+    <!-- // Lines chart END -->
+
+    <!-- Ordered bars chart -->
+    {% include "app/vendor/charts/html/flot/bars-ordered.html" %}
+    <!-- // Ordered bars chart END -->
+
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Donut chart-->
+            {% include "app/vendor/charts/html/flot/donut.html" %}
+            <!-- // Donut END -->
+        </div>
+        <div class="col-md-6">
+            <!-- Pie chart -->
+            {% include "app/vendor/charts/html/flot/pie.html" %}
+            <!-- // Pie chart END -->
+        </div>
+    </div>
+
+    <!-- Stacked bars chart -->
+    {% include "app/vendor/charts/html/flot/bars-stacked.html" %}
+    <!-- // Stacked bars chart END -->
+
+    <!-- Horizontal bars chart -->
+    {% include "app/vendor/charts/html/flot/bars-horizontal.html" %}
+    <!-- // Horizontal bars chart END -->
+
+    <!-- Auto updating chart -->
+    {% include "app/vendor/charts/html/flot/autoupdate.html" %}
+    <!-- // Auto updating chart END -->
+
+{% endblock %}

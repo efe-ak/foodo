@@ -1,0 +1,21 @@
+{% extends "app/html/themes/admin/_layout.html" %}
+
+{% block content %}
+
+    <h1>Morris Charts</h1>
+    <div class="row">
+        <div class="col-md-6">
+            {% include "app/vendor/charts/html/morris/donut.html" { title:"Donut Chart" } %}
+        </div>
+        <div class="col-md-6">
+            {% include "app/vendor/charts/html/morris/area.html" { title:"Area Chart" } %}
+        </div>
+    </div>
+
+    {% include "app/vendor/charts/html/morris/bar.html" { title:"Bar Chart" } %}
+
+    <div class="panel panel-default">
+        {% include "app/vendor/charts/html/morris/line.html" { title:"Line Chart" } %}
+    </div>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "app/html/themes/admin/_layout.html" %}
+
+{% block content %}
+
+    <div class="maps-google-fs" data-toggle="google-maps" data-zoom="18" data-file="js/data/google_maps/markers-edit.json" data-id="map-edit" data-center="57.797091972194565,12.051336765289307" data-zoom-position="LEFT_BOTTOM"></div>
+
+    <div class="navbar navbar-default navbar-size-large navbar-absolute-top navbar-map-overlay">
+        <div class="navbar-text"><i class="fa fa-fw fa-info"></i> Click on the map to add markers</div>
+        <a href="#" class="toggle pull-right active hidden-xs margin-none"><i class="fa fa-edit"></i></a>
+    </div>
+
+    {% include "app/vendor/maps/html/_map_templates.html" %}
+
+{% endblock %}

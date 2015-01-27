@@ -1,0 +1,67 @@
+.navbar-brand {
+    position: relative;
+    height: @navbar-height;
+    line-height: @navbar-height;
+    padding: 0 @sidebar-horizontal-spacing;
+    font-size: 18px;
+    font-weight: 700;
+    &:hover, a:hover {
+        text-decoration: none;
+    }
+    & + & {
+        margin-left: 0 !important;
+    }
+    .navbar-size-small & {
+        height: @navbar-small-height;
+        line-height: @navbar-small-height;
+    }
+    .navbar-size-large & {
+        @media (min-width: @navbar-large-breakpoint) {
+            height: @navbar-large-height;
+            line-height: @navbar-large-height;
+        }
+    }
+    &.navbar-brand-logo {
+        padding-left: 0;
+        img {
+            height: @navbar-height !important;
+            .navbar-size-small & {
+                height: @navbar-small-height !important;
+            }
+            .navbar-size-large & {
+                @media (min-width: @navbar-large-breakpoint) {
+                    height: @navbar-large-height !important;
+                }
+            }
+            width: auto !important;
+            display: inline-block !important;
+            vertical-align: top;
+        }
+    }
+    &.navbar-brand-primary, &.navbar-brand-primary:hover {
+        background: @primary-color;
+        color:#fff;
+        a {
+            color:#fff;
+        }
+        &:after {
+            content: " ";
+            display: block;
+            position: absolute;
+            bottom: -1px;
+            height: 1px;
+            left: 0;
+            right: 0;
+            background: darken(@primary-color, 10%);
+        }
+    }
+}
+
+@media (min-width: @grid-float-breakpoint) {
+	.navbar-brand {
+		.navbar-toggle-demo > .container &,
+		.navbar-toggle-demo > .container-fluid & {
+			margin-left: 0;
+		}
+	}
+}

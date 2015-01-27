@@ -1,0 +1,41 @@
+<div class="sidebar{% if sidebarOptions %} {{ sidebarOptions }}{% endif %}" {% if sidebarData %} {{ sidebarData }}{% endif %}>
+	<div class="split-vertical">
+		<div class="sidebar-block equal-padding">
+			<button class="btn btn-block btn-success"><i class="fa fa-ticket"></i> Create Ticket</button>
+		</div>
+		<div class="split-vertical-body">
+			<div class="split-vertical-cell">
+				<div data-scrollable>
+					<ul class="sidebar-menu sm-bordered">
+						<li{% if (page.slug == 'tickets') %} class="active"{% endif%}><a href="tickets.html"><i class="fa fa-ticket"></i> <span>New</span></a></li>
+						<li{% if (page.slug == 'unread-tickets') %} class="active"{% endif%}><a href="unread-tickets.html"><i class="fa fa-exclamation-circle"></i> <span>Unread</span></a></li>
+						<li{% if (page.slug == 'pending-tickets') %} class="active"{% endif%}><a href="pending-tickets.html"><i class="fa fa-spinner"></i> <span>Pending </span></a></li>
+						<li{% if (page.slug == 'draft-tickets') %} class="active"{% endif%}><a href="draft-tickets.html"><i class="fa fa-pencil"></i> <span>Draft</span></a></li>
+					</ul>
+					<div class="sidebar-block">
+						<div class="checkbox checkbox-primary">
+							<input id="tickets-answered" type="checkbox" checked />
+							<label for="tickets-answered">Answered</label>
+						</div>
+						<div class="checkbox checkbox-primary">
+							<input id="tickets-new" type="checkbox" checked />
+							<label for="tickets-new">New</label>
+						</div>
+						<div class="checkbox checkbox-primary">
+							<input id="tickets-read" type="checkbox" checked />
+							<label for="tickets-read">Read</label>
+						</div>
+					</div>
+					<div class="sidebar-block equal-padding">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="#ticket-id">
+								<span class="input-group-btn">
+								<button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

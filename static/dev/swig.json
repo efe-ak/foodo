@@ -1,0 +1,255 @@
+{
+	"site": {
+		"name": "ThemeKit",
+		"version": "3.6.1",
+		"description": "Multiple Themes & UI Framework",
+		"author": "mosaicpro",
+		"email": "contact@mosaicpro.biz"
+	},
+	"js_modules": [
+		"module-essentials",
+		"module-layout",
+		{
+			"name": "module-sidebar",
+			"exclude": [
+				"choose",
+				"navbar"
+			]
+		},
+		"module-navbar",
+		{
+			"name": "module-media",
+			"themes": [
+				"admin",
+				"music",
+				"real-estate"
+			]
+		},
+		{
+			"name": "module-player",
+			"themes": ["music"]
+		},
+		{
+			"name": "module-timeline",
+			"themes": [
+				"social-1",
+				"social-2",
+				"social-3"
+			]
+		},
+		{
+			"name": "module-chat",
+			"themes": [
+				"admin",
+				"social-1",
+				"social-2",
+				"social-3",
+				"music",
+				"learning"
+			]
+		},
+		{
+			"name": "module-maps",
+			"themes": [
+				"real-estate",
+				"admin"
+			]
+		},
+		{
+			"name": "module-charts-all",
+			"themes": ["admin"]
+		},
+		{
+			"name": "module-charts-flot",
+			"themes": []
+		},
+		{
+			"name": "module-charts-easy-pie",
+			"themes": []
+		},
+		{
+			"name": "module-charts-morris",
+			"themes": []
+		},
+		{
+			"name": "module-charts-sparkline",
+			"themes": []
+		}
+	],
+	"css_modules": [
+		"module-essentials",
+		"module-layout",
+		{
+			"name": "module-sidebar",
+			"exclude": [
+				"choose",
+				"navbar"
+			]
+		},
+		{
+			"name": "module-sidebar-skins",
+			"exclude": [
+				"choose",
+				"navbar"
+			]
+		},
+		"module-navbar",
+		{
+			"name": "module-media",
+			"themes": [
+				"admin",
+				"music",
+				"real-estate"
+			]
+		},
+		{
+			"name": "module-timeline",
+			"themes": [
+				"admin",
+				"social-1",
+				"social-2",
+				"social-3"
+			]
+		},
+		{
+			"name": "module-cover",
+			"themes": [
+				"social-1",
+				"social-2",
+				"social-3"
+			]
+		},
+		{
+			"name": "module-chat",
+			"themes": [
+				"admin",
+				"social-1",
+				"social-2",
+				"social-3",
+				"music",
+				"learning"
+			]
+		},
+		{
+			"name": "module-charts",
+			"themes": ["admin"]
+		},
+		{
+			"name": "module-maps",
+			"themes": [
+				"admin",
+				"real-estate"
+			]
+		},
+		{
+			"name": "module-colors-alerts",
+			"themes": ["color"]
+		},
+		{
+			"name": "module-colors-background",
+			"themes": [
+				"color",
+				"essential",
+				"music"
+			]
+		},
+		{
+			"name": "module-colors-buttons",
+			"themes": [
+				"color",
+				"music",
+				"real-estate"
+			]
+		},
+		{
+			"name": "module-colors-calendar",
+			"themes": ["color"]
+		},
+		{
+			"name": "module-colors-progress-bars",
+			"themes": ["color"]
+		},
+		{
+			"name": "module-colors-text",
+			"themes": [
+				"color",
+				"essential",
+				"music",
+				"real-estate"
+			]
+		}
+	],
+	"js_theme_core": [
+		"docs",
+		"real-estate",
+		"social-1",
+		"social-2",
+		"social-3",
+		"learning"
+	],
+	"js_vendor": [
+		"vendor-core",
+		{
+			"name": "vendor-tables",
+			"themes": [
+				"essential",
+				"admin"
+			]
+		},
+		"vendor-forms",
+		{
+			"name": "vendor-media",
+			"themes": [
+				"admin",
+				"music",
+				"real-estate"
+			]
+		},
+		{
+			"name": "vendor-player",
+			"themes": ["music"]
+		},
+		{
+			"name": "vendor-charts-all",
+			"themes": ["admin"]
+		},
+		{
+			"name": "vendor-charts-flot",
+			"themes": []
+		},
+		{
+			"name": "vendor-charts-easy-pie",
+			"themes": []
+		},
+		{
+			"name": "vendor-charts-morris",
+			"themes": []
+		},
+		{
+			"name": "vendor-charts-sparkline",
+			"themes": []
+		},
+		{
+			"name": "vendor-maps",
+			"themes": [
+				"admin",
+				"real-estate"
+			]
+		},
+		{
+			"name": "vendor-tree",
+			"themes": [
+				"essential",
+				"sidebar",
+				"admin"
+			]
+		},
+		{
+			"name": "vendor-nestable",
+			"themes": [
+				"essential",
+				"admin"
+			]
+		}
+	]
+}

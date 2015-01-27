@@ -1,0 +1,12 @@
+require('./_simple');
+require('./_mixed');
+require('./_line');
+require('./_horizontal');
+require('./_line_fill_nopoints');
+require('./_line_fill_nopoints_2');
+require('./_bars-ordered');
+require('./_donut');
+require('./_bars-stacked');
+require('./_pie');
+require('./_bars-horizontal');
+require('./_autoupdate');

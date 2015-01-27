@@ -1,0 +1,12 @@
+{% include "app/vendor/layout/html/_header.html" { htmlClass: 'ls-top-navbar show-sidebar sidebar-l1 sidebar-r1' } %}
+{% include "app/html/themes/admin/_navbar.html" %}
+{% include "app/html/themes/admin/_sidebar.html" { sidebarOptions: "left sidebar-size-1 sidebar-mini-reveal sidebar-offset-0 sidebar-skin-blue sidebar-visible-desktop sidebar-visible-mobile", sidebarData: "id=sidebar-menu data-type=dropdown", sidebarMenu: "sm-icons-block sm-icons-right" } %}
+{% include "app/html/themes/admin/_sidebar.html" { sidebarId: 2, sidebarOptions: "right sidebar-size-1 sidebar-mini-reveal sidebar-offset-0 sidebar-skin-white sidebar-visible-desktop sidebar-visible-mobile", sidebarData: "id=sidebar-menu data-type=dropdown", sidebarMenu: "sm-icons-block sm-active-item-bg" } %}
+
+<div id="content">
+    <div class="container-fluid">
+        {% include "app/vendor/layout/html/samples/_layouts.html" { fixed: false } %}
+    </div>
+</div>
+
+{% include "app/vendor/layout/html/_footer_scripts.html" %}

@@ -1,0 +1,37 @@
+.height(@property: height, @index: 50, @size: "", @increment: 10) when (@index =< 600) {
+	@max: ~"@{index}px";
+	@class: ~".@{property}-@{index}@{size}";
+	&@{class} {
+		@{property}: @max;
+	}
+	.height(@property, @index + @increment, @size);
+}
+
+// HEIGHT
+// ALL SCREENS
+.height();
+.height(max-height);
+
+// MOBILE
+@media (max-width: @screen-sm) {
+	.height(height, 50, "-xs");
+	.height(max-height, 50, "-xs");
+}
+
+// SMALL TABLET
+@media (min-width: @screen-sm) and (max-width: @screen-md) {
+	.height(height, 50, "-sm");
+	.height(max-height, 50, "-sm");
+}
+
+// MEDIUM DESKTOP
+@media (min-width: @screen-md) and (max-width: @screen-lg) {
+	.height(height, 50, "-md");
+	.height(max-height, 50, "-md");
+}
+
+// LARGE DESKTOP
+@media (min-width: @screen-lg) {
+	.height(height, 50, "-lg");
+	.height(max-height, 50, "-lg");
+}

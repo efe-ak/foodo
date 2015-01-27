@@ -1,0 +1,106 @@
+<div class="sidebar{% if sidebarOptions %} {{sidebarOptions}}{% endif %}" id="sidebar-menu" data-type="collapse">
+    <div data-scrollable>
+        <ul class="sidebar-menu">
+            <li><a href="../../index.html"><i class="icon-paint-brush"></i> <span>Themes</span></a></li>
+            <li class="category">Navigation</li>
+            <li class="hasSubmenu{% if (page.slug == 'index' or page.slug == 'timeline-list' or page.slug == 'timeline-mirror') %} open{% endif %}">
+                <a href="#timeline"><i class="icon-ship-wheel"></i> <span>Timeline</span></a>
+                <ul{% if (page.slug == 'index' or page.slug == 'timeline-list' or page.slug == 'timeline-mirror') %} class="in"{% endif %} id="timeline">
+                    <li{% if (page.slug == 'index') %} class="active"{% endif %}><a href="index.html"><i class="fa fa-circle-o"></i> <span>Blocks</span></a></li>
+                    <li{% if (page.slug == 'timeline-list') %} class="active"{% endif %}><a href="timeline-list.html"><i class="fa fa-circle-o"></i> <span>Listing</span></a></li>
+                </ul>
+            </li>
+            <li class="{% if (page.slug == 'profile') %} active {% endif %}"><a href="profile.html"><i class="icon-user-1"></i> <span>Profile</span></a></li>
+            <li class="{% if (page.slug == 'users') %} active{% endif %}"><a href="users.html"><i class="fa fa-group"></i> <span>Users</span></a></li>
+            <li class="{% if (page.slug == 'messages') %} active{% endif %}"><a href="messages.html"><i class="icon-comment-fill-1"></i> <span>Messages</span></a></li>
+            <li><a href="login.html"><i class="icon-lock-fill"></i> <span>Login</span></a></li>
+            <li class="hasSubmenu{% if (page.slug == 'buttons' or page.slug == 'icons' or page.slug == 'grid' or page.slug == 'progress' or page.slug == 'maps' or page.slug == 'forms' or page.slug == 'tables' or page.slug == 'tabs') %} open{% endif %}">
+                <a href="#components"><i class="icon-paint-brushes"></i> <span>UI Components</span></a>
+                <ul{% if (page.slug == 'buttons' or page.slug == 'icons' or page.slug == 'grid' or page.slug == 'progress' or page.slug == 'maps' or page.slug == 'forms' or page.slug == 'tables' or page.slug == 'tabs') %} class="in"{% endif %} id="components">
+                    <li{% if (page.slug == 'buttons') %} class="active"{% endif %}><a href="buttons.html"><i class="fa fa-circle-o"></i> <span>Buttons</span></a></li>
+                    <li{% if (page.slug == 'icons') %} class="active"{% endif %}><a href="icons.html"><i class="fa fa-circle-o"></i> <span>Icons</span></a></li>
+                    <li{% if (page.slug == 'progress') %} class="active"{% endif %}><a href="progress.html"><i class="fa fa-circle-o"></i> <span>Progress</span></a></li>
+                    <li{% if (page.slug == 'grid') %} class="active"{% endif %}><a href="grid.html"><i class="fa fa-circle-o"></i> <span>Grid</span></a></li>
+                    <li{% if (page.slug == 'forms') %} class="active"{% endif %}><a href="forms.html"><i class="fa fa-circle-o"></i> <span>Forms</span></a></li>
+                    <li{% if (page.slug == 'tables') %} class="active"{% endif %}><a href="tables.html"><i class="fa fa-circle-o"></i> <span>Tables</span></a></li>
+                    <li{% if (page.slug == 'tabs') %} class="active"{% endif %}><a href="tabs.html"><i class="fa fa-circle-o"></i> <span>Tabs</span></a></li>
+                </ul>
+            </li>
+
+            <!-- Sample 2 Level Collapse -->
+            <li class="hasSubmenu">
+                <a href="#submenu"><i class="fa fa-chevron-circle-down"></i> <span>Collapse</span></a>
+                <ul id="submenu">
+                    <li class="hasSubmenu">
+                        <a href="#submenu-1"><i class="fa fa-circle-o"></i> Submenu</a>
+                        <ul id="submenu-1">
+                            <li><a href="#">Regular Link</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i> Regular Link</a></li>
+                </ul>
+            </li>
+        </ul>
+        <h4 class="category border top">News Feeds</h4>
+        <div class="sidebar-block">
+            <ul class="sidebar-feed">
+                <li class="media">
+                    <span class="news-item-success pull-right"><i class="fa fa-circle"></i></span>
+                    <span class="pull-left media-object">
+                        <i class="fa fa-fw fa-bell"></i>
+                    </span>
+                    <div class="media-body">
+                        <a href="" class="text-white">Adrian</a> just logged in
+                        <span class="time">2 min ago</span>
+                    </div>
+                </li>
+                <li class="media">
+                    <span class="news-item-success pull-right"><i class="fa fa-circle"></i></span>
+                    <span class="pull-left media-object">
+                        <i class="fa fa-fw fa-bell"></i>
+                    </span>
+                    <div class="media-body">
+                        <a href="" class="text-white">Adrian</a> just added  <a href="" class="text-white">mosaicpro</a> as their office
+                        <span class="time">2 min ago</span>
+                    </div>
+                </li>
+                <li class="media">
+                    <span class="pull-left media-object">
+                        <i class="fa fa-fw fa-bell"></i>
+                    </span>
+                    <div class="media-body">
+                        <a href="" class="text-white">Adrian</a> just logged in
+                        <span class="time">2 min ago</span>
+                    </div>
+                </li>
+                <li class="media">
+                    <span class="pull-left media-object">
+                        <i class="fa fa-fw fa-bell"></i>
+                    </span>
+                    <div class="media-body">
+                        <a href="" class="text-white">Adrian</a> just logged in
+                        <span class="time">2 min ago</span>
+                    </div>
+                </li>
+                <li class="media">
+                    <span class="pull-left media-object">
+                        <i class="fa fa-fw fa-bell"></i>
+                    </span>
+                    <div class="media-body">
+                        <a href="" class="text-white">Adrian</a> just logged in
+                        <span class="time">2 min ago</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <h4 class="category">Filter</h4>
+        <div class="sidebar-block">
+            <ul>
+                <li><a href="#" class="sidebar-link"><span class="fa fa-fw fa-circle-o text-success"></span> Work Related</a></li>
+                <li><a href="#" class="sidebar-link"><span class="fa fa-fw fa-circle-o text-danger"></span> Very Important</a></li>
+                <li><a href="#" class="sidebar-link"><span class="fa fa-fw fa-circle-o text-info"></span> Friends &amp; Family</a></li>
+                <li><a href="#" class="sidebar-link"><span class="fa fa-fw fa-circle-o text-primary"></span> Other</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

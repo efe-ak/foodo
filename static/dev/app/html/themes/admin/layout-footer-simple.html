@@ -1,0 +1,11 @@
+{% include "app/vendor/layout/html/_header.html" { htmlClass: 'ls-top-navbar ls-bottom-footer' } %}
+{% include "app/html/themes/admin/_navbar.html" %}
+
+<div id="content">
+    <div class="container-fluid">
+        {% include "app/vendor/layout/html/samples/_layouts.html" { fixed: false } %}
+        {% include "app/vendor/layout/html/_footer_copyright.html" %}
+    </div>
+</div>
+
+{% include "app/vendor/layout/html/_footer_scripts.html" %}

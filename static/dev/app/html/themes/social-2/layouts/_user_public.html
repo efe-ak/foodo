@@ -1,0 +1,46 @@
+{% include "app/vendor/layout/html/_header.html" { htmlClass: 'st-layout ls-top-navbar ls-bottom-footer show-sidebar sidebar-l2' } %}
+
+<!-- Wrapper required for sidebar transitions -->
+<div class="st-container">
+
+    {% include "app/html/themes/social-2/layouts/nav/_navbar.html" %}
+
+    <!-- Sidebar component with st-effect-1 (set on the toggle button within the navbar) -->
+    {% include "app/html/themes/social-2/layouts/sidebar/_profile_public.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-visible-desktop sidebar-visible-mobile sidebar-skin-dark" } %}
+
+    <!-- Sidebar component with st-effect-1 (set on the toggle button within the navbar) -->
+    {% include "app/vendor/chat/html/chat.html" { sidebarOptions: "right sidebar-size-2 sidebar-offset-0 chat-skin-white", sidebarData: "id=sidebar-chat" } %}
+
+    <!-- sidebar effects OUTSIDE of st-pusher: -->
+    <!-- st-effect-1, st-effect-2, st-effect-4, st-effect-5, st-effect-9, st-effect-10, st-effect-11, st-effect-12, st-effect-13 -->
+
+    <!-- content push wrapper -->
+    <div class="st-pusher" id="content">
+
+        <!-- sidebar effects INSIDE of st-pusher: -->
+        <!-- st-effect-3, st-effect-6, st-effect-7, st-effect-8, st-effect-14 -->
+
+        <!-- this is the wrapper for the content -->
+        <div class="st-content">
+
+            <!-- extra div for emulating position:fixed of the menu -->
+            <div class="st-content-inner">
+
+                {% include "app/html/themes/social-2/layouts/nav/_subnav_public.html" %}
+
+                <div class="container-fluid">
+                    {% include "app/vendor/social/html/cover/cover-with-add-photo.html" %}
+                    {% block content %}{% endblock %}
+                </div>
+
+            </div><!-- /st-content-inner -->
+
+        </div><!-- /st-content -->
+
+    </div><!-- /st-pusher -->
+
+    {% include "app/vendor/layout/html/_footer_copyright.html" %}
+
+</div><!-- /st-container -->
+
+{% include "app/vendor/layout/html/_footer_scripts.html" %}

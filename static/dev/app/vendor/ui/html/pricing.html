@@ -1,0 +1,15 @@
+<div class="text-center">
+    <h1>How much should you pay for this?</h1>
+    <p class="lead">A lot less then you expect.</p>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        {% include "app/vendor/ui/html/_pricing-box.html" { type: "Free", value: "0", label: "label-default" } %}
+    </div>
+    <div class="col-md-4">
+        {% include "app/vendor/ui/html/_pricing-box.html" { type: "Silver", value: "25", label: "label-primary" } %}
+    </div>
+    <div class="col-md-4">
+        {% include "app/vendor/ui/html/_pricing-box.html" { type: "Danger", value: "50", label: "label-danger" } %}
+    </div>
+</div>

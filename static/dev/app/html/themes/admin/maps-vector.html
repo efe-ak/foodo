@@ -1,0 +1,118 @@
+{% extends "app/html/themes/admin/_layout.html" %}
+
+{% block content %}
+
+    <h1>Vector Maps</h1>
+    <div class="row gridalicious" data-toggle="gridalicious">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">Markers on the world map</h4>
+            </div>
+            <div class="panel-body">
+                <div id="world-map-markers" style="overflow: hidden; height:350px"></div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">Gross domestic product (GDP) by country</h4>
+            </div>
+            <div class="panel-body">
+                <div id="world-map-gdp" style="height:350px"></div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">USA unemployment</h4>
+            </div>
+            <div class="panel-body">
+                <div id="usa-unemployment" style="height:400px;"></div>
+                <p class="h5" id="usa-unemployment-slider-year">Data for <strong>2009</strong></p>
+
+                <div id="usa-unemployment-slider" class="slider-single slider-primary"></div>
+                <p>The following example demonstrates the visualization of unemployment statistics in the USA by states and
+                    metropolitan areas in a 5-years time-period. The step-by-step process of creation of such a map is
+                    described
+                    in the <a href="/tutorials/data-visualization/">tutorial</a>. The code in Ruby used to convert data
+                    could be
+                    found in <a href="https://github.com/bjornd/jvectormap-examples/tree/master/us-unemployment">this
+                        repository</a>.</p>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">Regions selection</h4>
+            </div>
+            <div class="panel-body">
+                <div id="regions-selection" style="height:500px;"></div>
+                <p>The following example demonstrates the feature of jVectorMap that allows selection of regions and/or
+                    markers
+                    by user or programmatically. Specific styles could be assigned for the selected items. User selection is
+                    saved between page reloads in the local storage.</p>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">French presidential election, 2007</h4>
+            </div>
+            <div class="panel-body">
+                <div id="france-2007" style="height:300px"></div>
+                <div class="jvm-legend">
+                    <span class="jvm-legend-item jvm-legend-item-ump"></span>
+                    <span>Nicolas Sarkozy</span>
+                    <span class="jvm-legend-item jvm-legend-item-ps"></span>
+                    <span>Segolene Royal</span>
+                </div>
+                <div class="separator"></div>
+
+                <h4 class="separator bottom">French presidential election, 2012</h4>
+
+                <div id="france-2012" style="height: 400px"></div>
+                <div class="jvm-legend">
+                    <span class="jvm-legend-item jvm-legend-item-ps"></span>
+                    <span>Francois Hollande</span>
+                    <span class="jvm-legend-item jvm-legend-item-ump"></span>
+                    <span>Nicolas Sarkozy</span>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">Generate random colors</h4>
+            </div>
+            <div class="panel-body">
+                <button type="button" id="update-colors-button" class="btn btn-primary">Generate colors</button>
+                <hr/>
+                <div id="random-colors-map" style="height:300px"></div>
+                <p>The following example demonstrates how to set colors directly for the map. The map is painted to the
+                    random
+                    colors upon loading. You can click "Update colors" to generate new colors for the map.</p>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">Map of the mall</h4>
+            </div>
+            <div class="panel-body">
+                <div id="mall-map" style="height:300px"></div>
+                <p>Example of custom map created from SVG using converter available <a
+                        href="http://svgto.jvectormap.com/">here</a>. Please note that if you use map generated from SVG you
+                    need to position markers by pixel coordinates, not by latitude and longitude as in case of map generated
+                    from GIS data.</p>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">Reverse projection</h4>
+            </div>
+            <div class="panel-body">
+                <p>This example demonstrates the ability to convert pixel coordinates on map to the repsective latitude and
+                    longitude coordinates. Click on the map adds marker to the clicked point, click on the added marker
+                    removes
+                    it.</p>
+
+                <div id="projection-map" style="height:400px;"></div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,191 @@
+<div class="sidebar{% if sidebarOptions %} {{ sidebarOptions }}{% endif %}"{% if sidebarData %} {{ sidebarData }}{% endif %}>
+    <div class="split-vertical">
+        <div class="sidebar-block tabbable tabs-icons">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#sidebar-tabs-menu{{ sidebarId }}" data-toggle="tab"><i class="fa fa-bars"></i></a></li>
+                <li><a href="#sidebar-tabs-2{{ sidebarId }}" data-toggle="tab"><i class="fa fa-bar-chart-o"></i></a></li>
+            </ul>
+        </div>
+        <div class="split-vertical-body">
+            <div class="split-vertical-cell">
+                <div class="tab-content">
+
+                    <div class="tab-pane active" id="sidebar-tabs-menu{{ sidebarId }}">
+                        <div data-scrollable>
+
+                            <ul class="sidebar-menu{% if sidebarOptions|contains('left') %} sm-icons-right{% endif %} sm-icons-block">
+                                <li{% if (page.slug == 'index') %} class="active"{% endif %}><a href="index.html"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
+                                <li{% if (page.slug == 'email') %} class="active"{% endif %}><a href="email.html"><i class="fa fa-envelope"></i> <span>Email</span></a></li>
+                                <li{% if (page.slug == 'chat') %} class="active"{% endif %}><a href="chat.html"><i class="fa fa-comments"></i> <span>Chat</span></a></li>
+                            </ul>
+
+                            <h4 class="category">Components</h4>
+                            <ul class="sidebar-menu sm-bordered sm-active-item-bg{% if sidebarOptions|contains('reveal') %}{% if sidebarOptions|contains('left') %} sm-icons-right{% endif %} sm-icons-block{% endif %}">
+                                <li class="hasSubmenu text-multiple{% if (page.slug == 'essentials' || page.slug == 'buttons' || page.slug == 'progress' || page.slug == 'tree' || page.slug == 'expandable' || page.slug == 'nestable' || page.slug == 'forms' || page.slug == 'tables' || page.slug == 'icons' || page.slug == 'grid' || page.slug == 'tabs' || page.slug == 'charts' || page.slug == 'maps') %} open{% endif %}">
+                                    <a href="#components{{ sidebarId }}">
+                                        <i class="fa fa-circle-o"></i>
+                                        <span class="text">
+                                            <span class="title">Essentials</span>
+                                            <span class="details">UI Kit</span>
+                                        </span>
+                                    </a>
+                                    <ul id="components{{ sidebarId }}"{% if (page.slug == 'essentials' || page.slug == 'buttons' || page.slug == 'progress' || page.slug == 'tree' || page.slug == 'expandable' || page.slug == 'nestable' || page.slug == 'forms' || page.slug == 'tables' || page.slug == 'icons' || page.slug == 'grid' || page.slug == 'tabs' || page.slug == 'charts' || page.slug == 'maps') %} class="in"{% endif %}>
+                                        <li{% if (page.slug == 'essentials') %} class="active"{% endif %}><a href="essentials.html"><i class="fa fa-circle-o"></i> <span>Overview</span></a></li>
+                                        <li{% if (page.slug == 'buttons') %} class="active"{% endif %}><a href="buttons.html"><i class="fa fa-th"></i> <span>Buttons</span></a></li>
+                                        <li{% if (page.slug == 'icons') %} class="active"{% endif %}><a href="icons.html"><i class="fa fa-paint-brush"></i> <span>Icons</span></a></li>
+                                        <li{% if (page.slug == 'expandable') %} class="active"{% endif %}><a href="expandable.html"><i class="fa fa-ellipsis-h"></i> <span>Expandable</span></a></li>
+                                        <li{% if (page.slug == 'forms') %} class="active"{% endif %}><a href="forms.html"><i class="fa fa-sliders"></i> <span>Forms</span></a></li>
+                                        <li{% if (page.slug == 'tabs') %} class="active"{% endif %}><a href="tabs.html"><i class="md md-tab-unselected"></i> <span>Tabs</span></a></li>
+                                        <li{% if (page.slug == 'nestable') %} class="active"{% endif %}><a href="nestable.html"><i class="md md-menu"></i> <span>Nestable</span></a></li>
+                                        <li{% if (page.slug == 'tree') %} class="active"{% endif %}><a href="tree.html"><i class="md md-loupe"></i> <span>Tree View</span></a></li>
+                                        <li{% if (page.slug == 'tables') %} class="active"{% endif %}><a href="tables.html"><i class="fa fa-table"></i> <span>Tables</span></a></li>
+                                        <li{% if (page.slug == 'progress') %} class="active"{% endif %}><a href="progress.html"><i class="fa fa-tasks"></i> <span>Progress</span></a></li>
+                                        <li{% if (page.slug == 'grid') %} class="active"{% endif %}><a href="grid.html"><i class="fa fa-columns"></i> <span>Grid</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="{% if (page.slug == 'layout-fluid-1-sidebar' || page.slug == 'layout-fluid-2-sidebars' || page.slug == 'layout-fluid-3-sidebars' || page.slug == 'layout-app' || page.slug == 'layout-sidebar-size-1' || page.slug == 'layout-sidebar-size-2' || page.slug == 'layout-sidebar-size-3' || page.slug == 'layout-sidebar-size-1-reveal' || page.slug == 'layout-sidebar-size-percentage') %} active{% endif %}">
+                                    <a href="layout-fluid-1-sidebar.html"><i class="md md-tab-unselected"></i> <span>Layouts</span></a>
+                                </li>
+                                <li class="hasSubmenu{% if (page.slug|contains('media-')) %} open{% endif %}">
+                                    <a href="#submenu-media{{ sidebarId }}"><i class="fa fa-photo"></i> <span>Media</span></a>
+                                    <ul id="submenu-media{{ sidebarId }}"{% if (page.slug|contains('media-')) %} class="in"{% endif %}>
+                                        <li {% if (page.slug == 'media-gallery') %} class="active" {% endif %}><a href="media-gallery.html"><i class="fa fa-photo"></i><span>Photos</span></a></li>
+                                        <li {% if (page.slug == 'media-carousel') %} class="active" {% endif %}><a href="media-carousel.html"><i class="fa fa-circle-o"></i><span>Carousels</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="hasSubmenu{% if (page.slug|contains('maps')) %} open{% endif %}">
+                                    <a href="#nav-maps{{ sidebarId }}"><i class="fa fa-globe"></i> <span>Maps</span></a>
+                                    <ul id="nav-maps{{ sidebarId }}" {% if (page.slug|contains('maps')) %} class="in"{% endif %}>
+                                        <li{% if (page.slug == 'maps-google-filters') %} class="active"{% endif %}><a href="maps-google-filters.html"><i class="fa fa-map-marker"></i> <span>Filters</span></a></li>
+                                        <li{% if (page.slug == 'maps-google-json') %} class="active"{% endif %}><a href="maps-google-json.html"><i class="fa fa-map-marker"></i> <span>JSON</span></a></li>
+                                        <li{% if (page.slug == 'maps-google-pagination') %} class="active"{% endif %}><a href="maps-google-pagination.html"><i class="fa fa-map-marker"></i> <span>Pagination</span></a></li>
+                                        <li{% if (page.slug == 'maps-google-edit') %} class="active"{% endif %}><a href="maps-google-edit.html"><i class="fa fa-map-marker"></i> <span>Edit markers</span></a></li>
+                                        <li{% if (page.slug == 'maps-vector') %} class="active"{% endif %}><a href="maps-vector.html"><i class="fa fa-map-marker"></i> <span>Vector Maps</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="hasSubmenu{% if (page.slug|contains('charts-')) %} open{% endif %}">
+                                    <a href="#nav-charts{{ sidebarId }}"><i class="fa fa-bar-chart"></i> <span>Charts</span></a>
+                                    <ul id="nav-charts{{ sidebarId }}" {% if (page.slug|contains('charts-')) %} class="in"{% endif %}>
+                                        <li{% if (page.slug == 'charts-morris') %} class="active"{% endif %}><a href="charts-morris.html"><i class="fa fa-bar-chart"></i> <span>Morris</span></a></li>
+                                        <li{% if (page.slug == 'charts-flot') %} class="active"{% endif %}><a href="charts-flot.html"><i class="fa fa-bar-chart"></i> <span>Flot</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <h4 class="category">Other</h4>
+                            <ul class="sidebar-menu sm-bordered sm-active-item-bg{% if sidebarOptions|contains('reveal') %}{% if sidebarOptions|contains('left') %} sm-icons-right{% endif %} sm-icons-block{% endif %}">
+                                <li{% if (page.slug == 'tickets') %} class="active"{% endif %}><a href="tickets.html"><i class="fa fa-ticket"></i> <span>Tickets</span></a></li>
+                                <li{% if (page.slug == 'appointments') %} class="active"{% endif %}><a href="appointments.html"><i class="fa fa-calendar"></i> <span>Appointments</span></a></li>
+                            </ul>
+
+                            <div class="sidebar-block equal-padding">
+                                <ul class="list-group list-group-menu">
+                                    <li class="list-group-item"><a href="login.html"><i class="fa fa-fw fa-lock"></i> <span>Login</span></a></li>
+                                    <li class="list-group-item"><a href="sign-up.html"><i class="fa fa-fw fa-pencil"></i> <span>Sign Up</span></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- // END .tab-pane -->
+
+                    <div class="tab-pane" id="sidebar-tabs-2{{ sidebarId }}">
+                        <div data-scrollable>
+
+                            <div class="category">Activity</div>
+                            <div class="sidebar-block">
+                                <div class="sidebar-feed">
+                                    <ul>
+                                        <li class="media news-item">
+                                            <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                                            <span class="pull-left media-object">
+                                                <i class="fa fa-fw fa-bell"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <a href="" class="text-white">Adrian</a> just logged in
+                                                <span class="time">2 min ago</span>
+                                            </div>
+                                        </li>
+                                        <li class="media news-item">
+                                            <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                                            <span class="pull-left media-object">
+                                                <i class="fa fa-fw fa-bell"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <a href="" class="text-white">Adrian</a> just added <a href="" class="text-white">mosaicpro</a> as their office
+                                                <span class="time">2 min ago</span>
+                                            </div>
+                                        </li>
+                                        <li class="media news-item">
+                                            <span class="pull-left media-object">
+                                                <i class="fa fa-fw fa-bell"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <a href="" class="text-white">Adrian</a> just logged in
+                                                <span class="time">2 min ago</span>
+                                            </div>
+                                        </li>
+                                        <li class="media news-item">
+                                            <span class="pull-left media-object">
+                                                <i class="fa fa-fw fa-bell"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <a href="" class="text-white">Adrian</a> just logged in
+                                                <span class="time">2 min ago</span>
+                                            </div>
+                                        </li>
+                                        <li class="media news-item">
+                                            <span class="pull-left media-object">
+                                                <i class="fa fa-fw fa-bell"></i>
+                                            </span>
+                                            <div class="media-body">
+                                                <a href="" class="text-white">Adrian</a> just logged in
+                                                <span class="time">2 min ago</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--End user-->
+
+                            <div class="sidebar-block equal-padding">
+                                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                    <label class="btn btn-default active">
+                                        <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fa fa-envelope"></i>
+                                    </label>
+                                    <label class="btn btn-default">
+                                        <input type="radio" name="options" id="option2" autocomplete="off"> <i class="fa fa-lock"></i>
+                                    </label>
+                                    <label class="btn btn-default">
+                                        <input type="radio" name="options" id="option31" autocomplete="off"> <i class="fa fa-list"></i>
+                                    </label>
+                                    <label class="btn btn-default">
+                                        <input type="radio" name="options" id="option32" autocomplete="off"> <i class="fa fa-group"></i>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Calendar -->
+                            <div class="category">Calendar</div>
+                            <div class="sidebar-block padding-none">
+                                <div class="datepicker"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- // END .tab-content -->
+
+            </div>
+            <!-- // END .split-vertical-cell -->
+
+        </div>
+        <!-- // END .split-vertical-body -->
+
+        <ul class="sidebar-menu sm-active-item-bg sm-icons-right sm-icons-block">
+            <li><a href="../../index.html"><i class="fa fa-eyedropper"></i> <span>Themes</span></a></li>
+        </ul>
+
+    </div>
+</div>

@@ -1,0 +1,36 @@
+.skins {
+	list-style: none;
+	padding-left: 0;
+	margin: 0 15px;
+	height: @navbar-height;
+	li {
+		display: inline-block;
+		margin-top: (@navbar-height - 17px) /2;
+		span {
+			display: block;
+			width: 16px;
+			height: 16px;
+			border: 1px solid #fff;
+			cursor: pointer;
+		}
+		&.loading {
+			span {
+				display: none;
+			}
+			top: -3px;
+			position: relative;
+			width: 16px;
+			&:after {
+				width: 16px;
+				text-align: center;
+				display: block;
+				content: "\f1ce";
+				animation: fa-spin 2s infinite linear;
+				font: normal normal normal 14px/1 FontAwesome;
+				font-size: inherit;
+				text-rendering: auto;
+				-webkit-font-smoothing: antialiased;
+			}
+		}
+	}
+}

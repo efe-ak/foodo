@@ -1,0 +1,32 @@
+<div class="sidebar{% if sidebarOptions %} {{ sidebarOptions }}{% endif %}"{% if sidebarData %} {{ sidebarData }}{% endif %}>
+    <div data-scrollable>
+        <ul class="sidebar-menu sm-bordered sm-icons-block sm-icons-right">
+            <li class="hasSubmenu{% if (page.slug == 'index' or page.slug == 'map-listing-list' or page.slug == 'map-listing-grid' or page.slug == 'listing' or page.slug == 'listing-grid' or page.slug == 'listing-map') %} open active{% endif %}">
+                <a href="#discover"><i class="fa fa-star"></i><span>Discover</span></a>
+                <ul id="discover"{% if (page.slug == 'index' or page.slug == 'map-listing-list' or page.slug == 'map-listing-grid' or page.slug == 'listing' or page.slug == 'listing-grid' or page.slug == 'listing-map') %} class="in"{% endif %}>
+                    <li{% if (page.slug == 'index') %} class="active"{% endif %}><a href="index.html"><i class="fa fa-map-marker"></i><span>Full screen Map</span></a></li>
+                    <li{% if (page.slug == 'map-listing-list') %} class="active"{% endif %}><a href="map-listing-list.html"><i class="fa fa-list"></i><span>Map Listing - List</span></a></li>
+                    <li{% if (page.slug == 'map-listing-grid') %} class="active"{% endif %}><a href="map-listing-grid.html"><i class="fa fa-th"></i><span>Map Listing - Grid</span></a></li>
+                    <li{% if (page.slug == 'listing') %} class="active"{% endif %}><a href="listing.html"><i class="fa fa-list"></i><span>Listing - List</span></a></li>
+                    <li{% if (page.slug == 'listing-grid') %} class="active"{% endif %}><a href="listing-grid.html"><i class="fa fa-th"></i><span>Listing - Grid</span></a></li>
+                    <li{% if (page.slug == 'listing-map') %} class="active"{% endif %}><a href="listing-map.html"><i class="fa fa-map-marker"></i><span>Listing - Map</span></a></li>
+                </ul>
+            </li>
+            <li class="hasSubmenu{% if (page.slug == 'property' or page.slug == 'map-property') %} open active{% endif %}">
+                <a href="#property"><i class="fa fa-home"></i><span>Property</span></a>
+                <ul id="property"{% if (page.slug == 'property' or page.slug == 'map-property') %} class="in"{% endif %}>
+                    <li{% if (page.slug == 'map-property') %} class="active"{% endif %}><a href="map-property.html"><i class="fa fa-map-marker"></i><span>Map + Property</span></a></li>
+                    <li{% if (page.slug == 'property') %} class="active"{% endif %}><a href="property.html"><i class="fa fa-list"></i><span>Property details</span></a></li>
+                </ul>
+            </li>
+            <li{% if (page.slug == 'map-edit') %} class="active"{% endif %}><a href="map-edit.html"><i class="fa fa-pencil"></i><span>Add property</span></a></li>
+        </ul>
+        <h4 class="category">Website pages</h4>
+        <div class="sidebar-block">
+            <ul class="list-group list-group-menu">
+                <li class="list-group-item"><a href="front-home-slider.html">Home + Slider</a></li>
+                <li class="list-group-item"><a href="front-home-map.html">Home + Map</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

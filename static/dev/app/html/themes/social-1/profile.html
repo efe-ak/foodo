@@ -1,0 +1,44 @@
+{% extends "app/html/themes/social-1/_layout.html" %}
+
+{% block content %}
+    <div class="media user-profile">
+        <div class="media-object pull-left">
+
+            <div class="panel panel-default profile-user-box">
+                <div class="avatar">
+                    <img src="images/people/110/guy-5.jpg" alt="" class="img-circle"/>
+                    <h3>Adrian Demian</h3>
+                    <a href="#" class="btn btn-success">Following <i class="fa fa-check-circle fa-fw"></i></a>
+                </div>
+                <div class="profile-icons">
+                    <span><i class="fa fa-users"></i> 372</span> <span><i class="fa fa-photo"></i> 43</span> <span><i class="fa fa-video-camera"></i> 3 </span>
+                </div>
+                <p>Hi! I'm Adrian the Senior UI Designer at <strong>MOSAICPRO</strong>. We hope you enjoy the design and quality of Social.</p>
+            </div>
+
+            <!-- Contact -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Contact
+                </div>
+                <ul class="icon-list block bordered">
+                    <li><i class="fa fa-envelope fa-fw"></i> <a href="#">contact@mosaicpro.biz</a></li>
+                    <li><i class="fa fa-facebook fa-fw"></i> <a href="#">/facebook</a></li>
+                    <li><i class="fa fa-behance fa-fw"></i> <a href="#">/user</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="media-body">
+            <div class="panel panel-default share">
+                <div class="input-group">
+                    <div class="input-group-btn">
+                        <a class="btn btn-primary" href="#"><i class="fa fa-envelope"></i> Send</a>
+                    </div><!-- /btn-group -->
+                    <input type="text" class="form-control share-text" placeholder="Write message..."/>
+                </div><!-- /input-group -->
+            </div>
+
+            {% include "app/html/common/pages/profile.html" %}
+        </div>
+    </div>
+{% endblock %}

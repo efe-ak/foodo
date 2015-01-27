@@ -1,0 +1,40 @@
+{% include "app/vendor/layout/html/_header.html" { htmlClass: 'st-layout ls-top-navbar ls-bottom-footer show-sidebar sidebar-l-sum-22' } %}
+
+<!-- Wrapper required for sidebar transitions -->
+<div class="st-container">
+
+    {% include "app/html/themes/admin/_navbar.html" { navbarBrand: "" } %}
+
+    <!-- Sidebar component with st-effect-1 (set on the toggle button within the navbar) -->
+    {% include "app/vendor/chat/html/chat.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-2 chat-skin-white sidebar-visible-desktop", sidebarData: "id=sidebar-chat" } %}
+
+    <!-- content push wrapper -->
+    <div class="st-pusher">
+
+        <!-- sidebar effects INSIDE of st-pusher: -->
+        <!-- st-effect-3, st-effect-6, st-effect-7, st-effect-8, st-effect-14 -->
+
+        <!-- Sidebar component with st-effect-3 (set on the toggle button within the navbar) -->
+        {% include "app/html/themes/admin/_sidebar.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 st-effect-3 sidebar-skin-blue sidebar-visible-desktop", sidebarData: "id=sidebar-menu  data-type=collapse" } %}
+
+        <!-- this is the wrapper for the content -->
+        <div class="st-content">
+
+            <!-- extra div for emulating position:fixed of the menu -->
+            <div class="st-content-inner" id="content">
+
+                {% block content %}{% endblock %}
+
+            </div>
+            <!-- /st-content-inner -->
+
+        </div>
+        <!-- /st-content -->
+
+    </div><!-- /st-pusher -->
+
+    {% include "app/vendor/layout/html/_footer_copyright.html" %}
+
+</div>
+
+{% include "app/vendor/layout/html/_footer_scripts.html" %}

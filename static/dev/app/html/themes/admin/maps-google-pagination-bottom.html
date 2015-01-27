@@ -1,0 +1,20 @@
+{% extends "app/html/themes/admin/_layout.html" %}
+
+{% block content %}
+
+    <div class="maps-google-fs" data-toggle="google-maps" data-file="js/data/google_maps/markers.json" data-pagination="true" data-pagination-position="BOTTOM_LEFT" data-zoom-position="LEFT_BOTTOM" data-zoom="18"></div>
+    <div class="map-overlay-panel map-overlay-top">
+        <div class="hidden-xs">
+            <h4 class="page-section-heading">Map pagination</h4>
+            <p>Enable marker pagination by simply adding the HTML5 attribute <code>data-pagination="true"</code>. Control the position with <code>data-pagination-position="LEFT_TOP|LEFT_BOTTOM"</code>. Data position accepts any valid constant from the <code>google.maps.ControlPosition</code> class -
+                <a href="https://developers.google.com/maps/documentation/javascript/reference" target="_blank">see reference</a></p>
+        </div>
+        <div class="btn-group">
+            <a class="btn btn-default" href="maps-google-pagination.html">Top</a>
+            <a class="btn btn-default active" href="maps-google-pagination-bottom.html">Bottom</a>
+        </div>
+    </div>
+
+    {% include "app/vendor/maps/html/_map_templates.html" %}
+
+{% endblock %}

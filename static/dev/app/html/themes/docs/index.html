@@ -1,0 +1,227 @@
+{% extends "app/html/themes/docs/_layout.html" %}
+
+{% block sidebar %}
+<div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark sidebar-visible-desktop" id="sidebar-menu">
+    <div id="menu">
+        <ul class="nav sidebar-menu sm-active-item-bg">
+            <li class="active"><a href="#overview">1. Overview</a></li>
+            <li class="active"><a href="#whats-included">2. Whats Included</a></li>
+            <li class="active"><a href="#structure-static">2. Static Structure</a></li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<h1 id="overview" class="h3">Package Overview</h1>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <p>This template is built with Bootstrap 3.2.0 and provides multiple UI Kits. The package is structured in two branches:</p>
+        <ul class="margin-none">
+            <li><strong>dist</strong> - includes the static files (HTML, images, compiled CSS and JavaScript)</li>
+            <li><strong>dev</strong> - includes a full development suite based on the latest tools in front-end development like Grunt, node.js templating, LESS, SASS and even a dedicated Vagrant environment so you can start developing in minutes with almost no setup required and zero effort.</li>
+        </ul>
+    </div>
+</div>
+<hr/>
+
+<h3 id="whats-included">What's Included</h3>
+<p>The main structure of the downloaded package.</p>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="panel-title">Package Structure</h4>
+    </div>
+    <div class="panel-body">
+        <div class="highlight">
+<pre>{% highlight %}
+{% include "app/html/themes/docs/components/_package_structure.html" %}
+{% endhighlight %}</pre>
+        </div>
+    </div>
+</div>
+<hr/>
+
+<h2 id="structure-static">Static Structure</h2>
+<p>The structure of the <code>dist</code> directory that holds the static files:</p>
+
+<div class="panel-group" id="static">
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#static" href="#static-charts">1. Charts KIT</a>
+            </h4>
+        </div>
+        <div id="static-charts" class="panel-collapse collapse in">
+            <div class="panel-body">
+                <div class="highlight">
+<pre>{% highlight %}
+{% include "app/html/themes/docs/components/static_kits/_charts.html" %}
+{% endhighlight %}</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#static" href="#static-chat">2. Chat KIT</a>
+            </h4>
+        </div>
+        <div id="static-chat" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="highlight">
+<pre>{% highlight %}
+{% include "app/html/themes/docs/components/static_kits/_chat.html" %}
+{% endhighlight %}</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#static" href="#static-dashboard">3. Dashboard KIT</a>
+            </h4>
+        </div>
+        <div id="static-dashboard" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="highlight">
+<pre>{% highlight %}
+{% include "app/html/themes/docs/components/static_kits/_dashboard.html" %}
+{% endhighlight %}</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#static" href="#static-essentials">4. Essentials KIT</a>
+            </h4>
+        </div>
+        <div id="static-essentials" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="highlight">
+<pre>{% highlight %}
+{% include "app/html/themes/docs/components/static_kits/_essentials.html" %}
+{% endhighlight %}</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#static" href="#static-layout">5. Layouts KIT</a>
+            </h4>
+        </div>
+        <div id="static-layout" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="highlight">
+<pre>{% highlight %}
+{% include "app/html/themes/docs/components/static_kits/_layouts.html" %}
+{% endhighlight %}</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#static" href="#static-map">6. Maps KIT</a>
+            </h4>
+        </div>
+        <div id="static-map" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="highlight">
+<pre>{% highlight %}
+{% include "app/html/themes/docs/components/static_kits/_map.html" %}
+{% endhighlight %}</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#static" href="#static-media">7. Media KIT</a>
+            </h4>
+        </div>
+        <div id="static-media" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="highlight">
+<pre>{% highlight %}
+{% include "app/html/themes/docs/components/static_kits/_media.html" %}
+{% endhighlight %}</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#static" href="#static-navbar">8. Navbar KIT</a>
+            </h4>
+        </div>
+        <div id="static-navbar" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="highlight">
+<pre>{% highlight %}
+{% include "app/html/themes/docs/components/static_kits/_navbar.html" %}
+{% endhighlight %}</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#static" href="#static-sidebar">9. Sidebar KIT</a>
+            </h4>
+        </div>
+        <div id="static-sidebar" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="highlight">
+<pre>{% highlight %}
+{% include "app/html/themes/docs/components/static_kits/_sidebar.html" %}
+{% endhighlight %}</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#static" href="#static-timeline">10. Timeline KIT</a>
+            </h4>
+        </div>
+        <div id="static-timeline" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="highlight">
+<pre>{% highlight %}
+{% include "app/html/themes/docs/components/static_kits/_timeline.html" %}
+{% endhighlight %}</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-body">
+        For a detailed structure of the <code>dev</code> directory, that holds all of the source files, please <a href="development-structure.html">see the Development Suite documentation</a>.
+    </div>
+</div>
+{% endblock %}

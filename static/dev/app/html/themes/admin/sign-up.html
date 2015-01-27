@@ -1,0 +1,52 @@
+{% extends "app/html/themes/admin/_layout-login.html" %}
+
+{% block content %}
+<div class="brand-logo">
+    <i class="fa fa-pencil"></i>
+</div>
+<div class="row">
+    <h1>Create a new account</h1>
+    <div class="col-sm-4 col-sm-offset-4">
+        <div class="panel panel-default">
+
+            <div class="panel-body">
+                <div class="alert alert-danger">
+                    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    *Please complete all required fields
+                </div>
+
+                <!-- Signup -->
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="First Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Password Confirmation">
+                    </div>
+                    <div class="form-group text-center">
+                        <div class="checkbox">
+                            <input type="checkbox" id="agree" />
+                            <label for="agree">* I Agree with <a href="#">Terms &amp; Conditions!</a></label>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <a href="index.html" class="btn btn-primary"> Create an Account</a>
+                    </div>
+                </form>
+                <!-- //Signup -->
+
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

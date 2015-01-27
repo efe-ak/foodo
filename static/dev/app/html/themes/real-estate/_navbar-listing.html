@@ -1,0 +1,31 @@
+<nav class="navbar navbar-default{% if navbarOptions %} {{ navbarOptions }}{% endif %}">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="toggle pull-right margin-none visible-xs" data-toggle="collapse" href="#navbar"><i class="fa fa-sliders fa-rotate-90"></i></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left-m">
+                <li{% if page.slug == "listing" %} class="active"{% endif %}><a href="listing.html"><i class="fa fa-list fa-fw"></i> List</a></li>
+                <li{% if page.slug == "listing-grid" %} class="active"{% endif %}><a href="listing-grid.html"><i class="fa fa-th fa-fw"></i> Grid</a></li>
+                <li{% if page.slug == "listing-map" %} class="active"{% endif %}><a href="listing-map.html"><i class="fa fa-map-marker fa-fw"></i> Map</a></li>
+            </ul>
+            <div class="navbar-right">
+                <div class="navbar-text">Sort by:</div>
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Date Added <span class="caret"></span>
+                            <span class="sr-only">(current)</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="active"><a href="#">Latest</a></li>
+                            <li><a href="#">Oldest</a></li>
+                            <li><a href="#">Price - ASC</a></li>
+                            <li><a href="#">Price - DESC</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

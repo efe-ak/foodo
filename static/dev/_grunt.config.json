@@ -1,0 +1,437 @@
+{
+	"debug": true,
+	"discover": {
+		"exclude": [
+			"animated-climacons",
+			"bridget",
+			"bootstrap-sass",
+			"bootstrap-rtl",
+			"mocha",
+			"modernizr",
+			"requirejs",
+			"jquery-ui-map",
+			"hotkeys"
+		]
+	},
+	"vendor_css": [
+		"app/icons/pictoicons/css/picto.css",
+		"bower_components/material-design-iconic-font/css/material-design-iconic-font.css",
+		"bower_components/bootstrap3-datepicker/css/datepicker.css",
+		"bower_components/jquery-minicolors/jquery.minicolors.css",
+		"bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.css",
+		"bower_components/highlightjs/styles/railscasts.css",
+		"bower_components/jvectormap/jquery-jvectormap.css",
+		"bower_components/owlcarousel/owl-carousel/owl.carousel.css",
+		"bower_components/morrisjs/morris.css",
+		"bower_components/fancytree/dist/skin-bootstrap/ui.fancytree.css",
+		"bower_components/bootstrap-daterangepicker/daterangepicker-bs3.css",
+		"bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.css",
+		"bower_components/select2/select2.css"
+	],
+	"dist": {
+		"docs": "",
+		"essential": "dist/ui",
+		"layout": "dist/ui",
+		"sidebar": "dist/ui",
+		"navbar": "dist/ui",
+		"color": "dist/ui",
+		"choose": "dist"
+	},
+	"browserify": [
+		{
+			"build": "module-essentials.js",
+			"cwd": "./app/vendor/ui/js/",
+			"src": "main.js"
+		},
+		{
+			"build": "module-layout.js",
+			"cwd": "./app/vendor/layout/js/",
+			"src": "main.js"
+		},
+		{
+			"build": "module-sidebar.js",
+			"cwd": "./app/vendor/sidebar/js/",
+			"src": "main.js"
+		},
+		{
+			"build": "module-maps.js",
+			"cwd": "./app/vendor/maps/js/",
+			"src": "main.js"
+		},
+		{
+			"build": "module-charts-all.js",
+			"cwd": "./app/vendor/charts/js/",
+			"src": "main.js"
+		},
+		{
+			"build": "module-charts-flot.js",
+			"cwd": "./app/vendor/charts/js/flot/",
+			"src": "main.js"
+		},
+		{
+			"build": "module-charts-easy-pie.js",
+			"cwd": "./app/vendor/charts/js/easy-pie/",
+			"src": "main.js"
+		},
+		{
+			"build": "module-charts-morris.js",
+			"cwd": "./app/vendor/charts/js/morris/",
+			"src": "main.js"
+		},
+		{
+			"build": "module-charts-sparkline.js",
+			"cwd": "./app/vendor/charts/js/sparkline/",
+			"src": "main.js"
+		}
+	],
+	"concat": [
+		{
+			"build": "vendor-core.js",
+			"cwd": "bower_components/",
+			"files": [
+				"jquery/dist/jquery.min.js",
+				"bootstrap/dist/js/bootstrap.js",
+				"jquery.breakpoints/breakpoints.js",
+				"jquery.nicescroll/jquery.nicescroll.js",
+				"Grid-A-Licious/jquery.grid-a-licious.js",
+				"isotope/dist/isotope.pkgd.js",
+				"isotope-packery/packery-mode.pkgd.js",
+				"jquery.cookie/jquery.cookie.js",
+				"holderjs/holder.js",
+				"handlebars/handlebars.js",
+				"jquery-ui/ui/core.js",
+				"jquery-ui/ui/widget.js",
+				"jquery-ui/ui/mouse.js",
+				"jquery-ui/ui/position.js",
+				"jquery-ui/ui/draggable.js",
+				"jquery-ui/ui/droppable.js",
+				"jquery-ui/ui/resizable.js",
+				"jquery-ui/ui/selectable.js",
+				"jquery-ui/ui/sortable.js",
+				"jquery.hotkeys/jquery.hotkeys.js",
+				"jquery-smartresize/jquery.debouncedresize.js"
+			]
+		},
+		{
+			"build": "vendor-tables.js",
+			"cwd": "bower_components/",
+			"files": [
+				"datatables/media/js/jquery.dataTables.js",
+				"datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.js"
+			]
+		},
+		{
+			"build": "vendor-forms.js",
+			"cwd": "bower_components/",
+			"files": [
+				"seiyria-bootstrap-slider/js/bootstrap-slider.js",
+				"bootstrap-select/dist/js/bootstrap-select.js",
+				"bootstrap-switch/dist/js/bootstrap-switch.js",
+				"bootstrap3-datepicker/js/bootstrap-datepicker.js",
+				"moment/min/moment.min.js",
+				"bootstrap-daterangepicker/daterangepicker.js",
+				"jquery-minicolors/jquery.minicolors.js",
+				"bootstrap-touchspin/dist/jquery.bootstrap-touchspin.js",
+				"select2/select2.js"
+			]
+		},
+		{
+			"build": "vendor-media.js",
+			"cwd": "bower_components/",
+			"files": ["owlcarousel/owl-carousel/owl.carousel.js"]
+		},
+		{
+			"build": "vendor-player.js",
+			"cwd": "bower_components/",
+			"files": [
+				"jplayer/dist/jplayer/jquery.jplayer.js",
+				"jplayer/dist/add-on/jplayer.playlist.js"
+			]
+		},
+		{
+			"build": "vendor-tree.js",
+			"cwd": "bower_components/",
+			"files": ["fancytree/dist/jquery.fancytree-all.js"]
+		},
+		{
+			"build": "vendor-nestable.js",
+			"cwd": "bower_components/",
+			"files": ["nestable/jquery.nestable.js"]
+		},
+		{
+			"build": "vendor-charts-all.js",
+			"cwd": "bower_components/",
+			"files": [
+				"flot/jquery.flot.js",
+				"flot/jquery.flot.pie.js",
+				"flot/jquery.flot.resize.js",
+				"flot-orderBars/js/jquery.flot.orderBars.js",
+				"flot/jquery.flot.stack.js",
+				"jquery.sparkline/src/header.js",
+				"jquery.sparkline/src/defaults.js",
+				"jquery.sparkline/src/utils.js",
+				"jquery.sparkline/src/simpledraw.js",
+				"jquery.sparkline/src/rangemap.js",
+				"jquery.sparkline/src/interact.js",
+				"jquery.sparkline/src/base.js",
+				"jquery.sparkline/src/chart-line.js",
+				"jquery.sparkline/src/chart-bar.js",
+				"jquery.sparkline/src/chart-tristate.js",
+				"jquery.sparkline/src/chart-discrete.js",
+				"jquery.sparkline/src/chart-bullet.js",
+				"jquery.sparkline/src/chart-pie.js",
+				"jquery.sparkline/src/chart-box.js",
+				"jquery.sparkline/src/vcanvas-base.js",
+				"jquery.sparkline/src/vcanvas-canvas.js",
+				"jquery.sparkline/src/vcanvas-vml.js",
+				"jquery.sparkline/src/footer.js",
+				"jquery.easy-pie-chart/dist/jquery.easypiechart.js",
+				"raphael/raphael.js",
+				"morrisjs/morris.js"
+			]
+		},
+		{
+			"build": "vendor-charts-flot.js",
+			"cwd": "bower_components/",
+			"files": [
+				"flot/jquery.flot.js",
+				"flot/jquery.flot.pie.js",
+				"flot/jquery.flot.resize.js",
+				"flot-orderBars/js/jquery.flot.orderBars.js",
+				"flot/jquery.flot.stack.js"
+			]
+		},
+		{
+			"build": "vendor-charts-easy-pie.js",
+			"cwd": "bower_components/",
+			"files": [ "jquery.easy-pie-chart/dist/jquery.easypiechart.js" ]
+		},
+		{
+			"build": "vendor-charts-morris.js",
+			"cwd": "bower_components/",
+			"files": [
+				"raphael/raphael.js",
+				"morrisjs/morris.js"
+			]
+		},
+		{
+			"build": "vendor-charts-sparkline.js",
+			"cwd": "bower_components/",
+			"files": [
+				"jquery.sparkline/src/header.js",
+				"jquery.sparkline/src/defaults.js",
+				"jquery.sparkline/src/utils.js",
+				"jquery.sparkline/src/simpledraw.js",
+				"jquery.sparkline/src/rangemap.js",
+				"jquery.sparkline/src/interact.js",
+				"jquery.sparkline/src/base.js",
+				"jquery.sparkline/src/chart-line.js",
+				"jquery.sparkline/src/chart-bar.js",
+				"jquery.sparkline/src/chart-tristate.js",
+				"jquery.sparkline/src/chart-discrete.js",
+				"jquery.sparkline/src/chart-bullet.js",
+				"jquery.sparkline/src/chart-pie.js",
+				"jquery.sparkline/src/chart-box.js",
+				"jquery.sparkline/src/vcanvas-base.js",
+				"jquery.sparkline/src/vcanvas-canvas.js",
+				"jquery.sparkline/src/vcanvas-vml.js",
+				"jquery.sparkline/src/footer.js"
+			]
+		},
+		{
+			"build": "vendor-maps.js",
+			"cwd": "bower_components/",
+			"files": [
+				"jvectormap/jquery-jvectormap.js",
+				"jvectormap/lib/jquery-mousewheel.js",
+				"jvectormap/src/jvectormap.js",
+				"jvectormap/src/abstract-element.js",
+				"jvectormap/src/abstract-canvas-element.js",
+				"jvectormap/src/abstract-shape-element.js",
+				"jvectormap/src/svg-element.js",
+				"jvectormap/src/svg-group-element.js",
+				"jvectormap/src/svg-canvas-element.js",
+				"jvectormap/src/svg-shape-element.js",
+				"jvectormap/src/svg-path-element.js",
+				"jvectormap/src/svg-circle-element.js",
+				"jvectormap/src/svg-image-element.js",
+				"jvectormap/src/svg-text-element.js",
+				"jvectormap/src/vml-element.js",
+				"jvectormap/src/vml-group-element.js",
+				"jvectormap/src/vml-canvas-element.js",
+				"jvectormap/src/vml-shape-element.js",
+				"jvectormap/src/vml-path-element.js",
+				"jvectormap/src/vml-circle-element.js",
+				"jvectormap/src/vector-canvas.js",
+				"jvectormap/src/simple-scale.js",
+				"jvectormap/src/ordinal-scale.js",
+				"jvectormap/src/numeric-scale.js",
+				"jvectormap/src/color-scale.js",
+				"jvectormap/src/legend.js",
+				"jvectormap/src/data-series.js",
+				"jvectormap/src/proj.js",
+				"jvectormap/src/map-object.js",
+				"jvectormap/src/region.js",
+				"jvectormap/src/marker.js",
+				"jvectormap/src/map.js"
+			]
+		},
+		{
+			"build": "module-navbar.js",
+			"cwd": "app/vendor/navbar/js/",
+			"files": [
+				"_breakpoints.js",
+				"_switch.js"
+			]
+		},
+		{
+			"build": "module-media.js",
+			"cwd": "app/vendor/media/js/",
+			"files": [
+				"_responsive-videos.js",
+				"carousel/owl/_default.js",
+				"carousel/owl/_mixed.js",
+				"carousel/owl/_preview.js"
+			]
+		},
+		{
+			"build": "module-player.js",
+			"cwd": "app/vendor/media/js/",
+			"files": ["player/_player.js"]
+		},
+		{
+			"build": "module-chat.js",
+			"cwd": "app/vendor/chat/js/",
+			"files": [
+				"_breakpoints.js",
+				"_search.js",
+				"_windows.js",
+				"_toggle.js"
+			]
+		},
+		{
+			"build": "module-timeline.js",
+			"cwd": "app/vendor/social/js/",
+			"files": ["_timeline.js"]
+		},
+		{
+			"build": "module-bundle-all.js",
+			"cwd": "$THEME_DIR",
+			"files": [
+				"js/module-navbar.js",
+				"js/module-media.js",
+				"js/module-player.js",
+				"js/module-chat.js",
+				"js/module-timeline.js",
+				"js/module-essentials.js",
+				"js/module-layout.js",
+				"js/module-sidebar.js",
+				"js/module-maps.js",
+				"js/module-charts-all.js"
+			]
+		},
+		{
+			"build": "vendor-bundle-all.js",
+			"cwd": "$THEME_DIR",
+			"files": [
+				"js/vendor-core.js",
+				"js/vendor-tables.js",
+				"js/vendor-forms.js",
+				"js/vendor-media.js",
+				"js/vendor-player.js",
+				"js/vendor-charts-all.js",
+				"js/vendor-maps.js",
+				"js/vendor-tree.js",
+				"js/vendor-nestable.js"
+			]
+		}
+	],
+	"copy": [
+		{
+			"task": "select2-images",
+			"cwd": "bower_components/select2",
+			"src": [
+				"*.png",
+				"*.gif"
+			],
+			"dest": "css"
+		},
+		{
+			"task": "vector-map-data",
+			"themes": ["admin"],
+			"cwd": "app/js/themes/map",
+			"src": "*.json",
+			"dest": "js/data/vector_maps"
+		},
+		{
+			"task": "jquery-ui-map",
+			"themes": [
+				"admin",
+				"real-estate"
+			],
+			"cwd": "bower_components/jquery-ui-map/ui",
+			"src": "*",
+			"dest": "js/plugins/maps_google/jquery-ui-map/ui"
+		},
+		{
+			"task": "google-maps-real-estate-data",
+			"themes": ["real-estate"],
+			"cwd": "app/js/themes/real-estate/data",
+			"src": "*.json",
+			"dest": "js/data/google_maps"
+		},
+		{
+			"task": "google-maps-admin-data",
+			"themes": ["admin"],
+			"cwd": "app/vendor/maps/js/google/data",
+			"src": "*.json",
+			"dest": "js/data/google_maps"
+		},
+		{
+			"task": "jquery-ui-map-data",
+			"themes": ["admin"],
+			"cwd": "bower_components/jquery-ui-map/demos/json",
+			"src": "demo.json",
+			"dest": "js/data/google_maps"
+		},
+		{
+			"task": "jquery-ui-map-markerclusterer",
+			"themes": [
+				"admin",
+				"real-estate"
+			],
+			"cwd": "bower_components/jquery-ui-map/demos/js/markerclustererplus-2.0.6",
+			"src": ["*.js"],
+			"dest": "js/plugins/maps_google/jquery-ui-map/addons"
+		},
+		{
+			"task": "gmaps-infobox",
+			"themes": [
+				"admin",
+				"real-estate"
+			],
+			"cwd": "bower_components/gmaps-infobox/1.1.13/src",
+			"src": ["*.js"],
+			"dest": "js/plugins/maps_google/jquery-ui-map/addons"
+		},
+		{
+			"task": "jplayer",
+			"themes": ["music"],
+			"cwd": "bower_components/jplayer/dist/jplayer",
+			"src": ["*.swf"],
+			"dest": "js/jplayer/addons"
+		}
+	],
+	"rename": [
+		{
+			"name": "choose",
+			"files": [
+				{
+					"src": "$THEME_DIR/index.html",
+					"dest": "$DIST_DIR/index.html"
+				}
+			],
+			"themes": ["choose"]
+		}
+	]
+}

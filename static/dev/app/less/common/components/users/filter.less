@@ -1,0 +1,48 @@
+#filter {
+	margin-bottom: @grid-gutter-width/2;
+	form {
+		label {
+			color: #888;
+			margin-right: 10px;
+		}
+
+		.selectpicker {
+			font-weight: 400;
+		}
+
+		select.btn-primary {
+			padding: 5px 3px;
+		}
+		.form-control {
+			background: #fff
+		}
+	}
+	padding-bottom: @grid-gutter-width / 2;
+	border-bottom: 2px solid @panel-default-border;
+
+	@media (min-width: @screen-sm) {
+		#users-filter-trigger {
+			display: inline-block;
+			.search-name {
+				input {
+					width: auto;
+					display: inline-block;
+				}
+			}
+		}
+	}
+	@media (max-width: @screen-sm) {
+		.bootstrap-select {
+			width: 100% !important;
+			margin-bottom: 10px;
+
+		}
+
+		#users-filter-trigger {
+			display: block;
+			.form-control {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}

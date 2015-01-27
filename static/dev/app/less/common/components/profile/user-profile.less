@@ -1,0 +1,44 @@
+.media.user-profile {
+
+	> .media-object {
+		@media (max-width: @screen-xs) {
+			float: none !important;
+			&.pull-left {
+				margin: 0;
+			}
+		}
+		@media (min-width: @screen-xs) {
+			width: 240px;
+			margin-right: @grid-gutter-width / 2;
+
+		}
+	}
+}
+
+.profile-user-box {
+	text-align: center;
+
+	.avatar {
+		padding: 40px 10px 10px;
+		text-align: center;
+		margin-bottom: 10px;
+		h3 {
+			font-weight: 300;
+			color: lighten(@text-color, 15%);
+			margin: 10px;
+		}
+	}
+	p {
+		text-align: center;
+		padding: 0 15px 0px;
+		color: @text-color;
+	}
+	.profile-icons {
+		border-top: 1px solid @panel-default-border;
+		border-bottom: 1px solid @panel-default-border;
+		background: lighten(#efefef, 2%);
+		height: 40px;
+		line-height: 40px;
+		margin-bottom: 10px;
+	}
+}

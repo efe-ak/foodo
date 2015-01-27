@@ -1,0 +1,36 @@
+{% include "app/vendor/layout/html/_header.html" { htmlClass: 'st-layout ls-top-navbar ls-bottom-footer show-sidebar sidebar-l2 sidebar-r2' } %}
+
+<!-- Wrapper required for sidebar transitions -->
+<div class="st-container">
+
+    {% include "app/html/themes/sidebar/_navbar.html" %}
+
+    <!-- Load Sidebar as Content -->
+    {% block content %}{% endblock %}
+
+    <!-- content push wrapper -->
+    <div class="st-pusher" id="content">
+
+        <!-- this is the wrapper for the content -->
+        <div class="st-content">
+
+            <!-- extra div for emulating position:fixed of the menu -->
+            <div class="st-content-inner">
+
+                <div class="container-fluid">
+
+                    {% include "app/vendor/sidebar/html/_content.html" %}
+
+                </div>
+
+            </div><!-- /st-content-inner -->
+
+        </div><!-- /st-content -->
+
+    </div><!-- /st-pusher -->
+
+    {% include "app/vendor/layout/html/_footer_copyright.html" %}
+
+</div><!-- /st-container -->
+
+{% include "app/vendor/layout/html/_footer_scripts.html" %}

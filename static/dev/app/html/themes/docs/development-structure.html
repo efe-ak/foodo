@@ -1,0 +1,42 @@
+{% extends "app/html/themes/docs/_layout.html" %}
+
+{% block sidebar %}
+<div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark sidebar-visible-desktop" id="sidebar-menu">
+    <div id="menu">
+        <ul class="nav sidebar-menu sm-active-item-bg">
+            <li class="active"><a href="#structure">1. Structure</a></li>
+            <li><a href="#prerequisite">2. Prerequisite</a></li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+    <div class="page-header">
+        <h1>File Structure</h1>
+        <p>The structure of the <code>dev</code> directory, that holds all the source files used to build the <code>dist</code> directory.</p>
+    </div>
+
+    <div class="panel panel-default" id="structure">
+        <div class="panel-heading"><h4 class="panel-title">Structure</h4></div>
+        <div class="panel-body">
+            <div class="highlight">
+<pre>{% highlight %}
+{% include "app/html/themes/docs/components/_dev_structure.html" %}
+{% endhighlight %}</pre>
+            </div>
+        </div>
+    </div>
+    <hr/>
+
+    <h2 id="prerequisite">Prerequisite</h2>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <p>To make use of the development suite, depending on the specific functionality you'd like, you need to have installed node with npm, ruby, bower, grunt, gem, and bundler.</p>
+            <p class="margin-none"><strong>Easy alternative:</strong> If you'd like to experiment with the development suite but not bother with installing and configuring all these various tools, you can use the included Vagrant Environment - a dedicated virtual environment with everything you need pre-installed. You'll get a fully isolated virtual machine and be up &amp; running in minutes.
+                See more about <a href="development-environment.html">how to use Vagrant</a> on the development suite documentation.</p>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+<div class="sidebar{% if sidebarOptions %} {{ sidebarOptions }}{% endif %}"{% if sidebarData %} {{ sidebarData }}{% endif %}>
+    <div data-scrollable>
+
+        {% include "app/html/themes/real-estate/_sidebar-map-listing/_featured.html" %}
+
+        <h4 class="category">Properties</h4>
+        {% include "app/html/themes/real-estate/_sidebar-map-listing/_grid.html" %}
+
+        <div class="sidebar-block equal-padding">
+            <ul class="pagination margin-none">
+                <li class="disabled"><a href="#">&laquo;</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">&raquo;</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>

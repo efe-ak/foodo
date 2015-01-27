@@ -1,0 +1,108 @@
+{% include "app/vendor/layout/html/_header.html" { htmlClass: 'hide-sidebar st-layout ls-top-navbar' } %}
+
+<!-- Wrapper required for sidebar transitions -->
+<div class="st-container">
+
+    {% include "app/html/themes/sidebar/_navbar.html" %}
+
+    <!-- sidebar effects OUTSIDE of st-pusher: -->
+    <!-- st-effect-1, st-effect-2, st-effect-4, st-effect-5, st-effect-9, st-effect-10, st-effect-11, st-effect-12, st-effect-13 -->
+
+    <!-- Sidebar component with st-effect-1 (set on the toggle button) -->
+    {% include "app/vendor/layout/html/samples/_sidebar.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark", sidebarData: "data-type=dropdown id=sidebar-menu" } %}
+
+    <!-- Sidebar component with st-effect-2 (set on the toggle button) -->
+    {% include "app/vendor/layout/html/samples/_sidebar.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark", sidebarData: "data-type=dropdown id=st-effect-2" } %}
+
+    <!-- Sidebar component with st-effect-4 (set on the toggle button) -->
+    {% include "app/vendor/layout/html/samples/_sidebar.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark", sidebarData: "data-type=dropdown id=st-effect-4" } %}
+
+    <!-- Sidebar component with st-effect-5 (set on the toggle button) -->
+    {% include "app/vendor/layout/html/samples/_sidebar.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark", sidebarData: "data-type=dropdown id=st-effect-5" } %}
+
+    <!-- Sidebar component with st-effect-9 (set on the toggle button) -->
+    {% include "app/vendor/layout/html/samples/_sidebar.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark", sidebarData: "data-type=dropdown id=st-effect-9" } %}
+
+    <!-- Sidebar component with st-effect-10 (set on the toggle button) -->
+    {% include "app/vendor/layout/html/samples/_sidebar.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark", sidebarData: "data-type=dropdown id=st-effect-10" } %}
+
+    <!-- Sidebar component with st-effect-11 (set on the toggle button) -->
+    {% include "app/vendor/layout/html/samples/_sidebar.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark", sidebarData: "data-type=dropdown id=st-effect-11" } %}
+
+    <!-- Sidebar component with st-effect-12 (set on the toggle button) -->
+    {% include "app/vendor/layout/html/samples/_sidebar.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark", sidebarData: "data-type=dropdown id=st-effect-12" } %}
+
+    <!-- Sidebar component with st-effect-13 (set on the toggle button) -->
+    {% include "app/vendor/layout/html/samples/_sidebar.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark", sidebarData: "data-type=dropdown id=st-effect-13" } %}
+
+    <!-- content push wrapper -->
+    <div class="st-pusher" id="content">
+
+        <!-- sidebar effects INSIDE of st-pusher: -->
+        <!-- st-effect-3, st-effect-6, st-effect-7, st-effect-8, st-effect-14 -->
+
+        <!-- Sidebar component with st-effect-3 (set on the toggle button) -->
+        {% include "app/vendor/layout/html/samples/_sidebar.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark", sidebarData: "data-type=dropdown id=st-effect-3" } %}
+
+        <!-- Sidebar component with st-effect-6 (set on the toggle button) -->
+        {% include "app/vendor/layout/html/samples/_sidebar.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark", sidebarData: "data-type=dropdown id=st-effect-6" } %}
+
+        <!-- Sidebar component with st-effect-7 (set on the toggle button) -->
+        {% include "app/vendor/layout/html/samples/_sidebar.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark", sidebarData: "data-type=dropdown id=st-effect-7" } %}
+
+        <!-- Sidebar component with st-effect-8 (set on the toggle button) -->
+        {% include "app/vendor/layout/html/samples/_sidebar.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark", sidebarData: "data-type=dropdown id=st-effect-8" } %}
+
+        <!-- Sidebar component with st-effect-14 (set on the toggle button) -->
+        {% include "app/vendor/layout/html/samples/_sidebar.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark", sidebarData: "data-type=dropdown id=st-effect-14" } %}
+
+        <!-- this is the wrapper for the content -->
+        <div class="st-content">
+
+            <!-- extra div for emulating position:fixed of the menu -->
+            <div class="st-content-inner">
+
+                <div class="jumbotron bg-transparent text-center">
+                    <h1>Sidebar Transitions</h1>
+                    <p class="margin-none">Transition effects for off-canvas views.</p>
+                </div>
+
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="panel panel-default">
+                                <ul class="panel-body buttons-spacing-vertical">
+                                    <a href="#sidebar-menu" data-toggle="sidebar-menu" data-effect="st-effect-1" class="btn btn-default">Slide in on top</a>
+                                    <a href="#st-effect-2" data-toggle="sidebar-menu" data-effect="st-effect-2" class="btn btn-default">Reveal</a>
+                                    <a href="#st-effect-3" data-toggle="sidebar-menu" data-effect="st-effect-3" class="btn btn-default">Push</a>
+                                    <a href="#st-effect-4" data-toggle="sidebar-menu" data-effect="st-effect-4" class="btn btn-default">Slide along</a>
+                                    <a href="#st-effect-5" data-toggle="sidebar-menu" data-effect="st-effect-5" class="btn btn-default">Reverse slide out</a>
+                                    <a href="#st-effect-6" data-toggle="sidebar-menu" data-effect="st-effect-6" class="btn btn-default">Rotate Pusher</a>
+                                    <a href="#st-effect-7" data-toggle="sidebar-menu" data-effect="st-effect-7" class="btn btn-default">3D rotate in</a>
+                                    <a href="#st-effect-8" data-toggle="sidebar-menu" data-effect="st-effect-8" class="btn btn-default">3D rotate out</a>
+                                    <a href="#st-effect-9" data-toggle="sidebar-menu" data-effect="st-effect-9" class="btn btn-default">Scale down pusher</a>
+                                    <a href="#st-effect-10" data-toggle="sidebar-menu" data-effect="st-effect-10" class="btn btn-default">Scale up</a>
+                                    <a href="#st-effect-11" data-toggle="sidebar-menu" data-effect="st-effect-11" class="btn btn-default">Scale &amp; rotate pusher</a>
+                                    <a href="#st-effect-12" data-toggle="sidebar-menu" data-effect="st-effect-12" class="btn btn-default">Open door</a>
+                                    <a href="#st-effect-13" data-toggle="sidebar-menu" data-effect="st-effect-13" class="btn btn-default">Fall down</a>
+                                    <a href="#st-effect-14" data-toggle="sidebar-menu" data-effect="st-effect-14" class="btn btn-default">Delayed 3D rotate</a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <p class="lead">Creative sidebar menus with off-canvas navigation effects revealed in many ways.</p>
+                            <p class="lead margin-none"><strong>Press ESC to close any sidebar.</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /st-content-inner -->
+
+        </div><!-- /st-content -->
+
+    </div><!-- /st-pusher -->
+
+</div><!-- /st-container -->
+
+{% include "app/vendor/layout/html/_footer_scripts.html" %}

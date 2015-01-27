@@ -1,0 +1,6 @@
+{% extends "app/html/themes/sidebar/_layout.html" %}
+
+{% block content %}
+    {% set tpl = "app/vendor/sidebar/html/" + page.basename %}
+    {% include tpl %}
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "app/html/themes/admin/_layout-login.html" %}
+
+{% block content %}
+<div class="brand-logo">
+    <img src="images/people/110/guy-5.jpg" alt="guy"/>
+</div>
+<div class="row">
+
+    <h1>Account Access</h1>
+
+    <div class="col-sm-4 col-sm-offset-4">
+        <div class="panel panel-default">
+            <div class="panel-body">
+
+                <div class="alert alert-danger">
+                    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    Invalid User or Password
+                </div>
+
+                <form role="form" action="index.html">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <input type="text" class="form-control" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-shield"></i></span>
+                            <input  type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <a href="index.html" class="btn btn-success">Login  <i class="fa fa-fw fa-unlock-alt"></i></a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+        <a href="#" class="forgot-pass">
+            Forgot your Password?
+            <i class="fa fa-question-circle"></i>
+        </a>
+
+    </div>
+</div>
+{% endblock %}

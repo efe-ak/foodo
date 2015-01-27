@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html class="hide-sidebar st-layout ls-top-navbar" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>ThemeKit</title>
+    <!-- Compressed Vendor BUNDLE
+    Includes vendor (3rd party) styling such as the customized Bootstrap and other 3rd party libraries used for the current theme/module -->
+    <link href="css/vendor.min.css" rel="stylesheet">
+    <!-- Compressed Theme BUNDLE
+    Note: The bundle includes all the custom styling required for the current theme, however
+    it was tweaked for the current theme/module and does NOT include ALL of the standalone modules;
+    The bundle was generated using modern frontend development tools that are provided with the package
+    To learn more about the development process, please refer to the documentation. -->
+    <!-- <link href="css/theme.bundle.min.css" rel="stylesheet"> -->
+    <!-- Compressed Theme CORE
+    This variant is to be used when loading the separate styling modules -->
+    <link href="css/theme-core.min.css" rel="stylesheet">
+    <!-- Standalone Modules
+    As a convenience, we provide the entire UI framework broke down in separate modules
+    Some of the standalone modules may have not been used with the current theme/module
+    but ALL modules are 100% compatible -->
+    <link href="css/module-essentials.min.css" rel="stylesheet" />
+    <link href="css/module-layout.min.css" rel="stylesheet" />
+    <link href="css/module-sidebar.min.css" rel="stylesheet" />
+    <link href="css/module-sidebar-skins.min.css" rel="stylesheet" />
+    <link href="css/module-navbar.min.css" rel="stylesheet" />
+    <!-- <link href="css/module-media.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-timeline.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-cover.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-chat.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-charts.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-maps.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-colors-alerts.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-colors-background.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-colors-buttons.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-colors-calendar.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-colors-progress-bars.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-colors-text.min.css" rel="stylesheet" /> -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- If you don't need support for Internet Explorer <= 8 you can safely remove these -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Wrapper required for sidebar transitions -->
+    <div class="st-container">
+        <!-- Fluid navbar -->
+        <div class="navbar navbar-main navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#sidebar-menu" data-toggle="sidebar-menu" class="toggle pull-left visible-xs">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <a class="navbar-brand" href="index.html">Sidebar Kit</a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse" id="collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../../index.html">Themes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- sidebar effects OUTSIDE of st-pusher: -->
+        <!-- st-effect-1, st-effect-2, st-effect-4, st-effect-5, st-effect-9, st-effect-10, st-effect-11, st-effect-12, st-effect-13 -->
+        <!-- Sidebar component with st-effect-1 (set on the toggle button) -->
+        <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark" data-type=dropdown id=sidebar-menu>
+            <div class="split-vertical">
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Header</h4>
+                    <p>With fluid height</p>
+                </div>
+                <div class="split-vertical-body">
+                    <div class="split-vertical-cell">
+                        <div data-scrollable>
+                            <h4 class="category">Blank Sidebar Placeholder</h4>
+                            <div class="sidebar-block">
+                                <p>To see all the various sidebar content elements, including submenu types</p>
+                                <p><a href="../sidebar/index.html" class="btn btn-default btn-block">see the Sidebar Kit</a>
+                                </p>
+                                <p>Also, check out these awesome</p>
+                                <a href="../sidebar/transitions.html" class="btn btn-default btn-block">Sidebar Transitions</a>
+                            </div>
+                            <ul class="sidebar-menu">
+                                <li class="category">Sample Heading</li>
+                                <li><a href=""><i class="fa fa-home"></i> <span>Sample Menu</span></a>
+                                </li>
+                                <li class="hasSubmenu">
+                                    <a href="#submenu"><i class="fa fa-bar-chart-o"></i> <span>Sample Submenu</span></a>
+                                    <ul id="submenu">
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <h4 class="category">Scrollable</h4>
+                            <div class="sidebar-block">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus facilis quia voluptates! Iure, quibusdam ratione sunt unde ut vero voluptatibus.</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>Bottom of scrollable content</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Footer</h4>
+                    <p>With fluid height</p>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar component with st-effect-2 (set on the toggle button) -->
+        <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark" data-type=dropdown id=st-effect-2>
+            <div class="split-vertical">
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Header</h4>
+                    <p>With fluid height</p>
+                </div>
+                <div class="split-vertical-body">
+                    <div class="split-vertical-cell">
+                        <div data-scrollable>
+                            <h4 class="category">Blank Sidebar Placeholder</h4>
+                            <div class="sidebar-block">
+                                <p>To see all the various sidebar content elements, including submenu types</p>
+                                <p><a href="../sidebar/index.html" class="btn btn-default btn-block">see the Sidebar Kit</a>
+                                </p>
+                                <p>Also, check out these awesome</p>
+                                <a href="../sidebar/transitions.html" class="btn btn-default btn-block">Sidebar Transitions</a>
+                            </div>
+                            <ul class="sidebar-menu">
+                                <li class="category">Sample Heading</li>
+                                <li><a href=""><i class="fa fa-home"></i> <span>Sample Menu</span></a>
+                                </li>
+                                <li class="hasSubmenu">
+                                    <a href="#submenu"><i class="fa fa-bar-chart-o"></i> <span>Sample Submenu</span></a>
+                                    <ul id="submenu">
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <h4 class="category">Scrollable</h4>
+                            <div class="sidebar-block">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus facilis quia voluptates! Iure, quibusdam ratione sunt unde ut vero voluptatibus.</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>Bottom of scrollable content</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Footer</h4>
+                    <p>With fluid height</p>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar component with st-effect-4 (set on the toggle button) -->
+        <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark" data-type=dropdown id=st-effect-4>
+            <div class="split-vertical">
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Header</h4>
+                    <p>With fluid height</p>
+                </div>
+                <div class="split-vertical-body">
+                    <div class="split-vertical-cell">
+                        <div data-scrollable>
+                            <h4 class="category">Blank Sidebar Placeholder</h4>
+                            <div class="sidebar-block">
+                                <p>To see all the various sidebar content elements, including submenu types</p>
+                                <p><a href="../sidebar/index.html" class="btn btn-default btn-block">see the Sidebar Kit</a>
+                                </p>
+                                <p>Also, check out these awesome</p>
+                                <a href="../sidebar/transitions.html" class="btn btn-default btn-block">Sidebar Transitions</a>
+                            </div>
+                            <ul class="sidebar-menu">
+                                <li class="category">Sample Heading</li>
+                                <li><a href=""><i class="fa fa-home"></i> <span>Sample Menu</span></a>
+                                </li>
+                                <li class="hasSubmenu">
+                                    <a href="#submenu"><i class="fa fa-bar-chart-o"></i> <span>Sample Submenu</span></a>
+                                    <ul id="submenu">
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <h4 class="category">Scrollable</h4>
+                            <div class="sidebar-block">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus facilis quia voluptates! Iure, quibusdam ratione sunt unde ut vero voluptatibus.</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>Bottom of scrollable content</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Footer</h4>
+                    <p>With fluid height</p>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar component with st-effect-5 (set on the toggle button) -->
+        <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark" data-type=dropdown id=st-effect-5>
+            <div class="split-vertical">
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Header</h4>
+                    <p>With fluid height</p>
+                </div>
+                <div class="split-vertical-body">
+                    <div class="split-vertical-cell">
+                        <div data-scrollable>
+                            <h4 class="category">Blank Sidebar Placeholder</h4>
+                            <div class="sidebar-block">
+                                <p>To see all the various sidebar content elements, including submenu types</p>
+                                <p><a href="../sidebar/index.html" class="btn btn-default btn-block">see the Sidebar Kit</a>
+                                </p>
+                                <p>Also, check out these awesome</p>
+                                <a href="../sidebar/transitions.html" class="btn btn-default btn-block">Sidebar Transitions</a>
+                            </div>
+                            <ul class="sidebar-menu">
+                                <li class="category">Sample Heading</li>
+                                <li><a href=""><i class="fa fa-home"></i> <span>Sample Menu</span></a>
+                                </li>
+                                <li class="hasSubmenu">
+                                    <a href="#submenu"><i class="fa fa-bar-chart-o"></i> <span>Sample Submenu</span></a>
+                                    <ul id="submenu">
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <h4 class="category">Scrollable</h4>
+                            <div class="sidebar-block">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus facilis quia voluptates! Iure, quibusdam ratione sunt unde ut vero voluptatibus.</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>Bottom of scrollable content</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Footer</h4>
+                    <p>With fluid height</p>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar component with st-effect-9 (set on the toggle button) -->
+        <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark" data-type=dropdown id=st-effect-9>
+            <div class="split-vertical">
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Header</h4>
+                    <p>With fluid height</p>
+                </div>
+                <div class="split-vertical-body">
+                    <div class="split-vertical-cell">
+                        <div data-scrollable>
+                            <h4 class="category">Blank Sidebar Placeholder</h4>
+                            <div class="sidebar-block">
+                                <p>To see all the various sidebar content elements, including submenu types</p>
+                                <p><a href="../sidebar/index.html" class="btn btn-default btn-block">see the Sidebar Kit</a>
+                                </p>
+                                <p>Also, check out these awesome</p>
+                                <a href="../sidebar/transitions.html" class="btn btn-default btn-block">Sidebar Transitions</a>
+                            </div>
+                            <ul class="sidebar-menu">
+                                <li class="category">Sample Heading</li>
+                                <li><a href=""><i class="fa fa-home"></i> <span>Sample Menu</span></a>
+                                </li>
+                                <li class="hasSubmenu">
+                                    <a href="#submenu"><i class="fa fa-bar-chart-o"></i> <span>Sample Submenu</span></a>
+                                    <ul id="submenu">
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <h4 class="category">Scrollable</h4>
+                            <div class="sidebar-block">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus facilis quia voluptates! Iure, quibusdam ratione sunt unde ut vero voluptatibus.</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>Bottom of scrollable content</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Footer</h4>
+                    <p>With fluid height</p>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar component with st-effect-10 (set on the toggle button) -->
+        <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark" data-type=dropdown id=st-effect-10>
+            <div class="split-vertical">
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Header</h4>
+                    <p>With fluid height</p>
+                </div>
+                <div class="split-vertical-body">
+                    <div class="split-vertical-cell">
+                        <div data-scrollable>
+                            <h4 class="category">Blank Sidebar Placeholder</h4>
+                            <div class="sidebar-block">
+                                <p>To see all the various sidebar content elements, including submenu types</p>
+                                <p><a href="../sidebar/index.html" class="btn btn-default btn-block">see the Sidebar Kit</a>
+                                </p>
+                                <p>Also, check out these awesome</p>
+                                <a href="../sidebar/transitions.html" class="btn btn-default btn-block">Sidebar Transitions</a>
+                            </div>
+                            <ul class="sidebar-menu">
+                                <li class="category">Sample Heading</li>
+                                <li><a href=""><i class="fa fa-home"></i> <span>Sample Menu</span></a>
+                                </li>
+                                <li class="hasSubmenu">
+                                    <a href="#submenu"><i class="fa fa-bar-chart-o"></i> <span>Sample Submenu</span></a>
+                                    <ul id="submenu">
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <h4 class="category">Scrollable</h4>
+                            <div class="sidebar-block">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus facilis quia voluptates! Iure, quibusdam ratione sunt unde ut vero voluptatibus.</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>Bottom of scrollable content</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Footer</h4>
+                    <p>With fluid height</p>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar component with st-effect-11 (set on the toggle button) -->
+        <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark" data-type=dropdown id=st-effect-11>
+            <div class="split-vertical">
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Header</h4>
+                    <p>With fluid height</p>
+                </div>
+                <div class="split-vertical-body">
+                    <div class="split-vertical-cell">
+                        <div data-scrollable>
+                            <h4 class="category">Blank Sidebar Placeholder</h4>
+                            <div class="sidebar-block">
+                                <p>To see all the various sidebar content elements, including submenu types</p>
+                                <p><a href="../sidebar/index.html" class="btn btn-default btn-block">see the Sidebar Kit</a>
+                                </p>
+                                <p>Also, check out these awesome</p>
+                                <a href="../sidebar/transitions.html" class="btn btn-default btn-block">Sidebar Transitions</a>
+                            </div>
+                            <ul class="sidebar-menu">
+                                <li class="category">Sample Heading</li>
+                                <li><a href=""><i class="fa fa-home"></i> <span>Sample Menu</span></a>
+                                </li>
+                                <li class="hasSubmenu">
+                                    <a href="#submenu"><i class="fa fa-bar-chart-o"></i> <span>Sample Submenu</span></a>
+                                    <ul id="submenu">
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <h4 class="category">Scrollable</h4>
+                            <div class="sidebar-block">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus facilis quia voluptates! Iure, quibusdam ratione sunt unde ut vero voluptatibus.</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>Bottom of scrollable content</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Footer</h4>
+                    <p>With fluid height</p>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar component with st-effect-12 (set on the toggle button) -->
+        <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark" data-type=dropdown id=st-effect-12>
+            <div class="split-vertical">
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Header</h4>
+                    <p>With fluid height</p>
+                </div>
+                <div class="split-vertical-body">
+                    <div class="split-vertical-cell">
+                        <div data-scrollable>
+                            <h4 class="category">Blank Sidebar Placeholder</h4>
+                            <div class="sidebar-block">
+                                <p>To see all the various sidebar content elements, including submenu types</p>
+                                <p><a href="../sidebar/index.html" class="btn btn-default btn-block">see the Sidebar Kit</a>
+                                </p>
+                                <p>Also, check out these awesome</p>
+                                <a href="../sidebar/transitions.html" class="btn btn-default btn-block">Sidebar Transitions</a>
+                            </div>
+                            <ul class="sidebar-menu">
+                                <li class="category">Sample Heading</li>
+                                <li><a href=""><i class="fa fa-home"></i> <span>Sample Menu</span></a>
+                                </li>
+                                <li class="hasSubmenu">
+                                    <a href="#submenu"><i class="fa fa-bar-chart-o"></i> <span>Sample Submenu</span></a>
+                                    <ul id="submenu">
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <h4 class="category">Scrollable</h4>
+                            <div class="sidebar-block">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus facilis quia voluptates! Iure, quibusdam ratione sunt unde ut vero voluptatibus.</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>Bottom of scrollable content</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Footer</h4>
+                    <p>With fluid height</p>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar component with st-effect-13 (set on the toggle button) -->
+        <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark" data-type=dropdown id=st-effect-13>
+            <div class="split-vertical">
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Header</h4>
+                    <p>With fluid height</p>
+                </div>
+                <div class="split-vertical-body">
+                    <div class="split-vertical-cell">
+                        <div data-scrollable>
+                            <h4 class="category">Blank Sidebar Placeholder</h4>
+                            <div class="sidebar-block">
+                                <p>To see all the various sidebar content elements, including submenu types</p>
+                                <p><a href="../sidebar/index.html" class="btn btn-default btn-block">see the Sidebar Kit</a>
+                                </p>
+                                <p>Also, check out these awesome</p>
+                                <a href="../sidebar/transitions.html" class="btn btn-default btn-block">Sidebar Transitions</a>
+                            </div>
+                            <ul class="sidebar-menu">
+                                <li class="category">Sample Heading</li>
+                                <li><a href=""><i class="fa fa-home"></i> <span>Sample Menu</span></a>
+                                </li>
+                                <li class="hasSubmenu">
+                                    <a href="#submenu"><i class="fa fa-bar-chart-o"></i> <span>Sample Submenu</span></a>
+                                    <ul id="submenu">
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <h4 class="category">Scrollable</h4>
+                            <div class="sidebar-block">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus facilis quia voluptates! Iure, quibusdam ratione sunt unde ut vero voluptatibus.</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>Bottom of scrollable content</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Footer</h4>
+                    <p>With fluid height</p>
+                </div>
+            </div>
+        </div>
+        <!-- content push wrapper -->
+        <div class="st-pusher" id="content">
+            <!-- sidebar effects INSIDE of st-pusher: -->
+            <!-- st-effect-3, st-effect-6, st-effect-7, st-effect-8, st-effect-14 -->
+            <!-- Sidebar component with st-effect-3 (set on the toggle button) -->
+            <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark" data-type=dropdown id=st-effect-3>
+                <div class="split-vertical">
+                    <div class="sidebar-block">
+                        <h4 class="category">Sidebar Header</h4>
+                        <p>With fluid height</p>
+                    </div>
+                    <div class="split-vertical-body">
+                        <div class="split-vertical-cell">
+                            <div data-scrollable>
+                                <h4 class="category">Blank Sidebar Placeholder</h4>
+                                <div class="sidebar-block">
+                                    <p>To see all the various sidebar content elements, including submenu types</p>
+                                    <p><a href="../sidebar/index.html" class="btn btn-default btn-block">see the Sidebar Kit</a>
+                                    </p>
+                                    <p>Also, check out these awesome</p>
+                                    <a href="../sidebar/transitions.html" class="btn btn-default btn-block">Sidebar Transitions</a>
+                                </div>
+                                <ul class="sidebar-menu">
+                                    <li class="category">Sample Heading</li>
+                                    <li><a href=""><i class="fa fa-home"></i> <span>Sample Menu</span></a>
+                                    </li>
+                                    <li class="hasSubmenu">
+                                        <a href="#submenu"><i class="fa fa-bar-chart-o"></i> <span>Sample Submenu</span></a>
+                                        <ul id="submenu">
+                                            <li><a href=""><span>Sample Menu</span></a>
+                                            </li>
+                                            <li><a href=""><span>Sample Menu</span></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <h4 class="category">Scrollable</h4>
+                                <div class="sidebar-block">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus facilis quia voluptates! Iure, quibusdam ratione sunt unde ut vero voluptatibus.</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>Bottom of scrollable content</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-block">
+                        <h4 class="category">Sidebar Footer</h4>
+                        <p>With fluid height</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar component with st-effect-6 (set on the toggle button) -->
+            <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark" data-type=dropdown id=st-effect-6>
+                <div class="split-vertical">
+                    <div class="sidebar-block">
+                        <h4 class="category">Sidebar Header</h4>
+                        <p>With fluid height</p>
+                    </div>
+                    <div class="split-vertical-body">
+                        <div class="split-vertical-cell">
+                            <div data-scrollable>
+                                <h4 class="category">Blank Sidebar Placeholder</h4>
+                                <div class="sidebar-block">
+                                    <p>To see all the various sidebar content elements, including submenu types</p>
+                                    <p><a href="../sidebar/index.html" class="btn btn-default btn-block">see the Sidebar Kit</a>
+                                    </p>
+                                    <p>Also, check out these awesome</p>
+                                    <a href="../sidebar/transitions.html" class="btn btn-default btn-block">Sidebar Transitions</a>
+                                </div>
+                                <ul class="sidebar-menu">
+                                    <li class="category">Sample Heading</li>
+                                    <li><a href=""><i class="fa fa-home"></i> <span>Sample Menu</span></a>
+                                    </li>
+                                    <li class="hasSubmenu">
+                                        <a href="#submenu"><i class="fa fa-bar-chart-o"></i> <span>Sample Submenu</span></a>
+                                        <ul id="submenu">
+                                            <li><a href=""><span>Sample Menu</span></a>
+                                            </li>
+                                            <li><a href=""><span>Sample Menu</span></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <h4 class="category">Scrollable</h4>
+                                <div class="sidebar-block">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus facilis quia voluptates! Iure, quibusdam ratione sunt unde ut vero voluptatibus.</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>Bottom of scrollable content</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-block">
+                        <h4 class="category">Sidebar Footer</h4>
+                        <p>With fluid height</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar component with st-effect-7 (set on the toggle button) -->
+            <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark" data-type=dropdown id=st-effect-7>
+                <div class="split-vertical">
+                    <div class="sidebar-block">
+                        <h4 class="category">Sidebar Header</h4>
+                        <p>With fluid height</p>
+                    </div>
+                    <div class="split-vertical-body">
+                        <div class="split-vertical-cell">
+                            <div data-scrollable>
+                                <h4 class="category">Blank Sidebar Placeholder</h4>
+                                <div class="sidebar-block">
+                                    <p>To see all the various sidebar content elements, including submenu types</p>
+                                    <p><a href="../sidebar/index.html" class="btn btn-default btn-block">see the Sidebar Kit</a>
+                                    </p>
+                                    <p>Also, check out these awesome</p>
+                                    <a href="../sidebar/transitions.html" class="btn btn-default btn-block">Sidebar Transitions</a>
+                                </div>
+                                <ul class="sidebar-menu">
+                                    <li class="category">Sample Heading</li>
+                                    <li><a href=""><i class="fa fa-home"></i> <span>Sample Menu</span></a>
+                                    </li>
+                                    <li class="hasSubmenu">
+                                        <a href="#submenu"><i class="fa fa-bar-chart-o"></i> <span>Sample Submenu</span></a>
+                                        <ul id="submenu">
+                                            <li><a href=""><span>Sample Menu</span></a>
+                                            </li>
+                                            <li><a href=""><span>Sample Menu</span></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <h4 class="category">Scrollable</h4>
+                                <div class="sidebar-block">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus facilis quia voluptates! Iure, quibusdam ratione sunt unde ut vero voluptatibus.</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>Bottom of scrollable content</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-block">
+                        <h4 class="category">Sidebar Footer</h4>
+                        <p>With fluid height</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar component with st-effect-8 (set on the toggle button) -->
+            <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark" data-type=dropdown id=st-effect-8>
+                <div class="split-vertical">
+                    <div class="sidebar-block">
+                        <h4 class="category">Sidebar Header</h4>
+                        <p>With fluid height</p>
+                    </div>
+                    <div class="split-vertical-body">
+                        <div class="split-vertical-cell">
+                            <div data-scrollable>
+                                <h4 class="category">Blank Sidebar Placeholder</h4>
+                                <div class="sidebar-block">
+                                    <p>To see all the various sidebar content elements, including submenu types</p>
+                                    <p><a href="../sidebar/index.html" class="btn btn-default btn-block">see the Sidebar Kit</a>
+                                    </p>
+                                    <p>Also, check out these awesome</p>
+                                    <a href="../sidebar/transitions.html" class="btn btn-default btn-block">Sidebar Transitions</a>
+                                </div>
+                                <ul class="sidebar-menu">
+                                    <li class="category">Sample Heading</li>
+                                    <li><a href=""><i class="fa fa-home"></i> <span>Sample Menu</span></a>
+                                    </li>
+                                    <li class="hasSubmenu">
+                                        <a href="#submenu"><i class="fa fa-bar-chart-o"></i> <span>Sample Submenu</span></a>
+                                        <ul id="submenu">
+                                            <li><a href=""><span>Sample Menu</span></a>
+                                            </li>
+                                            <li><a href=""><span>Sample Menu</span></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <h4 class="category">Scrollable</h4>
+                                <div class="sidebar-block">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus facilis quia voluptates! Iure, quibusdam ratione sunt unde ut vero voluptatibus.</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>Bottom of scrollable content</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-block">
+                        <h4 class="category">Sidebar Footer</h4>
+                        <p>With fluid height</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar component with st-effect-14 (set on the toggle button) -->
+            <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark" data-type=dropdown id=st-effect-14>
+                <div class="split-vertical">
+                    <div class="sidebar-block">
+                        <h4 class="category">Sidebar Header</h4>
+                        <p>With fluid height</p>
+                    </div>
+                    <div class="split-vertical-body">
+                        <div class="split-vertical-cell">
+                            <div data-scrollable>
+                                <h4 class="category">Blank Sidebar Placeholder</h4>
+                                <div class="sidebar-block">
+                                    <p>To see all the various sidebar content elements, including submenu types</p>
+                                    <p><a href="../sidebar/index.html" class="btn btn-default btn-block">see the Sidebar Kit</a>
+                                    </p>
+                                    <p>Also, check out these awesome</p>
+                                    <a href="../sidebar/transitions.html" class="btn btn-default btn-block">Sidebar Transitions</a>
+                                </div>
+                                <ul class="sidebar-menu">
+                                    <li class="category">Sample Heading</li>
+                                    <li><a href=""><i class="fa fa-home"></i> <span>Sample Menu</span></a>
+                                    </li>
+                                    <li class="hasSubmenu">
+                                        <a href="#submenu"><i class="fa fa-bar-chart-o"></i> <span>Sample Submenu</span></a>
+                                        <ul id="submenu">
+                                            <li><a href=""><span>Sample Menu</span></a>
+                                            </li>
+                                            <li><a href=""><span>Sample Menu</span></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <h4 class="category">Scrollable</h4>
+                                <div class="sidebar-block">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus facilis quia voluptates! Iure, quibusdam ratione sunt unde ut vero voluptatibus.</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                    <p>Bottom of scrollable content</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-block">
+                        <h4 class="category">Sidebar Footer</h4>
+                        <p>With fluid height</p>
+                    </div>
+                </div>
+            </div>
+            <!-- this is the wrapper for the content -->
+            <div class="st-content">
+                <!-- extra div for emulating position:fixed of the menu -->
+                <div class="st-content-inner">
+                    <div class="jumbotron bg-transparent text-center">
+                        <h1>Sidebar Transitions</h1>
+                        <p class="margin-none">Transition effects for off-canvas views.</p>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="panel panel-default">
+                                    <ul class="panel-body buttons-spacing-vertical">
+                                        <a href="#sidebar-menu" data-toggle="sidebar-menu" data-effect="st-effect-1" class="btn btn-default">Slide in on top</a>
+                                        <a href="#st-effect-2" data-toggle="sidebar-menu" data-effect="st-effect-2" class="btn btn-default">Reveal</a>
+                                        <a href="#st-effect-3" data-toggle="sidebar-menu" data-effect="st-effect-3" class="btn btn-default">Push</a>
+                                        <a href="#st-effect-4" data-toggle="sidebar-menu" data-effect="st-effect-4" class="btn btn-default">Slide along</a>
+                                        <a href="#st-effect-5" data-toggle="sidebar-menu" data-effect="st-effect-5" class="btn btn-default">Reverse slide out</a>
+                                        <a href="#st-effect-6" data-toggle="sidebar-menu" data-effect="st-effect-6" class="btn btn-default">Rotate Pusher</a>
+                                        <a href="#st-effect-7" data-toggle="sidebar-menu" data-effect="st-effect-7" class="btn btn-default">3D rotate in</a>
+                                        <a href="#st-effect-8" data-toggle="sidebar-menu" data-effect="st-effect-8" class="btn btn-default">3D rotate out</a>
+                                        <a href="#st-effect-9" data-toggle="sidebar-menu" data-effect="st-effect-9" class="btn btn-default">Scale down pusher</a>
+                                        <a href="#st-effect-10" data-toggle="sidebar-menu" data-effect="st-effect-10" class="btn btn-default">Scale up</a>
+                                        <a href="#st-effect-11" data-toggle="sidebar-menu" data-effect="st-effect-11" class="btn btn-default">Scale &amp; rotate pusher</a>
+                                        <a href="#st-effect-12" data-toggle="sidebar-menu" data-effect="st-effect-12" class="btn btn-default">Open door</a>
+                                        <a href="#st-effect-13" data-toggle="sidebar-menu" data-effect="st-effect-13" class="btn btn-default">Fall down</a>
+                                        <a href="#st-effect-14" data-toggle="sidebar-menu" data-effect="st-effect-14" class="btn btn-default">Delayed 3D rotate</a>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <p class="lead">Creative sidebar menus with off-canvas navigation effects revealed in many ways.</p>
+                                <p class="lead margin-none">
+                                    <strong>Press ESC to close any sidebar.</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /st-content-inner -->
+            </div>
+            <!-- /st-content -->
+        </div>
+        <!-- /st-pusher -->
+    </div>
+    <!-- /st-container -->
+    <!-- Inline Script for colors and config objects; used by various external scripts; -->
+    <script>
+    var colors = {
+        "danger-color": "#e74c3c",
+        "success-color": "#81b53e",
+        "warning-color": "#f0ad4e",
+        "inverse-color": "#2c3e50",
+        "info-color": "#2d7cb5",
+        "default-color": "#6e7882",
+        "default-light-color": "#cfd9db",
+        "purple-color": "#9D8AC7",
+        "mustard-color": "#d4d171",
+        "lightred-color": "#e15258",
+        "body-bg": "#f6f6f6"
+    };
+    var config = {
+        debug: true,
+        theme: "sidebar",
+        skins: {
+            "default": {
+                "primary-color": "#16ae9f"
+            }
+        }
+    };
+    </script>
+    <!-- Separate Vendor Script Bundles -->
+    <script src="js/vendor-core.min.js"></script>
+    <!-- <script src="js/vendor-tables.min.js"></script> -->
+    <script src="js/vendor-forms.min.js"></script>
+    <!-- <script src="js/vendor-media.min.js"></script> -->
+    <!-- <script src="js/vendor-player.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-all.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-flot.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-easy-pie.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-morris.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-sparkline.min.js"></script> -->
+    <!-- <script src="js/vendor-maps.min.js"></script> -->
+    <script src="js/vendor-tree.min.js"></script>
+    <!-- <script src="js/vendor-nestable.min.js"></script> -->
+    <!-- Compressed Vendor Scripts Bundle
+    Includes all of the 3rd party JavaScript libraries above.
+    The bundle was generated using modern frontend development tools that are provided with the package
+    To learn more about the development process, please refer to the documentation.
+    Do not use it simultaneously with the separate bundles above. -->
+    <!-- <script src="js/vendor-bundle-all.min.js"></script> -->
+    <!-- Compressed App Scripts Bundle
+    Includes Custom Application JavaScript used for the current theme/module;
+    Do not use it simultaneously with the standalone modules below. -->
+    <!-- <script src="js/module-bundle-main.min.js"></script> -->
+    <!-- Standalone Modules
+    As a convenience, we provide the entire UI framework broke down in separate modules
+    Some of the standalone modules may have not been used with the current theme/module
+    but ALL the modules are 100% compatible -->
+    <script src="js/module-essentials.min.js"></script>
+    <script src="js/module-layout.min.js"></script>
+    <script src="js/module-sidebar.min.js"></script>
+    <script src="js/module-navbar.min.js"></script>
+    <!-- <script src="js/module-media.min.js"></script> -->
+    <!-- <script src="js/module-player.min.js"></script> -->
+    <!-- <script src="js/module-timeline.min.js"></script> -->
+    <!-- <script src="js/module-chat.min.js"></script> -->
+    <!-- <script src="js/module-maps.min.js"></script> -->
+    <!-- <script src="js/module-charts-all.min.js"></script> -->
+    <!-- <script src="js/module-charts-flot.min.js"></script> -->
+    <!-- <script src="js/module-charts-easy-pie.min.js"></script> -->
+    <!-- <script src="js/module-charts-morris.min.js"></script> -->
+    <!-- <script src="js/module-charts-sparkline.min.js"></script> -->
+</body>
+</html>

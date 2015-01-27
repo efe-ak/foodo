@@ -1,0 +1,63 @@
+<div class="sidebar{% if sidebarOptions %} {{ sidebarOptions }}{% endif %}" {% if sidebarData %} {{ sidebarData }}{% endif %}>
+	<div data-scrollable>
+		<form action="">
+			<div class="sidebar-block">
+				<h1 class="text-h3 sidebar-heading">Create listing</h1>
+			</div>
+			<div class="sidebar-block">
+				<h4 class="category">General information</h4>
+				<div class="form-group form-control-default required">
+					<label for="title">Title</label>
+					<input type="text" placeholder="Listing Title" class="form-control" id="title"/>
+				</div>
+				<div class="form-group form-control-default required">
+					<label for="description">Description</label>
+					<textarea id="description" class="form-control" rows="5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, inventore, alias, architecto, accusamus magni odit quasi fugiat dolore eaque deserunt quibusdam ad similique saepe fugit consectetur repellendus sapiente veritatis culpa.</textarea>
+				</div>
+				<div class="form-group">
+					<p class="help-block">
+						<i class="icon-note-pad fa fa-fw"></i> 2 Characters Left
+					</p>
+				</div>
+			</div>
+			<div class="sidebar-block">
+				<h4 class="category">Commercial</h4>
+				<div class="form-group">
+					<label for="action" class="sidebar-text">I would like to:</label>
+					<select id="action" class="selectpicker">
+						<option value="1">Rent</option>
+						<option value="2" selected>Sell</option>
+					</select>
+				</div>
+				<div class="form-group form-control-default required">
+					<label for="price">Price (&euro;)</label>
+					<input id="price" type="text" class="form-control" value="90,000" />
+				</div>
+			</div>
+			<div class="sidebar-block">
+				<h4 class="category">Property</h4>
+				<div class="form-group">
+					<label for="type" class="sidebar-text">Type</label>
+					<select id="type" class="selectpicker">
+						<option>Apartment</option>
+						<option>House</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="facilities" class="sidebar-text">Facilities</label>
+					<select id="facilities" class="selectpicker" multiple>
+						<option>Garden</option>
+						<option selected>Internet</option>
+						<option>Gas station</option>
+						<option selected>Mall</option>
+						<option selected>Washing machine</option>
+					</select>
+				</div>
+			</div>
+			<div class="sidebar-block equal-padding">
+				<button type="submit" class="btn btn-primary">Submit</button>
+				<button type="button" class="btn btn-default"><i class="fa fa-times fa-fw"></i> Cancel</button>
+			</div>
+		</form>
+	</div>
+</div>

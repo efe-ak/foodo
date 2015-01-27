@@ -1,0 +1,13 @@
+<div class="sidebar{% if sidebarOptions %} {{ sidebarOptions }}{% endif %}" {% if sidebarData %} {{ sidebarData }}{% endif %}>
+    <div data-scrollable>
+        <ul class="sidebar-menu sm-icons-right sm-active-item-bg sm-icons-block">
+            <li {% if (page.slug == 'index') %} class="active"{% endif %}><a href="index.html"><i class="fa fa-home"></i><span>Highlights</span></a></li>
+            <li {% if (page.slug == 'discover') %} class="active"{% endif %}><a href="discover.html"><i class="fa fa-music"></i><span>Discover</span></a></li>
+            <li {% if (page.slug == 'album') %} class="active"{% endif %}><a href="album.html"><i class="fa fa-star"></i><span>Album</span></a></li>
+            <li {% if (page.slug == 'player') %} class="active"{% endif %}><a href="player.html"><i class="fa fa-play-circle"></i><span>Players</span></a></li>
+            <li {% if (page.slug == 'gallery') %} class="active"{% endif %}><a href="gallery.html"><i class="fa fa-photo"></i><span>Gallery</span></a></li>
+        </ul>
+        {% include "app/html/themes/music/sidebar/_activity.html" %}
+        {% include "app/html/themes/music/sidebar/_top-plays.html" %}
+    </div>
+</div>

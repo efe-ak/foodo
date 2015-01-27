@@ -1,0 +1,64 @@
+.timeline-appointments {
+	.panel-heading {
+		padding: 5px;
+		border-bottom: 1px solid @grey-100;
+		.pull-right {
+			line-height: 34px;
+			padding-right: 10px;
+		}
+	}
+	> ul {
+		background: lighten(@grey-100, 4%);
+		margin: 0;
+		ul {
+			margin: 0;
+		}
+		> li {
+			background: #fff;
+			margin-left: 100px;
+			border-left: 1px solid @grey-100;
+			position: relative;
+			.time {
+				position: absolute;
+				left: -90px;
+				top: -10px;
+				width: 70px;
+				text-align: right;
+				color: @default-color;
+				font-weight: bold;
+			}
+			.dot {
+				position: absolute;
+				left: -6px;
+				top: -6px;
+				background: #fff;
+				border-radius: 50%;
+			}
+			.appointments {
+				min-height: 60px;
+				background: linear-gradient(top, #f0f0f0 0%, white 5%) 0 0;
+				background-size: 100% 30px;
+				ul li {
+					line-height: 30px;
+					padding: 0 10px;
+					.btn-group-xs {
+						margin-top: 4px;
+					}
+					.apt {
+						display: block;
+						line-height: 30px;
+					}
+				}
+			}
+			&:first-of-type {
+				padding-top: 30px;
+				.time {
+					top: 20px;
+				}
+				.dot {
+					top: 24px;
+				}
+			}
+		}
+	}
+}

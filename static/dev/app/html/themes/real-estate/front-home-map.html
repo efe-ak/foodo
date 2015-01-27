@@ -1,0 +1,17 @@
+{% extends "app/html/themes/real-estate/_layout-front-map.html" %}
+
+{% block content %}
+
+	{% include "app/html/themes/real-estate/_navbar-front.html" { navbarOptions: 'navbar-primary navbar-fixed-top' } %}
+
+	<div class="panel height-600 relative margin-none">
+		<div id="google-fs-realestate" data-toggle="google-maps" data-file="js/data/google_maps/markers-listing.json" class="maps-google-fs"></div>
+
+		{% include "app/html/themes/real-estate/_map_popup_templates.html" %}
+	</div>
+
+	{% include "app/html/themes/real-estate/_front-home-section-1.html" %}
+
+	{% include "app/html/themes/real-estate/_front-footer-section.html" %}
+
+{% endblock %}

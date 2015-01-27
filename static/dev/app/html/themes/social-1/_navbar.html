@@ -1,0 +1,88 @@
+<!-- Fixed navbar -->
+<div class="navbar navbar-main navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="#sidebar-menu" data-effect="st-effect-1" data-toggle="sidebar-menu" class="toggle pull-left visible-xs"><i class="fa fa-bars"></i></a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#sidebar-chat" data-toggle="sidebar-menu" data-effect="st-effect-1" class="toggle pull-right visible-xs"><i class="fa fa-comments"></i></a>
+            <a class="navbar-brand navbar-brand-primary hidden-xs" href="index.html">ThemeKit</a>
+        </div>
+        <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="nav navbar-nav hidden-xs">
+                <!-- Notifications -->
+                <li class="dropdown notifications">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon-envelope-1"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="media">
+                            <a class="pull-left" href="#"><img class="media-object thumb" src="images/people/50/guy-2.jpg" alt="people"></a>
+                            <div class="media-body">
+                                <span class="label label-default pull-right">5 min</span>
+                                <h5 class="media-heading">Adrian D.</h5>
+                                <p class="margin-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <a class="pull-left" href="#"><img class="media-object thumb" src="images/people/50/woman-7.jpg" alt="people"></a>
+                            <div class="media-body">
+                                <span class="label label-default pull-right">2 days</span>
+                                <h5 class="media-heading">Jane B.</h5>
+                                <p class="margin-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <a class="pull-left" href="#"><img class="media-object thumb" src="images/people/50/guy-8.jpg" alt="people"></a>
+                            <div class="media-body">
+                                <span class="label label-default pull-right">3 days</span>
+                                <h5 class="media-heading">Andrew M.</h5>
+                                <p class="margin-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-user">
+                <!-- User -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="images/people/50/guy-5.jpg" width="35" alt="Bill" class="img-circle"/>
+                        Bill <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="messages.html">Messages</a></li>
+                        <li><a href="login.html">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <form class="navbar-form margin-none navbar-left hidden-xs">
+                <!-- Search -->
+                <div class="search-1">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="icon-search"></i></span>
+                        <input type="text" class="form-control" placeholder="Search a friend">
+                    </div>
+                </div>
+                <div class="pull-left visible-md visible-lg" data-toggle="tooltip" data-placement="bottom" title="A few Color Examples. Download includes CSS Files for all color examples & the tools to Generate any Color combination. This Color-Switcher is for previewing purposes only.">
+                    {% include "app/html/common/components/skins.html" { theme: 1 } %}
+                </div>
+            </form>
+
+            <ul class="nav navbar-nav navbar-right hidden-xs">
+                <li class="pull-right">
+                    <a href="#sidebar-chat" data-effect="st-effect-1" data-toggle="sidebar-menu">
+                        <i class="fa fa-comments"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

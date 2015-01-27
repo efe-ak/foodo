@@ -1,0 +1,3 @@
+{% macro random(minimum, maximum) %}
+    {{- Math.floor(Math.random() * maximum) + minimum }}
+{% endmacro %}

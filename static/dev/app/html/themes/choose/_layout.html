@@ -1,0 +1,7 @@
+{% include "app/vendor/layout/html/_header.html" { htmlClass: "ls-top-navbar ls-bottom-footer", cwd: "choose/" } %}
+
+	{% include "app/html/themes/choose/_navbar.html" %}
+	{% block content %}{% endblock %}
+	{% include "app/vendor/layout/html/_footer_copyright.html" %}
+
+{% include "app/vendor/layout/html/_footer_scripts.html" { cwd: "choose/" } %}

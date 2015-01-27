@@ -1,0 +1,73 @@
+{% include "app/vendor/layout/html/_header.html" { htmlClass: 'ls-top-navbar st-layout' } %}
+
+<!-- Wrapper required for sidebar transitions -->
+<div class="st-container">
+
+    {% include "app/html/themes/color/_navbar.html" %}
+
+    <!-- sidebar effects OUTSIDE of st-pusher: -->
+    <!-- st-effect-1, st-effect-2, st-effect-4, st-effect-5, st-effect-9, st-effect-10, st-effect-11, st-effect-12, st-effect-13 -->
+
+    <!-- Sidebar component with st-effect-1 (set on the toggle button) -->
+    {% include "app/html/themes/color/_sidebar.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark", sidebarData: "data-type=dropdown id=dark" } %}
+
+    <!-- Sidebar component with st-effect-1 (set on the toggle button) -->
+    {% include "app/html/themes/color/_sidebar.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-skin-white", sidebarData: "data-type=dropdown id=white" } %}
+
+    <!-- Sidebar component with st-effect-1 (set on the toggle button) -->
+    {% include "app/html/themes/color/_sidebar.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-skin-red", sidebarData: "data-type=dropdown id=red" } %}
+
+    <!-- Sidebar component with st-effect-1 (set on the toggle button) -->
+    {% include "app/html/themes/color/_sidebar.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-skin-green", sidebarData: "data-type=dropdown id=green" } %}
+
+    <!-- Sidebar component with st-effect-1 (set on the toggle button) -->
+    {% include "app/html/themes/color/_sidebar.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-skin-deep-purple", sidebarData: "data-type=dropdown id=deep-purple" } %}
+
+    <!-- Sidebar component with st-effect-1 (set on the toggle button) -->
+    {% include "app/html/themes/color/_sidebar.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-skin-blue", sidebarData: "data-type=dropdown id=blue" } %}
+
+    <!-- Sidebar component with st-effect-1 (set on the toggle button) -->
+    {% include "app/html/themes/color/_sidebar.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-skin-brown", sidebarData: "data-type=dropdown id=brown" } %}
+
+    <!-- Sidebar component with st-effect-1 (set on the toggle button) -->
+    {% include "app/html/themes/color/_sidebar.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-skin-white-red", sidebarData: "data-type=dropdown id=white-red" } %}
+
+    <!-- Sidebar component with st-effect-1 (set on the toggle button) -->
+    {% include "app/html/themes/color/_sidebar.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-skin-white-green", sidebarData: "data-type=dropdown id=white-green" } %}
+
+    <!-- Sidebar component with st-effect-1 (set on the toggle button) -->
+    {% include "app/html/themes/color/_sidebar.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-skin-white-deep-purple", sidebarData: "data-type=dropdown id=white-deep-purple" } %}
+
+    <!-- Sidebar component with st-effect-1 (set on the toggle button) -->
+    {% include "app/html/themes/color/_sidebar.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-skin-white-blue", sidebarData: "data-type=dropdown id=white-blue" } %}
+
+    <!-- Sidebar component with st-effect-1 (set on the toggle button) -->
+    {% include "app/html/themes/color/_sidebar.html" { sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-skin-white-brown", sidebarData: "data-type=dropdown id=white-brown" } %}
+
+    <!-- content push wrapper -->
+    <div class="st-pusher" id="content">
+
+        <!-- sidebar effects INSIDE of st-pusher: -->
+        <!-- st-effect-3, st-effect-6, st-effect-7, st-effect-8, st-effect-14 -->
+
+        <!-- this is the wrapper for the content -->
+        <div class="st-content">
+
+            <!-- extra div for emulating position:fixed of the menu -->
+            <div class="st-content-inner">
+
+                <div class="container">
+
+                    {% block content %}{% endblock %}
+
+                </div>
+
+            </div><!-- /st-content-inner -->
+
+        </div><!-- /st-content -->
+
+    </div><!-- /st-pusher -->
+
+</div><!-- /st-container -->
+
+{% include "app/vendor/layout/html/_footer_scripts.html" %}

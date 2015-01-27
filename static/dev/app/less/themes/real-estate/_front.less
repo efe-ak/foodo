@@ -1,0 +1,29 @@
+.page-section {
+	padding: @grid-gutter-width 0;
+}
+.footer-section {
+	&:extend(.page-section);
+
+	@media (min-width: @screen-md) {
+		padding: @grid-gutter-width*2 0;
+	}
+
+	@footer-section-dark-bg: #212121;
+	background-color: @footer-section-dark-bg;
+	color: @grey-700;
+
+	a {
+		color: @white;
+	}
+
+	// Forms
+	.form-control, .form-control-default {
+		background: darken(@footer-section-dark-bg, 4%);
+		border-color: darken(@footer-section-dark-bg, 4%);
+		color: @white;
+	}
+
+	label {
+		color: @grey-700;
+	}
+}

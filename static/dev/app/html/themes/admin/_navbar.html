@@ -1,0 +1,29 @@
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="#sidebar-menu" data-toggle="sidebar-menu" data-effect="st-effect-3" class="toggle pull-left visible-xs"><i class="fa fa-bars"></i></a>
+            {% if (! page.slug|contains('layout')) %}
+            <a href="#sidebar-chat" data-toggle="sidebar-menu" class="toggle pull-right"><i class="fa fa-comments"></i></a>
+            {% endif %}
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand hidden-xs {{ navbarBrand or 'navbar-brand-primary' }}">ThemeKit</a>
+        </div>
+        <div class="navbar-collapse collapse" id="collapse">
+            <form class="navbar-form navbar-left hidden-xs" role="search">
+                {% include "app/vendor/navbar/html/_search_2.html" { btnClass: 'btn-primary' } %}
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                {% include "app/vendor/navbar/html/_notifications.html" { options: "hidden-xs hidden-sm" } %}
+                {% include "app/vendor/navbar/html/_messages.html" { options: "hidden-xs hidden-sm" } %}
+                {% include "app/vendor/navbar/html/_user.html" %}
+                {% include "app/vendor/navbar/html/_country_flags.html" %}
+            </ul>
+        </div>
+    </div>
+</div>

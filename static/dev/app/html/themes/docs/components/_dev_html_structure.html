@@ -1,0 +1,100 @@
+<common>                    <!-- Common Resources -->
+├── <components>            <!-- Common Components used in all Themes -->
+│   ├── <cover>             <!-- Common Cover Components -->
+│   ├── <timeline>          <!-- Common Timeline Components -->
+│   ├── <weather_icons>     <!-- Weather Icons Component SVGs -->
+│   ├── chat.html           <!-- Chat Sidebar Component -->
+│   ├── messages.html       <!-- Messages Component -->
+│   ├── pricing-box.html
+│   ├── skins.html          <!-- Dynamic Skins Chooser used in navbars -->
+│
+├── <layouts>               <!-- Common Layouts used in all Themes -->
+│   └── login_social.html   <!-- Social Login Layout (used in all themes) -->
+│
+├── <pages>                 <!-- Common Pages used in all Themes -->
+│   ├── buttons.html
+│   ├── forms.html
+│   ├── grid.html
+│   ├── icons.html
+│   ├── pricing.html
+│   ├── profile.html
+│   ├── progress.html
+│   └── tables.html
+│
+<docs> <!-- Pages, Layout, Partials and Components Used to generate this Documentation -->
+├── <components>        <!-- Documentation Components -->
+├── _layout.html        <!-- Documentation Layout -->
+├── _navbar.html        <!-- Documentation Navbar -->
+├── _sidebar_dev.html   <!-- Documentation Development Suite Sidebar -->
+├── _sidebar_index.html <!-- Documentation Package Overview Sidebar -->
+├── index.html          <!-- Documentation Package Overview Page -->
+├── dev.html            <!-- Documentation Development Suite Page -->
+│
+<macros> <!-- Macros or Reusable snippets of functionality -->
+├── utils.html
+│
+<themes> <!-- Pages, Layouts, Partials and Components used for specific Themes -->
+│
+├── <1> <!-- Theme 1 (Social) -->
+│   ├── _layout.html    <!-- Theme 1 Layout -->
+│   ├── _navbar.html    <!-- Theme 1 Navbar -->
+│   ├── _sidebar.html   <!-- Theme 1 Sidebar -->
+│   │
+│   │   <!-- Common pages -->
+│   ├── buttons.html
+│   │
+│   │   <!-- buttons.html is one of the common pages used in every theme,
+│   │        configured to use the Theme 1 custom layout, but
+│   │        loads the page content from app/html/common/pages/buttons.html -->
+│   │
+│   │   <!-- all of the common pages from app/html/common/pages are included
+│   │        in the Theme 1 the same way as buttons.html above -->
+│   │
+│   │   <!-- Theme 1 specific pages -->
+│   ├── index.html          <!-- Theme 1 Homepage Timeline -->
+│   ├── messages.html       <!-- Theme 1 Messages Page -->
+│   ├── profile.html        <!-- Theme 1 Profile Page -->
+│   ├── timeline-list.html  <!-- Theme 1 Timeline List Page -->
+│   └── users.html          <!-- Theme 1 Users Page -->
+│
+├── <2> <!-- Theme 2 (Social) -->
+│   ├── <layouts>               <!-- Theme 2 Layouts -->
+│   │   ├── <includes>          <!-- Theme 2 Layouts Includes -->
+│   │   ├── <nav>               <!-- Theme 2 Navbar Partials -->
+│   │   ├── <sidebar>           <!-- Theme 2 Sidebar Partials -->
+│   │   ├── _default.html       <!-- Theme 2 Layout used in general purpose pages -->
+│   │   ├── _user_private.html  <!-- Theme 2 Layout used by user's private pages -->
+│   │   └── _user_public.html   <!-- Theme 2 Layout used by user's public pages -->
+│   │
+│   │   <!-- Common pages (same as Theme 1) -->
+│   │   <!-- Theme 2 specific pages -->
+│   ├── user-private-blank.html         <!-- Theme 2 User Private starter page -->
+│   ├── user-private-messages.html      <!-- Theme 2 User Private Messages page -->
+│   ├── user-private-profile.html       <!-- Theme 2 User Private Profile page -->
+│   ├── user-private-timeline.html      <!-- Theme 2 User Private Timeline page -->
+│   ├── user-private-users.html         <!-- Theme 2 User Private Friends page -->
+│   ├── user-public-blank.html          <!-- Theme 2 User Public starter page -->
+│   ├── user-public-profile.html        <!-- Theme 2 User Public Profile page -->
+│   └── user-public-users.html          <!-- Theme 2 User Public Friends page -->
+│
+├── <3> <!-- Theme 3 (Social: Fixed Layout) -->
+│   ├── <layouts> <!-- Theme 3 Layouts (same as Theme 2) -->
+│   │
+│   │   <!-- Common pages (same as Theme 1) -->
+│   │   <!-- Theme 3 specific pages (Same as Theme 2, with the addition of the following extra pages) -->
+│   └── user-public-timeline.html       <!-- Theme 3 User Public Timeline page -->
+│
+├── <4> <!-- Theme 4 (Learning) -->
+│   ├── <layouts> <!-- Theme 4 Layouts (same as Theme 3 with the addition of a "sidebar"
+│   │                  subdirectory to hold sidebar partials) -->
+│   │
+│   │   <!-- Common pages (see Theme 1 for the common page list) -->
+│   │   <!-- Theme 4 specific pages -->
+│   ├── index.html               <!-- Theme 4 Home page -->
+│   ├── tutors.html              <!-- Theme 4 Tutors page -->
+│   ├── survey.html              <!-- Theme 4 Survey page -->
+│   ├── library.html             <!-- Theme 4 Library List page -->
+│   ├── library-grid.html        <!-- Theme 4 Library Grid page -->
+│   └── lesson.html              <!-- Theme 4 Lesson page -->
+│
+index.html <!-- Choose theme page used in the Demo -->

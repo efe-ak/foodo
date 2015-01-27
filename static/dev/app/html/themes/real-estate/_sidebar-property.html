@@ -1,0 +1,22 @@
+<div class="sidebar{% if sidebarOptions %} {{ sidebarOptions }}{% endif %}" {% if sidebarData %} {{ sidebarData }}{% endif %}>
+	<div class="split-vertical">
+
+		<div class="sidebar-block equal-padding text-center">
+			<p><img src="images/people/110/woman-3.jpg" alt="woman" class="img-circle" width="80"/></p>
+			<p><a href="#" class="h5">Michelle D.</a></p>
+			<a href="#sidebar-agent" class="btn btn-primary" data-toggle="sidebar-menu">Contact Agent</a>
+		</div>
+
+		<div class="split-vertical-body">
+			<div class="split-vertical-cell">
+				<div data-scrollable>
+
+					<div id="google-fs-realestate" data-toggle="google-maps" data-file="js/data/google_maps/markers-property-single.json" data-center="57.79727612430726,12.051176295245341" data-zoom="17" class="maps-google-fs"></div>
+
+					{% include "app/html/themes/real-estate/_map_popup_templates.html" %}
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

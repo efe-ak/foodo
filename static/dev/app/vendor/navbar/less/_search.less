@@ -1,0 +1,57 @@
+.navbar .search-1 {
+	@media (min-width: @screen-sm) {
+		float: left;
+		.input-group {
+			height: @navbar-height;
+			.navbar-size-small& {
+				height: @navbar-small-height;
+			}
+			.navbar-size-large& {
+				@media (min-width: @navbar-large-breakpoint) {
+					height: @navbar-large-height;
+				}
+			}
+		}
+
+		.input-group-addon {
+			height: @navbar-height;
+			line-height: @navbar-height;
+			padding-top: 0;
+			padding-bottom: 0;
+			.navbar-size-small& {
+				height: @navbar-small-height;
+				line-height: @navbar-small-height;
+			}
+			.navbar-size-large& {
+				@media (min-width: @navbar-large-breakpoint) {
+					height: @navbar-large-height;
+					line-height: @navbar-large-height;
+				}
+			}
+			background: none;
+			border: none;
+			border-radius: 0;
+			font-weight: 600;
+			font-size: 18px;
+		}
+
+		.form-control {
+			height: @navbar-height;
+			.navbar-size-small& {
+				height: @navbar-small-height;
+			}
+			.navbar-size-large& {
+				@media (min-width: @navbar-large-breakpoint) {
+					height: @navbar-large-height;
+				}
+			}
+			border: none;
+			background: none;
+			box-shadow: none;
+			border-radius: 0;
+		}
+	}
+}
+.navbar .search-2 .btn {
+	margin: 0;
+}

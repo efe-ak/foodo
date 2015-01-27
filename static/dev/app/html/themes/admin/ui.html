@@ -1,0 +1,402 @@
+{% extends "app/html/themes/admin/_layout.html" %}
+
+{% block content %}
+<style>
+	/* Used for presenting buttons only */
+	.btn {
+		margin-bottom: 5px;
+	}
+
+	.progress {
+		margin-bottom: 0;
+	}
+</style>
+<h1>User Interface Elements</h1>
+<div class="row gridalicious" data-toggle="gridalicious" data-width="400">
+
+	<div class="panel panel-default">
+		<div class="panel-heading"><h4 class="panel-title">Regular Buttons</h4></div>
+		<div class="panel-body">
+			<p>Regular buttons with various colours for quickly creating styled buttons.</p>
+
+			<p>
+				<button class="btn btn-white">White</button>
+				<button class="btn btn-default">Default</button>
+				<button class="btn btn-primary">Primary</button>
+				<button class="btn btn-success">Success</button>
+				<button class="btn btn-warning">Warning</button>
+				<button class="btn btn-inverse">Inverse</button>
+				<button class="btn btn-danger">Danger</button>
+			</p>
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading"><h4 class="panel-title">Button Sizes</h4></div>
+		<div class="panel-body">
+			<p>Various buttons sizes for common scenarios, from large buttons, to medium sized, small and very small
+			   buttons.</p>
+			<button class="btn btn-default btn-lg">Large</button>
+			<button class="btn btn-primary">Regular</button>
+			<button class="btn btn-success btn-sm">Small</button>
+			<button class="btn btn-info btn-xs">Very Small</button>
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading panel-heading-gray">Stroke Buttons</div>
+		<div class="panel-body">
+			<p>Stroke button styling /with icons.</p>
+			<p>
+				<button class="btn btn-default btn-stroke">Default</button>
+				<button class="btn btn-primary btn-stroke">Primary</button>
+				<button class="btn btn-success btn-stroke">Success</button>
+				<button class="btn btn-warning btn-stroke">Warning</button>
+				<button class="btn btn-inverse btn-stroke">Inverse</button>
+				<button class="btn btn-danger btn-stroke">Danger</button>
+			</p>
+			<p>
+				<button class="btn btn-default btn-stroke"><i class="fa fa-picture-o"></i></button>
+				<button class="btn btn-inverse btn-stroke"><i class="fa fa-envelope"></i></button>
+				<button class="btn btn-primary btn-stroke"><i class="fa fa-pencil"></i></button>
+				<button class="btn btn-warning btn-stroke"><i class="fa fa-download"></i></button>
+				<button class="btn btn-info btn-stroke"><i class="fa fa-cloud-upload"></i></button>
+			</p>
+			<p>
+				<button class="btn btn-default btn-stroke btn-circle"><i class="fa fa-user"></i></button>
+				<button class="btn btn-inverse btn-stroke btn-circle"><i class="fa fa-home"></i></button>
+				<button class="btn btn-primary btn-stroke btn-circle"><i class="fa fa-building"></i></button>
+				<button class="btn btn-warning btn-stroke btn-circle"><i class="fa fa-sign-out"></i></button>
+				<button class="btn btn-info btn-stroke btn-circle"><i class="fa fa-medkit"></i></button>
+			</p>
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading"><h4 class="panel-title">Stacked Buttons</h4></div>
+		<div class="panel-body">
+			<p>Stacked Buttons with two lines of text and icon. All regular button styles can be used with stacked
+			   buttons.</p>
+
+			<p>
+				<button class="btn btn-default btn-icon-stacked"><i class="fa fa-2x fa-facebook"></i>
+					<span>Join using your<br>Facebook Account</span></button>
+				<button class="btn btn-primary btn-icon-stacked"><i class="fa fa-2x fa-twitter"></i>
+					<span>Join using your<br>Twitter Account</span></button>
+				<button class="btn btn-inverse btn-icon-stacked"><i class="fa fa-2x fa-google-plus"></i> <span>Join using your<br>Google Account</span>
+				</button>
+				<button class="btn btn-danger btn-icon-stacked"><i class="fa fa-2x fa-dribbble"></i>
+					<span>Join using your<br>Dribble Account</span></button>
+			</p>
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">Button with Icons</div>
+		<div class="panel-body">
+			<p>Various buttons with icons for common scenarios for faster grasp of the linked page.</p>
+			<p>
+				<button class="btn btn-white"><i class="fa fa-home"></i> Home</button>
+				<button class="btn btn-primary"><i class="icon-user-1"></i> Profile</button>
+				<button class="btn btn-success"><i class="fa fa-check-circle"></i> Confirm</button>
+				<button class="btn btn-danger"><i class="fa fa-times"></i> Delete</button>
+			</p>
+			<p>
+				<button class="btn btn-default btn-lg"><i class="fa fa-picture-o"></i></button>
+				<button class="btn btn-inverse"><i class="fa fa-envelope"></i></button>
+				<button class="btn btn-primary"><i class="fa fa-pencil"></i></button>
+				<button class="btn btn-warning btn-sm"><i class="fa fa-download"></i></button>
+				<button class="btn btn-info btn-xs"><i class="fa fa-cloud-upload"></i></button>
+			</p>
+			<p>
+				<button class="btn btn-default btn-circle"><i class="fa fa-user"></i></button>
+				<button class="btn btn-inverse btn-circle"><i class="fa fa-home"></i></button>
+				<button class="btn btn-primary btn-circle"><i class="fa fa-building"></i></button>
+				<button class="btn btn-warning btn-circle"><i class="fa fa-sign-out"></i></button>
+				<button class="btn btn-info btn-circle"><i class="fa fa-medkit"></i></button>
+			</p>
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">Button Dropdowns</div>
+		<div class="panel-body">
+			<p>Use any button to trigger a dropdown menu by placing it within a .btn-group and providing the proper menu markup.</p>
+			<div class="btn-group">
+				<button type="button" class="btn btn-default-light dropdown-toggle" data-toggle="dropdown">
+					Default Light
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a href="#">Action</a></li>
+					<li><a href="#">Another action</a></li>
+					<li><a href="#">Something else here</a></li>
+					<li class="divider"></li>
+					<li><a href="#">Separated link</a></li>
+				</ul>
+			</div>
+
+			<div class="btn-group">
+				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					Default
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a href="#">Action</a></li>
+					<li><a href="#">Another action</a></li>
+					<li><a href="#">Something else here</a></li>
+					<li class="divider"></li>
+					<li><a href="#">Separated link</a></li>
+				</ul>
+			</div>
+
+			<div class="btn-group">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+					Primary Color
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu pull-right">
+					<li><a href="#">Action</a></li>
+					<li><a href="#">Another action</a></li>
+					<li><a href="#">Something else here</a></li>
+					<li class="divider"></li>
+					<li><a href="#">Separated link</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">Progress Bars - Colors</h4>
+		</div>
+		<div class="panel-body">
+			<p class="margin-none">Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars.</p>
+		</div>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<span>Regular (Primary):</span>
+				<div class="progress">
+					<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+						<span class="sr-only">60% Complete</span>
+					</div>
+				</div>
+			</li>
+			<li class="list-group-item">
+				<span>Success:</span>
+				<div class="progress">
+					<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+						<span class="sr-only">40% Complete (success)</span>
+					</div>
+				</div>
+			</li>
+			<li class="list-group-item">
+				<span>Information:</span>
+				<div class="progress">
+					<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+						<span class="sr-only">20% Complete</span>
+					</div>
+				</div>
+			</li>
+			<li class="list-group-item">
+				<span>Warning:</span>
+				<div class="progress">
+					<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+						<span class="sr-only">60% Complete (warning)</span>
+					</div>
+				</div>
+			</li>
+			<li class="list-group-item">
+				<span>Inverse:</span>
+				<div class="progress">
+					<div class="progress-bar progress-bar-inverse" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+						<span class="sr-only">40% Complete</span>
+					</div>
+				</div>
+			</li>
+			<li class="list-group-item">
+				<span>Default (Gray):</span>
+				<div class="progress">
+					<div class="progress-bar progress-bar-default" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%">
+						<span class="sr-only">55% Complete</span>
+					</div>
+				</div>
+			</li>
+			<li class="list-group-item">
+				<span>Danger:</span>
+				<div class="progress">
+					<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+						<span class="sr-only">80% Complete</span>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">Progress Bars - Extra Variant</h4>
+		</div>
+		<div class="panel-body">
+			<p class="margin-none">Uses a gradient to create a striped effect. Not available in IE8. Place multiple bars into the same .progress to stack them.</p>
+		</div>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<span>Striped</span>
+				<div class="progress">
+					<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+						<span class="sr-only">40% Complete (success)</span>
+					</div>
+				</div>
+			</li>
+			<li class="list-group-item">
+				<span>Striped Animated</span>
+				<div class="progress">
+					<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+						<span class="sr-only">45% Complete</span>
+					</div>
+				</div>
+			</li>
+			<li class="list-group-item">
+				<span>Stacked</span>
+				<div class="progress">
+					<div class="progress-bar progress-bar-info" style="width: 35%">
+						<span class="sr-only">35% Complete (info)</span>
+					</div>
+					<div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
+						<span class="sr-only">20% Complete (warning)</span>
+					</div>
+					<div class="progress-bar progress-bar-danger" style="width: 10%">
+						<span class="sr-only">10% Complete (danger)</span>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">Pagination</h4>
+		</div>
+		<div class="panel-body">
+			<p>Provide pagination links for your site or app with the multi-page pagination component, or the simpler pager alternative.</p>
+			<nav>
+				<ul class="pagination pagination-lg margin-bottom-none">
+					<li class="disabled"><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
+					<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#"><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>
+				</ul>
+			</nav>
+			<nav>
+				<ul class="pagination margin-bottom-none">
+					<li class="disabled"><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
+					<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#"><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>
+				</ul>
+			</nav>
+			<nav>
+				<ul class="pagination pagination-sm margin-bottom-none">
+					<li class="disabled"><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
+					<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#"><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">Alerts</h4>
+		</div>
+		<div class="panel-body">
+			<p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
+			<div class="alert alert-success" role="alert">
+				<strong>Well done!</strong> You successfully read this important alert message.
+			</div>
+			<div class="alert alert-info" role="alert">
+				<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+			</div>
+			<div class="alert alert-warning" role="alert">
+				<strong>Warning!</strong> Better check yourself, you're not looking too good.
+			</div>
+			<div class="alert alert-danger margin-bottom-none" role="alert">
+				<strong>Oh snap!</strong> Change a few things up and try submitting again.
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				Tooltips
+			</h4>
+		</div>
+		<div class="panel-body">
+			<p>Inspired by the excellent jQuery.tipsy plugin written by Jason Frame; <a href="#" data-toggle="tooltip" title="" data-original-title="Default tooltip"> Tooltips</a> are an updated version, which don't rely on images, use <a href="#" data-toggle="tooltip" title="" data-original-title="A nice css tooltip">CSS3</a> for animations, and data-attributes for local title storage.</p>
+			<button type="button" class="btn btn-default btn-stroke" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+
+			<button type="button" class="btn btn-default btn-stroke" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+
+			<button type="button" class="btn btn-default btn-stroke" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+
+			<button type="button" class="btn btn-default btn-stroke" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+		</div>
+	</div>
+
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingOne">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								Collapsible Group Item #1
+							</a>
+						</h4>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+						<div class="panel-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingTwo">
+						<h4 class="panel-title">
+							<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								Collapsible Group Item #2
+							</a>
+						</h4>
+					</div>
+					<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+						<div class="panel-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="headingThree">
+						<h4 class="panel-title">
+							<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								Collapsible Group Item #3
+							</a>
+						</h4>
+					</div>
+					<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+						<div class="panel-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						</div>
+					</div>
+				</div>
+			</div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,2218 @@
+<!DOCTYPE html>
+<html class="ls-top-navbar st-layout" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>ThemeKit</title>
+    <!-- Compressed Vendor BUNDLE
+    Includes vendor (3rd party) styling such as the customized Bootstrap and other 3rd party libraries used for the current theme/module -->
+    <link href="css/vendor.min.css" rel="stylesheet">
+    <!-- Compressed Theme BUNDLE
+    Note: The bundle includes all the custom styling required for the current theme, however
+    it was tweaked for the current theme/module and does NOT include ALL of the standalone modules;
+    The bundle was generated using modern frontend development tools that are provided with the package
+    To learn more about the development process, please refer to the documentation. -->
+    <!-- <link href="css/theme.bundle.min.css" rel="stylesheet"> -->
+    <!-- Compressed Theme CORE
+    This variant is to be used when loading the separate styling modules -->
+    <link href="css/theme-core.min.css" rel="stylesheet">
+    <!-- Standalone Modules
+    As a convenience, we provide the entire UI framework broke down in separate modules
+    Some of the standalone modules may have not been used with the current theme/module
+    but ALL modules are 100% compatible -->
+    <link href="css/module-essentials.min.css" rel="stylesheet" />
+    <link href="css/module-layout.min.css" rel="stylesheet" />
+    <link href="css/module-sidebar.min.css" rel="stylesheet" />
+    <link href="css/module-sidebar-skins.min.css" rel="stylesheet" />
+    <link href="css/module-navbar.min.css" rel="stylesheet" />
+    <!-- <link href="css/module-media.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-timeline.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-cover.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-chat.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-charts.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-maps.min.css" rel="stylesheet" /> -->
+    <link href="css/module-colors-alerts.min.css" rel="stylesheet" />
+    <link href="css/module-colors-background.min.css" rel="stylesheet" />
+    <link href="css/module-colors-buttons.min.css" rel="stylesheet" />
+    <link href="css/module-colors-calendar.min.css" rel="stylesheet" />
+    <link href="css/module-colors-progress-bars.min.css" rel="stylesheet" />
+    <link href="css/module-colors-text.min.css" rel="stylesheet" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- If you don't need support for Internet Explorer <= 8 you can safely remove these -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Wrapper required for sidebar transitions -->
+    <div class="st-container">
+        <!-- Fluid navbar -->
+        <div class="navbar navbar-main navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Colors Kit</a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse" id="collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../../index.html">Themes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- sidebar effects OUTSIDE of st-pusher: -->
+        <!-- st-effect-1, st-effect-2, st-effect-4, st-effect-5, st-effect-9, st-effect-10, st-effect-11, st-effect-12, st-effect-13 -->
+        <!-- Sidebar component with st-effect-1 (set on the toggle button) -->
+        <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-dark" data-type=dropdown id=dark>
+            <div class="split-vertical">
+                <div class="sidebar-block equal-padding">
+                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                        <label class="btn btn-default active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fa fa-envelope"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> <i class="fa fa-lock"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option31" autocomplete="off"> <i class="fa fa-list"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option32" autocomplete="off"> <i class="fa fa-group"></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="split-vertical-body">
+                    <div class="split-vertical-cell">
+                        <div data-scrollable>
+                            <ul class="sidebar-menu">
+                                <li class="category">Category</li>
+                                <li class="active"><a href=""><i class="fa fa-home"></i> <span>Dashboard</span></a>
+                                </li>
+                                <li class="hasSubmenu">
+                                    <a href="#submenu"><i class="fa fa-bar-chart-o"></i> <span>Submenu</span></a>
+                                    <ul id="submenu">
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="category">Activity</div>
+                            <div class="sidebar-feed">
+                                <ul>
+                                    <li class="media news-item">
+                                        <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                                        <span class="pull-left media-object">
+                                    <i class="fa fa-fw fa-bell"></i>
+                                </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just added <a href="">mosaicpro</a> as their office
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--End Activity -->
+                            <!-- Calendar -->
+                            <div class="category">Calendar</div>
+                            <div class="datepicker"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Footer</h4>
+                    <p>With fluid height</p>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar component with st-effect-1 (set on the toggle button) -->
+        <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-white" data-type=dropdown id=white>
+            <div class="split-vertical">
+                <div class="sidebar-block equal-padding">
+                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                        <label class="btn btn-default active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fa fa-envelope"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> <i class="fa fa-lock"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option31" autocomplete="off"> <i class="fa fa-list"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option32" autocomplete="off"> <i class="fa fa-group"></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="split-vertical-body">
+                    <div class="split-vertical-cell">
+                        <div data-scrollable>
+                            <ul class="sidebar-menu">
+                                <li class="category">Category</li>
+                                <li class="active"><a href=""><i class="fa fa-home"></i> <span>Dashboard</span></a>
+                                </li>
+                                <li class="hasSubmenu">
+                                    <a href="#submenu"><i class="fa fa-bar-chart-o"></i> <span>Submenu</span></a>
+                                    <ul id="submenu">
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="category">Activity</div>
+                            <div class="sidebar-feed">
+                                <ul>
+                                    <li class="media news-item">
+                                        <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                                        <span class="pull-left media-object">
+                                    <i class="fa fa-fw fa-bell"></i>
+                                </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just added <a href="">mosaicpro</a> as their office
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--End Activity -->
+                            <!-- Calendar -->
+                            <div class="category">Calendar</div>
+                            <div class="datepicker"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Footer</h4>
+                    <p>With fluid height</p>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar component with st-effect-1 (set on the toggle button) -->
+        <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-red" data-type=dropdown id=red>
+            <div class="split-vertical">
+                <div class="sidebar-block equal-padding">
+                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                        <label class="btn btn-default active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fa fa-envelope"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> <i class="fa fa-lock"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option31" autocomplete="off"> <i class="fa fa-list"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option32" autocomplete="off"> <i class="fa fa-group"></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="split-vertical-body">
+                    <div class="split-vertical-cell">
+                        <div data-scrollable>
+                            <ul class="sidebar-menu">
+                                <li class="category">Category</li>
+                                <li class="active"><a href=""><i class="fa fa-home"></i> <span>Dashboard</span></a>
+                                </li>
+                                <li class="hasSubmenu">
+                                    <a href="#submenu"><i class="fa fa-bar-chart-o"></i> <span>Submenu</span></a>
+                                    <ul id="submenu">
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="category">Activity</div>
+                            <div class="sidebar-feed">
+                                <ul>
+                                    <li class="media news-item">
+                                        <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                                        <span class="pull-left media-object">
+                                    <i class="fa fa-fw fa-bell"></i>
+                                </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just added <a href="">mosaicpro</a> as their office
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--End Activity -->
+                            <!-- Calendar -->
+                            <div class="category">Calendar</div>
+                            <div class="datepicker"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Footer</h4>
+                    <p>With fluid height</p>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar component with st-effect-1 (set on the toggle button) -->
+        <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-green" data-type=dropdown id=green>
+            <div class="split-vertical">
+                <div class="sidebar-block equal-padding">
+                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                        <label class="btn btn-default active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fa fa-envelope"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> <i class="fa fa-lock"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option31" autocomplete="off"> <i class="fa fa-list"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option32" autocomplete="off"> <i class="fa fa-group"></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="split-vertical-body">
+                    <div class="split-vertical-cell">
+                        <div data-scrollable>
+                            <ul class="sidebar-menu">
+                                <li class="category">Category</li>
+                                <li class="active"><a href=""><i class="fa fa-home"></i> <span>Dashboard</span></a>
+                                </li>
+                                <li class="hasSubmenu">
+                                    <a href="#submenu"><i class="fa fa-bar-chart-o"></i> <span>Submenu</span></a>
+                                    <ul id="submenu">
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="category">Activity</div>
+                            <div class="sidebar-feed">
+                                <ul>
+                                    <li class="media news-item">
+                                        <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                                        <span class="pull-left media-object">
+                                    <i class="fa fa-fw fa-bell"></i>
+                                </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just added <a href="">mosaicpro</a> as their office
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--End Activity -->
+                            <!-- Calendar -->
+                            <div class="category">Calendar</div>
+                            <div class="datepicker"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Footer</h4>
+                    <p>With fluid height</p>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar component with st-effect-1 (set on the toggle button) -->
+        <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-deep-purple" data-type=dropdown id=deep-purple>
+            <div class="split-vertical">
+                <div class="sidebar-block equal-padding">
+                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                        <label class="btn btn-default active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fa fa-envelope"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> <i class="fa fa-lock"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option31" autocomplete="off"> <i class="fa fa-list"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option32" autocomplete="off"> <i class="fa fa-group"></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="split-vertical-body">
+                    <div class="split-vertical-cell">
+                        <div data-scrollable>
+                            <ul class="sidebar-menu">
+                                <li class="category">Category</li>
+                                <li class="active"><a href=""><i class="fa fa-home"></i> <span>Dashboard</span></a>
+                                </li>
+                                <li class="hasSubmenu">
+                                    <a href="#submenu"><i class="fa fa-bar-chart-o"></i> <span>Submenu</span></a>
+                                    <ul id="submenu">
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="category">Activity</div>
+                            <div class="sidebar-feed">
+                                <ul>
+                                    <li class="media news-item">
+                                        <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                                        <span class="pull-left media-object">
+                                    <i class="fa fa-fw fa-bell"></i>
+                                </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just added <a href="">mosaicpro</a> as their office
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--End Activity -->
+                            <!-- Calendar -->
+                            <div class="category">Calendar</div>
+                            <div class="datepicker"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Footer</h4>
+                    <p>With fluid height</p>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar component with st-effect-1 (set on the toggle button) -->
+        <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-blue" data-type=dropdown id=blue>
+            <div class="split-vertical">
+                <div class="sidebar-block equal-padding">
+                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                        <label class="btn btn-default active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fa fa-envelope"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> <i class="fa fa-lock"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option31" autocomplete="off"> <i class="fa fa-list"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option32" autocomplete="off"> <i class="fa fa-group"></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="split-vertical-body">
+                    <div class="split-vertical-cell">
+                        <div data-scrollable>
+                            <ul class="sidebar-menu">
+                                <li class="category">Category</li>
+                                <li class="active"><a href=""><i class="fa fa-home"></i> <span>Dashboard</span></a>
+                                </li>
+                                <li class="hasSubmenu">
+                                    <a href="#submenu"><i class="fa fa-bar-chart-o"></i> <span>Submenu</span></a>
+                                    <ul id="submenu">
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="category">Activity</div>
+                            <div class="sidebar-feed">
+                                <ul>
+                                    <li class="media news-item">
+                                        <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                                        <span class="pull-left media-object">
+                                    <i class="fa fa-fw fa-bell"></i>
+                                </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just added <a href="">mosaicpro</a> as their office
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--End Activity -->
+                            <!-- Calendar -->
+                            <div class="category">Calendar</div>
+                            <div class="datepicker"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Footer</h4>
+                    <p>With fluid height</p>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar component with st-effect-1 (set on the toggle button) -->
+        <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-brown" data-type=dropdown id=brown>
+            <div class="split-vertical">
+                <div class="sidebar-block equal-padding">
+                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                        <label class="btn btn-default active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fa fa-envelope"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> <i class="fa fa-lock"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option31" autocomplete="off"> <i class="fa fa-list"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option32" autocomplete="off"> <i class="fa fa-group"></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="split-vertical-body">
+                    <div class="split-vertical-cell">
+                        <div data-scrollable>
+                            <ul class="sidebar-menu">
+                                <li class="category">Category</li>
+                                <li class="active"><a href=""><i class="fa fa-home"></i> <span>Dashboard</span></a>
+                                </li>
+                                <li class="hasSubmenu">
+                                    <a href="#submenu"><i class="fa fa-bar-chart-o"></i> <span>Submenu</span></a>
+                                    <ul id="submenu">
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="category">Activity</div>
+                            <div class="sidebar-feed">
+                                <ul>
+                                    <li class="media news-item">
+                                        <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                                        <span class="pull-left media-object">
+                                    <i class="fa fa-fw fa-bell"></i>
+                                </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just added <a href="">mosaicpro</a> as their office
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--End Activity -->
+                            <!-- Calendar -->
+                            <div class="category">Calendar</div>
+                            <div class="datepicker"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Footer</h4>
+                    <p>With fluid height</p>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar component with st-effect-1 (set on the toggle button) -->
+        <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-white-red" data-type=dropdown id=white-red>
+            <div class="split-vertical">
+                <div class="sidebar-block equal-padding">
+                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                        <label class="btn btn-default active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fa fa-envelope"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> <i class="fa fa-lock"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option31" autocomplete="off"> <i class="fa fa-list"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option32" autocomplete="off"> <i class="fa fa-group"></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="split-vertical-body">
+                    <div class="split-vertical-cell">
+                        <div data-scrollable>
+                            <ul class="sidebar-menu">
+                                <li class="category">Category</li>
+                                <li class="active"><a href=""><i class="fa fa-home"></i> <span>Dashboard</span></a>
+                                </li>
+                                <li class="hasSubmenu">
+                                    <a href="#submenu"><i class="fa fa-bar-chart-o"></i> <span>Submenu</span></a>
+                                    <ul id="submenu">
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="category">Activity</div>
+                            <div class="sidebar-feed">
+                                <ul>
+                                    <li class="media news-item">
+                                        <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                                        <span class="pull-left media-object">
+                                    <i class="fa fa-fw fa-bell"></i>
+                                </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just added <a href="">mosaicpro</a> as their office
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--End Activity -->
+                            <!-- Calendar -->
+                            <div class="category">Calendar</div>
+                            <div class="datepicker"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Footer</h4>
+                    <p>With fluid height</p>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar component with st-effect-1 (set on the toggle button) -->
+        <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-white-green" data-type=dropdown id=white-green>
+            <div class="split-vertical">
+                <div class="sidebar-block equal-padding">
+                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                        <label class="btn btn-default active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fa fa-envelope"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> <i class="fa fa-lock"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option31" autocomplete="off"> <i class="fa fa-list"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option32" autocomplete="off"> <i class="fa fa-group"></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="split-vertical-body">
+                    <div class="split-vertical-cell">
+                        <div data-scrollable>
+                            <ul class="sidebar-menu">
+                                <li class="category">Category</li>
+                                <li class="active"><a href=""><i class="fa fa-home"></i> <span>Dashboard</span></a>
+                                </li>
+                                <li class="hasSubmenu">
+                                    <a href="#submenu"><i class="fa fa-bar-chart-o"></i> <span>Submenu</span></a>
+                                    <ul id="submenu">
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="category">Activity</div>
+                            <div class="sidebar-feed">
+                                <ul>
+                                    <li class="media news-item">
+                                        <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                                        <span class="pull-left media-object">
+                                    <i class="fa fa-fw fa-bell"></i>
+                                </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just added <a href="">mosaicpro</a> as their office
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--End Activity -->
+                            <!-- Calendar -->
+                            <div class="category">Calendar</div>
+                            <div class="datepicker"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Footer</h4>
+                    <p>With fluid height</p>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar component with st-effect-1 (set on the toggle button) -->
+        <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-white-deep-purple" data-type=dropdown id=white-deep-purple>
+            <div class="split-vertical">
+                <div class="sidebar-block equal-padding">
+                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                        <label class="btn btn-default active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fa fa-envelope"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> <i class="fa fa-lock"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option31" autocomplete="off"> <i class="fa fa-list"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option32" autocomplete="off"> <i class="fa fa-group"></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="split-vertical-body">
+                    <div class="split-vertical-cell">
+                        <div data-scrollable>
+                            <ul class="sidebar-menu">
+                                <li class="category">Category</li>
+                                <li class="active"><a href=""><i class="fa fa-home"></i> <span>Dashboard</span></a>
+                                </li>
+                                <li class="hasSubmenu">
+                                    <a href="#submenu"><i class="fa fa-bar-chart-o"></i> <span>Submenu</span></a>
+                                    <ul id="submenu">
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="category">Activity</div>
+                            <div class="sidebar-feed">
+                                <ul>
+                                    <li class="media news-item">
+                                        <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                                        <span class="pull-left media-object">
+                                    <i class="fa fa-fw fa-bell"></i>
+                                </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just added <a href="">mosaicpro</a> as their office
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--End Activity -->
+                            <!-- Calendar -->
+                            <div class="category">Calendar</div>
+                            <div class="datepicker"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Footer</h4>
+                    <p>With fluid height</p>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar component with st-effect-1 (set on the toggle button) -->
+        <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-white-blue" data-type=dropdown id=white-blue>
+            <div class="split-vertical">
+                <div class="sidebar-block equal-padding">
+                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                        <label class="btn btn-default active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fa fa-envelope"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> <i class="fa fa-lock"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option31" autocomplete="off"> <i class="fa fa-list"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option32" autocomplete="off"> <i class="fa fa-group"></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="split-vertical-body">
+                    <div class="split-vertical-cell">
+                        <div data-scrollable>
+                            <ul class="sidebar-menu">
+                                <li class="category">Category</li>
+                                <li class="active"><a href=""><i class="fa fa-home"></i> <span>Dashboard</span></a>
+                                </li>
+                                <li class="hasSubmenu">
+                                    <a href="#submenu"><i class="fa fa-bar-chart-o"></i> <span>Submenu</span></a>
+                                    <ul id="submenu">
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="category">Activity</div>
+                            <div class="sidebar-feed">
+                                <ul>
+                                    <li class="media news-item">
+                                        <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                                        <span class="pull-left media-object">
+                                    <i class="fa fa-fw fa-bell"></i>
+                                </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just added <a href="">mosaicpro</a> as their office
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--End Activity -->
+                            <!-- Calendar -->
+                            <div class="category">Calendar</div>
+                            <div class="datepicker"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Footer</h4>
+                    <p>With fluid height</p>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar component with st-effect-1 (set on the toggle button) -->
+        <div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-skin-white-brown" data-type=dropdown id=white-brown>
+            <div class="split-vertical">
+                <div class="sidebar-block equal-padding">
+                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                        <label class="btn btn-default active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fa fa-envelope"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> <i class="fa fa-lock"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option31" autocomplete="off"> <i class="fa fa-list"></i>
+                        </label>
+                        <label class="btn btn-default">
+                            <input type="radio" name="options" id="option32" autocomplete="off"> <i class="fa fa-group"></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="split-vertical-body">
+                    <div class="split-vertical-cell">
+                        <div data-scrollable>
+                            <ul class="sidebar-menu">
+                                <li class="category">Category</li>
+                                <li class="active"><a href=""><i class="fa fa-home"></i> <span>Dashboard</span></a>
+                                </li>
+                                <li class="hasSubmenu">
+                                    <a href="#submenu"><i class="fa fa-bar-chart-o"></i> <span>Submenu</span></a>
+                                    <ul id="submenu">
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                        <li><a href=""><span>Sample Menu</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="category">Activity</div>
+                            <div class="sidebar-feed">
+                                <ul>
+                                    <li class="media news-item">
+                                        <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                                        <span class="pull-left media-object">
+                                    <i class="fa fa-fw fa-bell"></i>
+                                </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just added <a href="">mosaicpro</a> as their office
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                    <li class="media news-item">
+                                        <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+                                        <div class="media-body">
+                                            <a href="">Adrian</a> just logged in
+                                            <span class="time">2 min ago</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--End Activity -->
+                            <!-- Calendar -->
+                            <div class="category">Calendar</div>
+                            <div class="datepicker"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-block">
+                    <h4 class="category">Sidebar Footer</h4>
+                    <p>With fluid height</p>
+                </div>
+            </div>
+        </div>
+        <!-- content push wrapper -->
+        <div class="st-pusher" id="content">
+            <!-- sidebar effects INSIDE of st-pusher: -->
+            <!-- st-effect-3, st-effect-6, st-effect-7, st-effect-8, st-effect-14 -->
+            <!-- this is the wrapper for the content -->
+            <div class="st-content">
+                <!-- extra div for emulating position:fixed of the menu -->
+                <div class="st-content-inner">
+                    <div class="container">
+                        <div class="jumbotron text-center bg-white">
+                            <h1>Colors <span class="text-red-500">K</span><span class="text-pink-500">i</span><span class="text-purple-500">t</span>
+                            </h1>
+                            <p class="margin-none"><span class="text-indigo-500">The Colors KIT introduces unexpected</span> <span class="text-blue-500">and vibrant colors, based on Google's Material Design Guideline</span><span class="text-light-blue-500">, inspired by bold color statements</span> <span class="text-cyan-500">juxtaposed with muted environments</span><span class="text-teal-500">, taking cues from contemporary</span> <span class="text-green-500">architecture &amp; many more.</span>
+                            </p>
+                        </div>
+                        <div class="jumbotron text-center bg-transparent">
+                            <h1>The color palettes</h1>
+                            <p class="margin-none">19 color palettes designed to work harmoniously with each other.</p>
+                        </div>
+                        <div class="row gridalicious" data-toggle="gridalicious">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Red</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <ul class="palette">
+                                        <li class="bg-red-100"></li>
+                                        <li class="bg-red-200"></li>
+                                        <li class="bg-red-300"></li>
+                                        <li class="bg-red-400"></li>
+                                        <li class="bg-red-500"></li>
+                                        <li class="bg-red-600"></li>
+                                        <li class="bg-red-700"></li>
+                                        <li class="bg-red-800"></li>
+                                        <li class="bg-red-900"></li>
+                                    </ul>
+                                    <ul class="palette margin-none">
+                                        <li class="bg-red-A100"></li>
+                                        <li class="bg-red-A200"></li>
+                                        <li class="bg-red-A400"></li>
+                                        <li class="bg-red-A700"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Pink</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <ul class="palette">
+                                        <li class="bg-pink-100"></li>
+                                        <li class="bg-pink-200"></li>
+                                        <li class="bg-pink-300"></li>
+                                        <li class="bg-pink-400"></li>
+                                        <li class="bg-pink-500"></li>
+                                        <li class="bg-pink-600"></li>
+                                        <li class="bg-pink-700"></li>
+                                        <li class="bg-pink-800"></li>
+                                        <li class="bg-pink-900"></li>
+                                    </ul>
+                                    <ul class="palette margin-none">
+                                        <li class="bg-pink-A100"></li>
+                                        <li class="bg-pink-A200"></li>
+                                        <li class="bg-pink-A400"></li>
+                                        <li class="bg-pink-A700"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Purple</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <ul class="palette">
+                                        <li class="bg-purple-100"></li>
+                                        <li class="bg-purple-200"></li>
+                                        <li class="bg-purple-300"></li>
+                                        <li class="bg-purple-400"></li>
+                                        <li class="bg-purple-500"></li>
+                                        <li class="bg-purple-600"></li>
+                                        <li class="bg-purple-700"></li>
+                                        <li class="bg-purple-800"></li>
+                                        <li class="bg-purple-900"></li>
+                                    </ul>
+                                    <ul class="palette margin-none">
+                                        <li class="bg-purple-A100"></li>
+                                        <li class="bg-purple-A200"></li>
+                                        <li class="bg-purple-A400"></li>
+                                        <li class="bg-purple-A700"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Deep Purple</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <ul class="palette">
+                                        <li class="bg-deep-purple-100"></li>
+                                        <li class="bg-deep-purple-200"></li>
+                                        <li class="bg-deep-purple-300"></li>
+                                        <li class="bg-deep-purple-400"></li>
+                                        <li class="bg-deep-purple-500"></li>
+                                        <li class="bg-deep-purple-600"></li>
+                                        <li class="bg-deep-purple-700"></li>
+                                        <li class="bg-deep-purple-800"></li>
+                                        <li class="bg-deep-purple-900"></li>
+                                    </ul>
+                                    <ul class="palette margin-none">
+                                        <li class="bg-deep-purple-A100"></li>
+                                        <li class="bg-deep-purple-A200"></li>
+                                        <li class="bg-deep-purple-A400"></li>
+                                        <li class="bg-deep-purple-A700"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Indigo</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <ul class="palette">
+                                        <li class="bg-indigo-100"></li>
+                                        <li class="bg-indigo-200"></li>
+                                        <li class="bg-indigo-300"></li>
+                                        <li class="bg-indigo-400"></li>
+                                        <li class="bg-indigo-500"></li>
+                                        <li class="bg-indigo-600"></li>
+                                        <li class="bg-indigo-700"></li>
+                                        <li class="bg-indigo-800"></li>
+                                        <li class="bg-indigo-900"></li>
+                                    </ul>
+                                    <ul class="palette margin-none">
+                                        <li class="bg-indigo-A100"></li>
+                                        <li class="bg-indigo-A200"></li>
+                                        <li class="bg-indigo-A400"></li>
+                                        <li class="bg-indigo-A700"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Blue</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <ul class="palette">
+                                        <li class="bg-blue-100"></li>
+                                        <li class="bg-blue-200"></li>
+                                        <li class="bg-blue-300"></li>
+                                        <li class="bg-blue-400"></li>
+                                        <li class="bg-blue-500"></li>
+                                        <li class="bg-blue-600"></li>
+                                        <li class="bg-blue-700"></li>
+                                        <li class="bg-blue-800"></li>
+                                        <li class="bg-blue-900"></li>
+                                    </ul>
+                                    <ul class="palette margin-none">
+                                        <li class="bg-blue-A100"></li>
+                                        <li class="bg-blue-A200"></li>
+                                        <li class="bg-blue-A400"></li>
+                                        <li class="bg-blue-A700"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Light Blue</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <ul class="palette">
+                                        <li class="bg-light-blue-100"></li>
+                                        <li class="bg-light-blue-200"></li>
+                                        <li class="bg-light-blue-300"></li>
+                                        <li class="bg-light-blue-400"></li>
+                                        <li class="bg-light-blue-500"></li>
+                                        <li class="bg-light-blue-600"></li>
+                                        <li class="bg-light-blue-700"></li>
+                                        <li class="bg-light-blue-800"></li>
+                                        <li class="bg-light-blue-900"></li>
+                                    </ul>
+                                    <ul class="palette margin-none">
+                                        <li class="bg-light-blue-A100"></li>
+                                        <li class="bg-light-blue-A200"></li>
+                                        <li class="bg-light-blue-A400"></li>
+                                        <li class="bg-light-blue-A700"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Cyan</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <ul class="palette">
+                                        <li class="bg-cyan-100"></li>
+                                        <li class="bg-cyan-200"></li>
+                                        <li class="bg-cyan-300"></li>
+                                        <li class="bg-cyan-400"></li>
+                                        <li class="bg-cyan-500"></li>
+                                        <li class="bg-cyan-600"></li>
+                                        <li class="bg-cyan-700"></li>
+                                        <li class="bg-cyan-800"></li>
+                                        <li class="bg-cyan-900"></li>
+                                    </ul>
+                                    <ul class="palette margin-none">
+                                        <li class="bg-cyan-A100"></li>
+                                        <li class="bg-cyan-A200"></li>
+                                        <li class="bg-cyan-A400"></li>
+                                        <li class="bg-cyan-A700"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Teal</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <ul class="palette">
+                                        <li class="bg-teal-100"></li>
+                                        <li class="bg-teal-200"></li>
+                                        <li class="bg-teal-300"></li>
+                                        <li class="bg-teal-400"></li>
+                                        <li class="bg-teal-500"></li>
+                                        <li class="bg-teal-600"></li>
+                                        <li class="bg-teal-700"></li>
+                                        <li class="bg-teal-800"></li>
+                                        <li class="bg-teal-900"></li>
+                                    </ul>
+                                    <ul class="palette margin-none">
+                                        <li class="bg-teal-A100"></li>
+                                        <li class="bg-teal-A200"></li>
+                                        <li class="bg-teal-A400"></li>
+                                        <li class="bg-teal-A700"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Green</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <ul class="palette">
+                                        <li class="bg-green-100"></li>
+                                        <li class="bg-green-200"></li>
+                                        <li class="bg-green-300"></li>
+                                        <li class="bg-green-400"></li>
+                                        <li class="bg-green-500"></li>
+                                        <li class="bg-green-600"></li>
+                                        <li class="bg-green-700"></li>
+                                        <li class="bg-green-800"></li>
+                                        <li class="bg-green-900"></li>
+                                    </ul>
+                                    <ul class="palette margin-none">
+                                        <li class="bg-green-A100"></li>
+                                        <li class="bg-green-A200"></li>
+                                        <li class="bg-green-A400"></li>
+                                        <li class="bg-green-A700"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Light Green</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <ul class="palette">
+                                        <li class="bg-light-green-100"></li>
+                                        <li class="bg-light-green-200"></li>
+                                        <li class="bg-light-green-300"></li>
+                                        <li class="bg-light-green-400"></li>
+                                        <li class="bg-light-green-500"></li>
+                                        <li class="bg-light-green-600"></li>
+                                        <li class="bg-light-green-700"></li>
+                                        <li class="bg-light-green-800"></li>
+                                        <li class="bg-light-green-900"></li>
+                                    </ul>
+                                    <ul class="palette margin-none">
+                                        <li class="bg-light-green-A100"></li>
+                                        <li class="bg-light-green-A200"></li>
+                                        <li class="bg-light-green-A400"></li>
+                                        <li class="bg-light-green-A700"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Lime</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <ul class="palette">
+                                        <li class="bg-lime-100"></li>
+                                        <li class="bg-lime-200"></li>
+                                        <li class="bg-lime-300"></li>
+                                        <li class="bg-lime-400"></li>
+                                        <li class="bg-lime-500"></li>
+                                        <li class="bg-lime-600"></li>
+                                        <li class="bg-lime-700"></li>
+                                        <li class="bg-lime-800"></li>
+                                        <li class="bg-lime-900"></li>
+                                    </ul>
+                                    <ul class="palette margin-none">
+                                        <li class="bg-lime-A100"></li>
+                                        <li class="bg-lime-A200"></li>
+                                        <li class="bg-lime-A400"></li>
+                                        <li class="bg-lime-A700"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Yellow</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <ul class="palette">
+                                        <li class="bg-yellow-100"></li>
+                                        <li class="bg-yellow-200"></li>
+                                        <li class="bg-yellow-300"></li>
+                                        <li class="bg-yellow-400"></li>
+                                        <li class="bg-yellow-500"></li>
+                                        <li class="bg-yellow-600"></li>
+                                        <li class="bg-yellow-700"></li>
+                                        <li class="bg-yellow-800"></li>
+                                        <li class="bg-yellow-900"></li>
+                                    </ul>
+                                    <ul class="palette margin-none">
+                                        <li class="bg-yellow-A100"></li>
+                                        <li class="bg-yellow-A200"></li>
+                                        <li class="bg-yellow-A400"></li>
+                                        <li class="bg-yellow-A700"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Amber</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <ul class="palette">
+                                        <li class="bg-amber-100"></li>
+                                        <li class="bg-amber-200"></li>
+                                        <li class="bg-amber-300"></li>
+                                        <li class="bg-amber-400"></li>
+                                        <li class="bg-amber-500"></li>
+                                        <li class="bg-amber-600"></li>
+                                        <li class="bg-amber-700"></li>
+                                        <li class="bg-amber-800"></li>
+                                        <li class="bg-amber-900"></li>
+                                    </ul>
+                                    <ul class="palette margin-none">
+                                        <li class="bg-amber-A100"></li>
+                                        <li class="bg-amber-A200"></li>
+                                        <li class="bg-amber-A400"></li>
+                                        <li class="bg-amber-A700"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Orange</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <ul class="palette">
+                                        <li class="bg-orange-100"></li>
+                                        <li class="bg-orange-200"></li>
+                                        <li class="bg-orange-300"></li>
+                                        <li class="bg-orange-400"></li>
+                                        <li class="bg-orange-500"></li>
+                                        <li class="bg-orange-600"></li>
+                                        <li class="bg-orange-700"></li>
+                                        <li class="bg-orange-800"></li>
+                                        <li class="bg-orange-900"></li>
+                                    </ul>
+                                    <ul class="palette margin-none">
+                                        <li class="bg-orange-A100"></li>
+                                        <li class="bg-orange-A200"></li>
+                                        <li class="bg-orange-A400"></li>
+                                        <li class="bg-orange-A700"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Deep Orange</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <ul class="palette">
+                                        <li class="bg-deep-orange-100"></li>
+                                        <li class="bg-deep-orange-200"></li>
+                                        <li class="bg-deep-orange-300"></li>
+                                        <li class="bg-deep-orange-400"></li>
+                                        <li class="bg-deep-orange-500"></li>
+                                        <li class="bg-deep-orange-600"></li>
+                                        <li class="bg-deep-orange-700"></li>
+                                        <li class="bg-deep-orange-800"></li>
+                                        <li class="bg-deep-orange-900"></li>
+                                    </ul>
+                                    <ul class="palette margin-none">
+                                        <li class="bg-deep-orange-A100"></li>
+                                        <li class="bg-deep-orange-A200"></li>
+                                        <li class="bg-deep-orange-A400"></li>
+                                        <li class="bg-deep-orange-A700"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Brown</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <ul class="palette margin-none">
+                                        <li class="bg-brown-100"></li>
+                                        <li class="bg-brown-200"></li>
+                                        <li class="bg-brown-300"></li>
+                                        <li class="bg-brown-400"></li>
+                                        <li class="bg-brown-500"></li>
+                                        <li class="bg-brown-600"></li>
+                                        <li class="bg-brown-700"></li>
+                                        <li class="bg-brown-800"></li>
+                                        <li class="bg-brown-900"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Grey</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <ul class="palette margin-none">
+                                        <li class="bg-grey-100"></li>
+                                        <li class="bg-grey-200"></li>
+                                        <li class="bg-grey-300"></li>
+                                        <li class="bg-grey-400"></li>
+                                        <li class="bg-grey-500"></li>
+                                        <li class="bg-grey-600"></li>
+                                        <li class="bg-grey-700"></li>
+                                        <li class="bg-grey-800"></li>
+                                        <li class="bg-grey-900"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Blue Grey</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <ul class="palette margin-none">
+                                        <li class="bg-blue-grey-100"></li>
+                                        <li class="bg-blue-grey-200"></li>
+                                        <li class="bg-blue-grey-300"></li>
+                                        <li class="bg-blue-grey-400"></li>
+                                        <li class="bg-blue-grey-500"></li>
+                                        <li class="bg-blue-grey-600"></li>
+                                        <li class="bg-blue-grey-700"></li>
+                                        <li class="bg-blue-grey-800"></li>
+                                        <li class="bg-blue-grey-900"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="jumbotron text-center bg-transparent">
+                            <h1>The user interface</h1>
+                            <p class="margin-none">250 shades of color applicable to the general User Interface - background colors and text colors for adding contextual value to any element, buttons, alerts, progress bars, calendars, tabs and even sidebar menus.</p>
+                        </div>
+                        <h1>Buttons</h1>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Regular Buttons</h4>
+                            </div>
+                            <div class="panel-body buttons-spacing-vertical">
+                                <p>Regular buttons with all of the colour palette for quickly creating styled and vibrant buttons.</p>
+                                <button class="btn btn-red-500">Red</button>
+                                <button class="btn btn-pink-500">Pink</button>
+                                <button class="btn btn-purple-500">Purple</button>
+                                <button class="btn btn-deep-purple-500">Deep Purple</button>
+                                <button class="btn btn-indigo-500">Indigo</button>
+                                <button class="btn btn-blue-500">Blue</button>
+                                <button class="btn btn-light-blue-500">Light Blue</button>
+                                <button class="btn btn-cyan-500">Cyan</button>
+                                <button class="btn btn-teal-500">Teal</button>
+                                <button class="btn btn-green-500">Green</button>
+                                <button class="btn btn-light-green-500">Light Green</button>
+                                <button class="btn btn-lime-500">Lime</button>
+                                <button class="btn btn-yellow-600">Yellow</button>
+                                <button class="btn btn-amber-500">Amber</button>
+                                <button class="btn btn-orange-500">Orange</button>
+                                <button class="btn btn-deep-orange-500">Deep Orange</button>
+                                <button class="btn btn-brown-500">Brown</button>
+                                <button class="btn btn-grey-500">Grey</button>
+                                <button class="btn btn-blue-grey-500">Blue Grey</button>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Stacked Buttons</h4>
+                            </div>
+                            <div class="panel-body">
+                                <p>Stacked Buttons with two lines of text and icon. All regular button styles can be used with stacked buttons.</p>
+                                <button class="btn btn-indigo-500 btn-icon-stacked"><i class="fa fa-2x fa-facebook"></i> <span>Join using your<br>Facebook Account</span>
+                                </button>
+                                <button class="btn btn-light-blue-500 btn-icon-stacked"><i class="fa fa-2x fa-twitter"></i> <span>Join using your<br>Twitter Account</span>
+                                </button>
+                                <button class="btn btn-green-500 btn-icon-stacked"><i class="fa fa-2x fa-google-plus"></i> <span>Join using your<br>Google Account</span>
+                                </button>
+                                <button class="btn btn-pink-500 btn-icon-stacked"><i class="fa fa-2x fa-dribbble"></i> <span>Join using your<br>Dribble Account</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading panel-heading-gray">Buttons with Stroke</div>
+                            <div class="panel-body">
+                                <p>
+                                    <button class="btn btn-pink-500 btn-stroke">Pink</button>
+                                    <button class="btn btn-orange-500 btn-stroke">Orange</button>
+                                    <button class="btn btn-deep-orange-500 btn-stroke">Deep Orange</button>
+                                    <button class="btn btn-red-500 btn-stroke">Red</button>
+                                    <button class="btn btn-purple-500 btn-stroke">Purple</button>
+                                    <button class="btn btn-brown-500 btn-stroke">Brown</button>
+                                </p>
+                                <p>
+                                    <button class="btn btn-deep-purple-500 btn-stroke"><i class="fa fa-picture-o"></i>
+                                    </button>
+                                    <button class="btn btn-indigo-500 btn-stroke"><i class="fa fa-envelope"></i>
+                                    </button>
+                                    <button class="btn btn-blue-500 btn-stroke"><i class="fa fa-pencil"></i>
+                                    </button>
+                                    <button class="btn btn-light-blue-500 btn-stroke"><i class="fa fa-download"></i>
+                                    </button>
+                                    <button class="btn btn-cyan-500 btn-stroke"><i class="fa fa-cloud-upload"></i>
+                                    </button>
+                                </p>
+                                <button class="btn btn-teal-500 btn-stroke btn-circle"><i class="fa fa-user"></i>
+                                </button>
+                                <button class="btn btn-green-500 btn-stroke btn-circle"><i class="fa fa-home"></i>
+                                </button>
+                                <button class="btn btn-light-green-500 btn-stroke btn-circle"><i class="fa fa-medkit"></i>
+                                </button>
+                                <button class="btn btn-lime-500 btn-stroke btn-circle"><i class="fa fa-building"></i>
+                                </button>
+                                <button class="btn btn-yellow-600 btn-stroke btn-circle"><i class="fa fa-sign-out"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Button Dropdowns</div>
+                            <div class="panel-body">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-green-500 dropdown-toggle" data-toggle="dropdown">
+                                        Dropdown Green
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a>
+                                        </li>
+                                        <li><a href="#">Another action</a>
+                                        </li>
+                                        <li><a href="#">Something else here</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-light-green-500 dropdown-toggle" data-toggle="dropdown">
+                                        Dropdown Light Green
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li><a href="#">Action</a>
+                                        </li>
+                                        <li><a href="#">Another action</a>
+                                        </li>
+                                        <li><a href="#">Something else here</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-lime-500 dropdown-toggle" data-toggle="dropdown">
+                                        Dropdown Lime
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li><a href="#">Action</a>
+                                        </li>
+                                        <li><a href="#">Another action</a>
+                                        </li>
+                                        <li><a href="#">Something else here</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        <h1>Progress Bars</h1>
+                        <p class="lead">Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars.</p>
+                        <div class="row gridalicious" data-toggle="gridalicious">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Progress Bars</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-red-500" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                            <span class="sr-only">60% Complete</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-pink-500" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                            <span class="sr-only">60% Complete</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-purple-500" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                                            <span class="sr-only">60% Complete</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-deep-purple-500" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                                            <span class="sr-only">60% Complete</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress margin-bottom-none">
+                                        <div class="progress-bar progress-bar-indigo-500" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                            <span class="sr-only">60% Complete</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Progress Bars</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-blue-500" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                            <span class="sr-only">60% Complete</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-light-blue-500" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                            <span class="sr-only">60% Complete</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-cyan-500" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                                            <span class="sr-only">60% Complete</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-teal-500" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                                            <span class="sr-only">60% Complete</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress margin-bottom-none">
+                                        <div class="progress-bar progress-bar-green-500" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                            <span class="sr-only">60% Complete</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Progress Bars</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-light-green-500" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                            <span class="sr-only">60% Complete</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-lime-500" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                            <span class="sr-only">60% Complete</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-yellow-500" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                                            <span class="sr-only">60% Complete</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-amber-500" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                                            <span class="sr-only">60% Complete</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress margin-bottom-none">
+                                        <div class="progress-bar progress-bar-orange-500" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                            <span class="sr-only">60% Complete</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="text-right">
+                            <h1>Sidebar Colors</h1>
+                            <p class="lead">Press ESC to close any sidebar.</p>
+                        </div>
+                        <div class="panel panel-default">
+                            <ul class="panel-body buttons-spacing-vertical">
+                                <a href="#dark" data-toggle="sidebar-menu" class="btn btn-inverse">Dark</a>
+                                <a href="#white" data-toggle="sidebar-menu" class="btn btn-white">White</a>
+                                <a href="#white-red" data-toggle="sidebar-menu" class="btn btn-red-500 btn-stroke">White Red</a>
+                                <a href="#white-green" data-toggle="sidebar-menu" class="btn btn-green-500 btn-stroke">White Green</a>
+                                <a href="#white-blue" data-toggle="sidebar-menu" class="btn btn-blue-500 btn-stroke">White Blue</a>
+                                <a href="#white-deep-purple" data-toggle="sidebar-menu" class="btn btn-deep-purple-500 btn-stroke">White Deep Purple</a>
+                                <a href="#white-brown" data-toggle="sidebar-menu" class="btn btn-brown-500 btn-stroke">White Brown</a>
+                                <a href="#red" data-toggle="sidebar-menu" class="btn btn-red-500">Red</a>
+                                <a href="#green" data-toggle="sidebar-menu" class="btn btn-green-500">Green</a>
+                                <a href="#blue" data-toggle="sidebar-menu" class="btn btn-blue-500">Blue</a>
+                                <a href="#deep-purple" data-toggle="sidebar-menu" class="btn btn-deep-purple-500">Deep Purple</a>
+                                <a href="#brown" data-toggle="sidebar-menu" class="btn btn-brown-500">Brown</a>
+                            </ul>
+                        </div>
+                        <hr/>
+                        <h1>Alerts</h1>
+                        <p class="lead">Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
+                        <div class="row gridalicious" data-toggle="gridalicious">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Alerts</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="alert alert-red-500" role="alert">
+                                        <strong>Well done!</strong> You successfully read this important alert message.
+                                    </div>
+                                    <div class="alert alert-pink-500" role="alert">
+                                        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+                                    </div>
+                                    <div class="alert alert-purple-500 margin-bottom-none" role="alert">
+                                        <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Alerts</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="alert alert-stroke alert-red-500" role="alert">
+                                        <strong>Well done!</strong> You successfully read this important alert message.
+                                    </div>
+                                    <div class="alert alert-stroke alert-pink-500" role="alert">
+                                        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+                                    </div>
+                                    <div class="alert alert-stroke alert-purple-500 margin-bottom-none" role="alert">
+                                        <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Alerts</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="alert alert-stroke alert-deep-purple-500" role="alert">
+                                        <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                                    </div>
+                                    <div class="alert alert-stroke alert-indigo-500" role="alert">
+                                        <strong>Well done!</strong> You successfully read this important alert message.
+                                    </div>
+                                    <div class="alert alert-stroke alert-blue-500 margin-bottom-none" role="alert">
+                                        <strong>Well done!</strong> You successfully read this important alert message.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Alerts</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="alert alert-stroke alert-light-blue-500" role="alert">
+                                        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+                                    </div>
+                                    <div class="alert alert-stroke alert-cyan-500" role="alert">
+                                        <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                                    </div>
+                                    <div class="alert alert-stroke alert-teal-500 margin-bottom-none" role="alert">
+                                        <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Alerts</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="alert alert-stroke alert-green-500" role="alert">
+                                        <strong>Well done!</strong> You successfully read this important alert message.
+                                    </div>
+                                    <div class="alert alert-stroke alert-light-green-500" role="alert">
+                                        <strong>Well done!</strong> You successfully read this important alert message.
+                                    </div>
+                                    <div class="alert alert-stroke alert-lime-700 margin-bottom-none" role="alert">
+                                        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Alerts</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="alert alert-stroke alert-yellow-700" role="alert">
+                                        <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                                    </div>
+                                    <div class="alert alert-stroke alert-amber-700" role="alert">
+                                        <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                                    </div>
+                                    <div class="alert alert-stroke alert-orange-600 margin-bottom-none" role="alert">
+                                        <strong>Well done!</strong> You successfully read this important alert message.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        <h1>Calendars</h1>
+                        <p class="lead">Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
+                        <div class="row gridalicious" data-toggle="gridalicious">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Calendars</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="bg-green-500">
+                                        <div class="calendar-green-300 datepicker"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Calendars</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="calendar-cyan-300 datepicker"></div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Calendars</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="calendar-blue-300 datepicker"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /st-content-inner -->
+            </div>
+            <!-- /st-content -->
+        </div>
+        <!-- /st-pusher -->
+    </div>
+    <!-- /st-container -->
+    <!-- Inline Script for colors and config objects; used by various external scripts; -->
+    <script>
+    var colors = {
+        "danger-color": "#e74c3c",
+        "success-color": "#81b53e",
+        "warning-color": "#f0ad4e",
+        "inverse-color": "#2c3e50",
+        "info-color": "#2d7cb5",
+        "default-color": "#6e7882",
+        "default-light-color": "#cfd9db",
+        "purple-color": "#9D8AC7",
+        "mustard-color": "#d4d171",
+        "lightred-color": "#e15258",
+        "body-bg": "#f6f6f6"
+    };
+    var config = {
+        debug: true,
+        theme: "color",
+        skins: {
+            "default": {
+                "primary-color": "#16ae9f"
+            }
+        }
+    };
+    </script>
+    <!-- Separate Vendor Script Bundles -->
+    <script src="js/vendor-core.min.js"></script>
+    <!-- <script src="js/vendor-tables.min.js"></script> -->
+    <script src="js/vendor-forms.min.js"></script>
+    <!-- <script src="js/vendor-media.min.js"></script> -->
+    <!-- <script src="js/vendor-player.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-all.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-flot.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-easy-pie.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-morris.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-sparkline.min.js"></script> -->
+    <!-- <script src="js/vendor-maps.min.js"></script> -->
+    <!-- <script src="js/vendor-tree.min.js"></script> -->
+    <!-- <script src="js/vendor-nestable.min.js"></script> -->
+    <!-- Compressed Vendor Scripts Bundle
+    Includes all of the 3rd party JavaScript libraries above.
+    The bundle was generated using modern frontend development tools that are provided with the package
+    To learn more about the development process, please refer to the documentation.
+    Do not use it simultaneously with the separate bundles above. -->
+    <!-- <script src="js/vendor-bundle-all.min.js"></script> -->
+    <!-- Compressed App Scripts Bundle
+    Includes Custom Application JavaScript used for the current theme/module;
+    Do not use it simultaneously with the standalone modules below. -->
+    <!-- <script src="js/module-bundle-main.min.js"></script> -->
+    <!-- Standalone Modules
+    As a convenience, we provide the entire UI framework broke down in separate modules
+    Some of the standalone modules may have not been used with the current theme/module
+    but ALL the modules are 100% compatible -->
+    <script src="js/module-essentials.min.js"></script>
+    <script src="js/module-layout.min.js"></script>
+    <script src="js/module-sidebar.min.js"></script>
+    <script src="js/module-navbar.min.js"></script>
+    <!-- <script src="js/module-media.min.js"></script> -->
+    <!-- <script src="js/module-player.min.js"></script> -->
+    <!-- <script src="js/module-timeline.min.js"></script> -->
+    <!-- <script src="js/module-chat.min.js"></script> -->
+    <!-- <script src="js/module-maps.min.js"></script> -->
+    <!-- <script src="js/module-charts-all.min.js"></script> -->
+    <!-- <script src="js/module-charts-flot.min.js"></script> -->
+    <!-- <script src="js/module-charts-easy-pie.min.js"></script> -->
+    <!-- <script src="js/module-charts-morris.min.js"></script> -->
+    <!-- <script src="js/module-charts-sparkline.min.js"></script> -->
+</body>
+</html>

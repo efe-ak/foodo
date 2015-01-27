@@ -1,0 +1,39 @@
+<dev>
+├── <app>
+│   ├── <html>       <!-- Template Files & Components -->
+│   ├── <icons>      <!-- Custom Icons (Picto Icons)-->
+│   ├── <images>     <!-- Images used in the template -->
+│   ├── <js>         <!-- Custom APP Scripts -->
+│   ├── <less>       <!-- LESS FILES required to generate CSS from LESS -->
+│   └── <scss>       <!-- SASS FILES required to generate CSS from SASS -->
+├── <grunt>
+│   ├── <utils>      <!-- Utilities used within tasks -->
+│   ├── <tasks>
+│   │   ├── autoprefixer.js     <!-- Parse CSS and add vendor prefixes to CSS rules automatically -->
+│   │   ├── browserify.js       <!-- Compiles application scripts bundles -->
+│   │   ├── browserSync.js      <!-- Time-saving synchronised browser testing with built-in http server, code sync and action sync across multiple devices -->
+│   │   ├── build.js            <!-- Build the various parts of the application in one go -->
+│   │   ├── clean.js            <!-- Clean files and folders -->
+│   │   ├── concat.js           <!-- Concatenate files -->
+│   │   ├── copy.js             <!-- Copy files and folders -->
+│   │   ├── cssmin.js           <!-- Compress CSS files -->
+│   │   ├── default.js          <!-- the default task to run when running grunt without specifying a task -->
+│   │   ├── discover.js         <!-- special task for automatically generating a scripts vendor bundle from all the installed bower components -->
+│   │   ├── jekyll.js           <!-- compiles Jekyll templates to HTML -->
+│   │   ├── jshint.js           <!-- Validate JavaScript files -->
+│   │   ├── less.js             <!-- compile LESS to CSS -->
+│   │   ├── prettify.js         <!-- format the HTML output from the "dist/" directory after running a build -->
+│   │   ├── sass.js             <!-- compile SASS to CSS -->
+│   │   ├── shell.js            <!-- execute shell commands -->
+│   │   ├── swig.js             <!-- compiles swig templates to HTML -->
+│   │   ├── uglify.js           <!-- Compress JavaScript files -->
+│   │   └── watch.js            <!-- Run predefined tasks whenever watched file patterns are added, changed or deleted -->
+│   └── config.js
+├── <rb>             <!-- Ruby Generators (LESS to SASS) -->
+├── Gruntfile.js     <!-- Grunt Tasks Loader (/grunt/tasks) -->
+├── _config.yml      <!-- Config file required to generate the app/html -->
+├── _skins.json      <!-- Skins Config - used in templates to generate the Skin switcher in HTML -->
+├── bower.json       <!-- File required to install Bower Components -->
+├── package.json     <!-- File required to install Node Modules for Grunt -->
+├── Gemfile          <!-- The Gemfile describes the gem dependencies required to execute associated Ruby code -->
+├── Rakefile         <!-- The Rakefile is tailored to specifying tasks and actions for Ruby -->

@@ -1,0 +1,144 @@
+{
+	"name": "ThemeKit",
+	"version": "3.6.1",
+	"authors": [
+		"Mosaicpro <contact@mosaicpro.biz> (http://mosaicpro.biz)"
+	],
+	"description": "Modern UI Kits for Apps & Websites",
+	"license": "http://themeforest.net/licenses",
+	"private": true,
+	"overrides": {
+		"jquery.breakpoints": {
+			"main": "./breakpoints.js"
+		},
+		"Grid-A-Licious": {
+			"main": "./jquery.grid-a-licious.js"
+		},
+		"datatables-plugins": {
+			"main": "./integration/bootstrap/3/dataTables.bootstrap.js"
+		},
+		"jquery.sparkline": {
+			"main": [
+				"./src/header.js",
+				"./src/defaults.js",
+				"./src/utils.js",
+				"./src/simpledraw.js",
+				"./src/rangemap.js",
+				"./src/interact.js",
+				"./src/base.js",
+				"./src/chart-line.js",
+				"./src/chart-bar.js",
+				"./src/chart-tristate.js",
+				"./src/chart-discrete.js",
+				"./src/chart-bullet.js",
+				"./src/chart-pie.js",
+				"./src/chart-box.js",
+				"./src/vcanvas-base.js",
+				"./src/vcanvas-canvas.js",
+				"./src/vcanvas-vml.js",
+				"./src/footer.js"
+			]
+		},
+		"flot": {
+			"main": [
+				"./jquery.flot.js",
+				"./jquery.flot.pie.js",
+				"./jquery.flot.resize.js",
+				"../flot-orderBars/js/jquery.flot.orderBars.js",
+				"./jquery.flot.stack.js"
+			]
+		},
+		"jvectormap": {
+			"main": [
+				"./jquery-jvectormap.js",
+				"./lib/jquery-mousewheel.js",
+				"./src/jvectormap.js",
+				"./src/abstract-element.js",
+				"./src/abstract-canvas-element.js",
+				"./src/abstract-shape-element.js",
+				"./src/svg-element.js",
+				"./src/svg-group-element.js",
+				"./src/svg-canvas-element.js",
+				"./src/svg-shape-element.js",
+				"./src/svg-path-element.js",
+				"./src/svg-circle-element.js",
+				"./src/svg-image-element.js",
+				"./src/svg-text-element.js",
+				"./src/vml-element.js",
+				"./src/vml-group-element.js",
+				"./src/vml-canvas-element.js",
+				"./src/vml-shape-element.js",
+				"./src/vml-path-element.js",
+				"./src/vml-circle-element.js",
+				"./src/vector-canvas.js",
+				"./src/simple-scale.js",
+				"./src/ordinal-scale.js",
+				"./src/numeric-scale.js",
+				"./src/color-scale.js",
+				"./src/legend.js",
+				"./src/data-series.js",
+				"./src/proj.js",
+				"./src/map-object.js",
+				"./src/region.js",
+				"./src/marker.js",
+				"./src/map.js"
+			]
+		},
+		"jplayer": {
+			"main": [
+				"./dist/jplayer/jquery.jplayer.min.js",
+				"./dist/add-on/jplayer.playlist.min.js"
+			]
+		},
+		"owlcarousel": {
+			"main": "./owl-carousel/owl.carousel.js"
+		}
+	},
+	"dependencies": {
+		"bootstrap": "3.2.0",
+		"font-awesome": "~4.2.0",
+		"holderjs": "~2.3.2",
+		"jquery.breakpoints": "*",
+		"morrisjs": "~0.5.1",
+		"jquery.nicescroll": "be4f1a2bfe0795f31fb8d1f7812bed748062633e",
+		"bootstrap-rtl": "~0.9.16",
+		"datatables": "~1.10.2",
+		"datatables-plugins": "*",
+		"Grid-A-Licious": "https://github.com/suprb/Grid-A-Licious.git",
+		"animated-climacons": "https://github.com/noahblon/animated-climacons.git",
+		"bootstrap-select": "~1.6.2",
+		"jquery.cookie": "~1.4.1",
+		"bootstrap3-datepicker": "~1.2.1",
+		"jquery-minicolors": "~2.1.7",
+		"seiyria-bootstrap-slider": "~4.0.1",
+		"handlebars": "~2.0.0",
+		"bootstrap-sass": "https://github.com/twbs/bootstrap-sass.git#3.2.0",
+		"jquery.sparkline": "https://github.com/gwatts/jquery.sparkline.git",
+		"highlightjs": "~8.3.0",
+		"flot": "~0.8.3",
+		"jquery.easy-pie-chart": "~2.1.4",
+		"jvectormap": "~2.0.0",
+		"flot-orderBars": "https://github.com/emmerich/flot-orderBars.git",
+		"owlcarousel": "~1.3.2",
+		"bootstrap-switch": "~3.2.2",
+		"jquery-ui-map": "~3.0.0",
+		"gmaps-markerclusterer-plus": "~2.1.1",
+		"gmaps-infobox": "svn+http://google-maps-utility-library-v3.googlecode.com/svn#infobox",
+		"jplayer": "~2.9.2",
+		"fancytree": "~2.6.0",
+		"jquery.hotkeys": "https://github.com/jeresig/jquery.hotkeys.git#0.2.0",
+		"material-design-iconic-font": "~1.1.1",
+		"jquery-smartresize": "*",
+		"awesome-bootstrap-checkbox": "~0.2.3",
+		"bootstrap-daterangepicker": "~1.3.17",
+		"nestable": "*",
+		"bootstrap-touchspin": "~3.0.1",
+		"isotope": "~2.1.0",
+		"isotope-packery": "~1.1.0",
+		"select2": "~3.5.2",
+		"select2-bootstrap-css": "~1.4.4"
+	},
+	"resolutions": {
+		"bootstrap": "3.2.0"
+	}
+}

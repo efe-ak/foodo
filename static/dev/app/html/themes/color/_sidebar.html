@@ -1,0 +1,112 @@
+<div class="sidebar{% if sidebarOptions %} {{ sidebarOptions }}{% endif %}" {% if sidebarData %} {{ sidebarData }}{% endif %}>
+	<div class="split-vertical">
+		<div class="sidebar-block equal-padding">
+			<div class="btn-group btn-group-justified" data-toggle="buttons">
+				<label class="btn btn-default active">
+					<input type="radio" name="options" id="option1" autocomplete="off" checked> <i
+						class="fa fa-envelope"></i>
+				</label>
+				<label class="btn btn-default">
+					<input type="radio" name="options" id="option2" autocomplete="off"> <i class="fa fa-lock"></i>
+				</label>
+				<label class="btn btn-default">
+					<input type="radio" name="options" id="option31" autocomplete="off"> <i class="fa fa-list"></i>
+				</label>
+				<label class="btn btn-default">
+					<input type="radio" name="options" id="option32" autocomplete="off"> <i class="fa fa-group"></i>
+				</label>
+			</div>
+		</div>
+
+		<div class="split-vertical-body">
+			<div class="split-vertical-cell">
+				<div data-scrollable>
+					<ul class="sidebar-menu">
+						<li class="category">Category</li>
+						<li class="active"><a href=""><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
+						<li class="hasSubmenu">
+							<a href="#submenu"><i class="fa fa-bar-chart-o"></i> <span>Submenu</span></a>
+							<ul id="submenu">
+								<li><a href=""><span>Sample Menu</span></a></li>
+								<li><a href=""><span>Sample Menu</span></a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="category">Activity</div>
+					<div class="sidebar-feed">
+						<ul>
+							<li class="media news-item">
+								<span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                                <span class="pull-left media-object">
+                                    <i class="fa fa-fw fa-bell"></i>
+                                </span>
+
+								<div class="media-body">
+									<a href="">Adrian</a> just logged in
+									<span class="time">2 min ago</span>
+								</div>
+							</li>
+							<li class="media news-item">
+								<span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                            <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+
+								<div class="media-body">
+									<a href="">Adrian</a> just added <a href=""
+										>mosaicpro</a>
+														  as
+														  their office
+									<span class="time">2 min ago</span>
+								</div>
+							</li>
+							<li class="media news-item">
+                            <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+
+								<div class="media-body">
+									<a href="">Adrian</a> just logged in
+									<span class="time">2 min ago</span>
+								</div>
+							</li>
+							<li class="media news-item">
+                            <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+
+								<div class="media-body">
+									<a href="">Adrian</a> just logged in
+									<span class="time">2 min ago</span>
+								</div>
+							</li>
+							<li class="media news-item">
+                            <span class="pull-left media-object">
+                                <i class="fa fa-fw fa-bell"></i>
+                            </span>
+
+								<div class="media-body">
+									<a href="">Adrian</a> just logged in
+									<span class="time">2 min ago</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<!--End Activity -->
+
+					<!-- Calendar -->
+					<div class="category">Calendar</div>
+
+					<div class="datepicker"></div>
+
+				</div>
+			</div>
+		</div>
+		<div class="sidebar-block">
+			<h4 class="category">Sidebar Footer</h4>
+
+			<p>With fluid height</p>
+		</div>
+	</div>
+</div>

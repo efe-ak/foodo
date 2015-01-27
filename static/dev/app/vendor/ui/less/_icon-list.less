@@ -1,0 +1,42 @@
+// Icon List
+ul.icon-list {
+	list-style: none;
+	padding-left: 0px;
+	margin-top: 10px;
+	margin-bottom: 0;
+	display: block;
+	width: 100%;
+	span {
+		display: none;
+	}
+	li {
+		display: inline-block;
+		padding: 3px 0px;
+		margin-right: 5px;
+		i {
+			color: @icon-gray;
+			font-size: 18px;
+			vertical-align: middle;
+		}
+		a {
+			color: @inverse-color;
+		}
+	}
+	//  Blocks
+	&.block {
+		margin-top: 0;
+		li {
+			display: block;
+			padding: 8px 10px;
+		}
+	}
+	//  Borders
+	&.bordered {
+		li {
+			&:not(:last-of-type) {
+				border-bottom: 1px solid @panel-default-border;
+			}
+		}
+	}
+}
+

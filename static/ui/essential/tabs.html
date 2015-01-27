@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html class="st-layout ls-top-navbar ls-bottom-footer show-sidebar sidebar-l1" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>ThemeKit</title>
+    <!-- Compressed Vendor BUNDLE
+    Includes vendor (3rd party) styling such as the customized Bootstrap and other 3rd party libraries used for the current theme/module -->
+    <link href="css/vendor.min.css" rel="stylesheet">
+    <!-- Compressed Theme BUNDLE
+    Note: The bundle includes all the custom styling required for the current theme, however
+    it was tweaked for the current theme/module and does NOT include ALL of the standalone modules;
+    The bundle was generated using modern frontend development tools that are provided with the package
+    To learn more about the development process, please refer to the documentation. -->
+    <!-- <link href="css/theme.bundle.min.css" rel="stylesheet"> -->
+    <!-- Compressed Theme CORE
+    This variant is to be used when loading the separate styling modules -->
+    <link href="css/theme-core.min.css" rel="stylesheet">
+    <!-- Standalone Modules
+    As a convenience, we provide the entire UI framework broke down in separate modules
+    Some of the standalone modules may have not been used with the current theme/module
+    but ALL modules are 100% compatible -->
+    <link href="css/module-essentials.min.css" rel="stylesheet" />
+    <link href="css/module-layout.min.css" rel="stylesheet" />
+    <link href="css/module-sidebar.min.css" rel="stylesheet" />
+    <link href="css/module-sidebar-skins.min.css" rel="stylesheet" />
+    <link href="css/module-navbar.min.css" rel="stylesheet" />
+    <!-- <link href="css/module-media.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-timeline.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-cover.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-chat.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-charts.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-maps.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-colors-alerts.min.css" rel="stylesheet" /> -->
+    <link href="css/module-colors-background.min.css" rel="stylesheet" />
+    <!-- <link href="css/module-colors-buttons.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-colors-calendar.min.css" rel="stylesheet" /> -->
+    <!-- <link href="css/module-colors-progress-bars.min.css" rel="stylesheet" /> -->
+    <link href="css/module-colors-text.min.css" rel="stylesheet" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- If you don't need support for Internet Explorer <= 8 you can safely remove these -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Wrapper required for sidebar transitions -->
+    <div class="st-container">
+        <!-- Fluid navbar -->
+        <div class="navbar navbar-main navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#sidebar-menu" data-toggle="sidebar-menu" class="toggle pull-left visible-xs">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <a class="navbar-brand" href="index.html">Essentials Kit</a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse" id="collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../../index.html">Themes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar component with st-effect-1 (set on the toggle button within the navbar) -->
+        <div class="sidebar left sidebar-size-1 sidebar-mini-reveal sidebar-offset-0 sidebar-skin-dark sidebar-visible-desktop sidebar-visible-mobile" id=sidebar-menu>
+            <div data-scrollable>
+                <ul class="sidebar-menu sm-icons-right sm-icons-block sm-active-item-bg">
+                    <li class="category">Essentials</li>
+                    <li><a href="index.html"><i class="fa fa-home"></i> <span>Essentials</span></a>
+                    </li>
+                    <li><a href="buttons.html"><i class="fa fa-th"></i> <span>Buttons</span></a>
+                    </li>
+                    <li><a href="icons.html"><i class="fa fa-paint-brush"></i> <span>Icons</span></a>
+                    </li>
+                    <li><a href="expandable.html"><i class="fa fa-ellipsis-h"></i> <span>Expandable</span></a>
+                    </li>
+                    <li><a href="forms.html"><i class="fa fa-sliders"></i> <span>Forms</span></a>
+                    </li>
+                    <li class="active"><a href="tabs.html"><i class="md md-tab-unselected"></i> <span>Tabs</span></a>
+                    </li>
+                    <li><a href="nestable.html"><i class="md md-menu"></i> <span>Nestable</span></a>
+                    </li>
+                    <li><a href="tree.html"><i class="md md-loupe"></i> <span>Tree View</span></a>
+                    </li>
+                    <li><a href="tables.html"><i class="fa fa-table"></i> <span>Tables</span></a>
+                    </li>
+                    <li><a href="progress.html"><i class="fa fa-tasks"></i> <span>Progress</span></a>
+                    </li>
+                    <li><a href="grid.html"><i class="fa fa-columns"></i> <span>Grid</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- sidebar effects OUTSIDE of st-pusher: -->
+        <!-- st-effect-1, st-effect-2, st-effect-4, st-effect-5, st-effect-9, st-effect-10, st-effect-11, st-effect-12, st-effect-13 -->
+        <!-- content push wrapper -->
+        <div class="st-pusher" id="content">
+            <!-- sidebar effects INSIDE of st-pusher: -->
+            <!-- st-effect-3, st-effect-6, st-effect-7, st-effect-8, st-effect-14 -->
+            <!-- this is the wrapper for the content -->
+            <div class="st-content">
+                <!-- extra div for emulating position:fixed of the menu -->
+                <div class="st-content-inner">
+                    <div class="container-fluid">
+                        <div class="jumbotron text-center bg-transparent margin-none">
+                            <h1>Tabs</h1>
+                            <p>The tabbable UI Component includes many positioning and styling options, starting with minimalistic tabs to vertical or horizontal tabs, left, center or right aligned and more. Tabs are responsive and the component automatically displays a horizontal scrolling area when using many tabs on a single tabbable widget.</p>
+                        </div>
+                        <div class="page-section">
+                            <div class="row">
+                                <div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+                                    <h4 class="page-section-heading">Default Icon &amp; Text</h4>
+                                    <!-- Tabbable Widget -->
+                                    <div class="tabbable">
+                                        <!-- Tabs -->
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a href="#home" data-toggle="tab"><i class="fa fa-fw fa-home"></i> Home</a>
+                                            </li>
+                                            <li><a href="#profile" data-toggle="tab"><i class="fa fa-fw fa-user"></i> Profile</a>
+                                            </li>
+                                            <li><a href="#messages" data-toggle="tab"><i class="fa fa-fw fa-envelope"></i> Messages</a>
+                                            </li>
+                                            <li><a href="#settings" data-toggle="tab"><i class="fa fa-fw fa-cog"></i> Settings</a>
+                                            </li>
+                                        </ul>
+                                        <!-- // END Tabs -->
+                                        <!-- Panes -->
+                                        <div class="tab-content">
+                                            <div id="home" class="tab-pane active">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aperiam aut, commodi consectetur cumque est exercitationem hic minima nulla officia perferendis quam quas repellendus rerum tempora totam voluptates! Aut et facere impedit inventore iure, magni vitae. Blanditiis, deserunt doloremque dolores in laborum magni minus nesciunt officiis pariatur quas qui, suscipit. A accusamus adipisci autem beatae delectus enim et harum illo ipsa ipsam iste itaque labore nesciunt odio odit pariatur perspiciatis placeat provident quas quasi qui quo quos ratione reiciendis repudiandae soluta suscipit, tempore tenetur ut voluptas? Accusamus commodi culpa distinctio explicabo illo, laborum, nemo, nulla omnis tenetur unde ut!
+                                            </div>
+                                            <div id="profile" class="tab-pane">
+                                                Adipisci commodi consequuntur ducimus enim est, et facilis nostrum nulla officiis pariatur quasi reiciendis, sed sunt. Accusantium aut autem consequatur cupiditate delectus dolore dolorem doloribus ducimus ex harum, illo impedit ipsa iusto maiores, minus nesciunt, perspiciatis placeat quae quibusdam quis repellat repudiandae rerum sed sequi suscipit temporibus veniam vitae. Alias debitis earum incidunt nostrum veniam, voluptas. A consequatur consequuntur distinctio dolores ex excepturi id, iusto maxime numquam quae qui unde voluptates! Accusamus ad aut, blanditiis debitis deleniti eius eum facere ipsam laboriosam laborum magnam nesciunt odio quas repellendus rerum sequi, sit. Architecto ex hic necessitatibus, officia perferendis quae quidem sapiente.
+                                            </div>
+                                            <div id="messages" class="tab-pane">
+                                                Ab accusamus aperiam consequatur ducimus ea eos est, non omnis porro possimus praesentium, provident quam quibusdam quidem quo suscipit voluptate? Aperiam, dolorum eaque labore natus placeat sint totam. Cupiditate eos explicabo fugiat labore natus officia quidem sed ullam veniam voluptatibus. Consequatur, ducimus id, iste modi nesciunt nostrum obcaecati odit porro quaerat quibusdam quisquam, sequi similique vero. Adipisci aliquid at aut culpa cumque distinctio earum esse eveniet excepturi exercitationem harum illum in iste laudantium mollitia, nulla numquam perferendis perspiciatis porro qui, quo quod ratione similique suscipit temporibus ullam voluptas voluptates! Aperiam atque dolor excepturi illum in, magnam nemo quidem tempora vitae.
+                                            </div>
+                                            <div id="settings" class="tab-pane">
+                                                Aliquam distinctio eligendi eos iure maiores molestiae praesentium. Aliquam aliquid architecto at blanditiis dignissimos doloremque esse et eveniet ex excepturi expedita ipsam itaque iusto minima nisi nobis, numquam, odit omnis quae quaerat quas quisquam ratione sapiente, sint sit suscipit voluptas! Illum libero tempora velit. Accusamus animi aut beatae cupiditate dignissimos dolore eligendi exercitationem id maiores maxime necessitatibus, nisi non omnis quis quos reiciendis repellat vel. Aperiam asperiores at aut blanditiis consequatur consequuntur cumque ex exercitationem explicabo fuga impedit incidunt ipsam iusto libero minus nostrum nulla obcaecati omnis optio provident quae quaerat, quia quibusdam reiciendis sed, sunt tenetur? Hic tempora, vel!
+                                            </div>
+                                        </div>
+                                        <!-- // END Panes -->
+                                    </div>
+                                    <!-- // END Tabbable Widget -->
+                                    <h4 class="page-section-heading">Icons only</h4>
+                                    <!-- Tabbable Widget -->
+                                    <div class="tabbable tabs-icons">
+                                        <!-- Tabs -->
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a href="#home2" data-toggle="tab"><i class="fa fa-home"></i></a>
+                                            </li>
+                                            <li><a href="#profile2" data-toggle="tab"><i class="fa fa-user"></i></a>
+                                            </li>
+                                            <li><a href="#messages2" data-toggle="tab"><i class="fa fa-envelope"></i></a>
+                                            </li>
+                                            <li><a href="#settings2" data-toggle="tab"><i class="fa fa-cog"></i></a>
+                                            </li>
+                                        </ul>
+                                        <!-- // END Tabs -->
+                                        <!-- Panes -->
+                                        <div class="tab-content">
+                                            <div id="home2" class="tab-pane active">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aperiam aut, commodi consectetur cumque est exercitationem hic minima nulla officia perferendis quam quas repellendus rerum tempora totam voluptates! Aut et facere impedit inventore iure, magni vitae. Blanditiis, deserunt doloremque dolores in laborum magni minus nesciunt officiis pariatur quas qui, suscipit. A accusamus adipisci autem beatae delectus enim et harum illo ipsa ipsam iste itaque labore nesciunt odio odit pariatur perspiciatis placeat provident quas quasi qui quo quos ratione reiciendis repudiandae soluta suscipit, tempore tenetur ut voluptas? Accusamus commodi culpa distinctio explicabo illo, laborum, nemo, nulla omnis tenetur unde ut!
+                                            </div>
+                                            <div id="profile2" class="tab-pane">
+                                                Adipisci commodi consequuntur ducimus enim est, et facilis nostrum nulla officiis pariatur quasi reiciendis, sed sunt. Accusantium aut autem consequatur cupiditate delectus dolore dolorem doloribus ducimus ex harum, illo impedit ipsa iusto maiores, minus nesciunt, perspiciatis placeat quae quibusdam quis repellat repudiandae rerum sed sequi suscipit temporibus veniam vitae. Alias debitis earum incidunt nostrum veniam, voluptas. A consequatur consequuntur distinctio dolores ex excepturi id, iusto maxime numquam quae qui unde voluptates! Accusamus ad aut, blanditiis debitis deleniti eius eum facere ipsam laboriosam laborum magnam nesciunt odio quas repellendus rerum sequi, sit. Architecto ex hic necessitatibus, officia perferendis quae quidem sapiente.
+                                            </div>
+                                            <div id="messages2" class="tab-pane">
+                                                Ab accusamus aperiam consequatur ducimus ea eos est, non omnis porro possimus praesentium, provident quam quibusdam quidem quo suscipit voluptate? Aperiam, dolorum eaque labore natus placeat sint totam. Cupiditate eos explicabo fugiat labore natus officia quidem sed ullam veniam voluptatibus. Consequatur, ducimus id, iste modi nesciunt nostrum obcaecati odit porro quaerat quibusdam quisquam, sequi similique vero. Adipisci aliquid at aut culpa cumque distinctio earum esse eveniet excepturi exercitationem harum illum in iste laudantium mollitia, nulla numquam perferendis perspiciatis porro qui, quo quod ratione similique suscipit temporibus ullam voluptas voluptates! Aperiam atque dolor excepturi illum in, magnam nemo quidem tempora vitae.
+                                            </div>
+                                            <div id="settings2" class="tab-pane">
+                                                Aliquam distinctio eligendi eos iure maiores molestiae praesentium. Aliquam aliquid architecto at blanditiis dignissimos doloremque esse et eveniet ex excepturi expedita ipsam itaque iusto minima nisi nobis, numquam, odit omnis quae quaerat quas quisquam ratione sapiente, sint sit suscipit voluptas! Illum libero tempora velit. Accusamus animi aut beatae cupiditate dignissimos dolore eligendi exercitationem id maiores maxime necessitatibus, nisi non omnis quis quos reiciendis repellat vel. Aperiam asperiores at aut blanditiis consequatur consequuntur cumque ex exercitationem explicabo fuga impedit incidunt ipsam iusto libero minus nostrum nulla obcaecati omnis optio provident quae quaerat, quia quibusdam reiciendis sed, sunt tenetur? Hic tempora, vel!
+                                            </div>
+                                        </div>
+                                        <!-- // END Panes -->
+                                    </div>
+                                    <!-- // END Tabbable Widget -->
+                                    <h4 class="page-section-heading">Active With Background (Icon &amp; Text)</h4>
+                                    <!-- Tabbable Widget -->
+                                    <div class="tabbable tabs-primary">
+                                        <!-- Tabs -->
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a href="#color-home" data-toggle="tab"><i class="fa fa-fw fa-home"></i> Home</a>
+                                            </li>
+                                            <li><a href="#color-profile" data-toggle="tab"><i class="fa fa-fw fa-user"></i> Profile</a>
+                                            </li>
+                                            <li><a href="#color-messages" data-toggle="tab"><i class="fa fa-fw fa-envelope"></i> Messages</a>
+                                            </li>
+                                            <li><a href="#color-settings" data-toggle="tab"><i class="fa fa-fw fa-cog"></i> Settings</a>
+                                            </li>
+                                        </ul>
+                                        <!-- // END Tabs -->
+                                        <!-- Panes -->
+                                        <div class="tab-content">
+                                            <div id="color-home" class="tab-pane active">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aperiam aut, commodi consectetur cumque est exercitationem hic minima nulla officia perferendis quam quas repellendus rerum tempora totam voluptates! Aut et facere impedit inventore iure, magni vitae. Blanditiis, deserunt doloremque dolores in laborum magni minus nesciunt officiis pariatur quas qui, suscipit. A accusamus adipisci autem beatae delectus enim et harum illo ipsa ipsam iste itaque labore nesciunt odio odit pariatur perspiciatis placeat provident quas quasi qui quo quos ratione reiciendis repudiandae soluta suscipit, tempore tenetur ut voluptas? Accusamus commodi culpa distinctio explicabo illo, laborum, nemo, nulla omnis tenetur unde ut!
+                                            </div>
+                                            <div id="color-profile" class="tab-pane">
+                                                Adipisci commodi consequuntur ducimus enim est, et facilis nostrum nulla officiis pariatur quasi reiciendis, sed sunt. Accusantium aut autem consequatur cupiditate delectus dolore dolorem doloribus ducimus ex harum, illo impedit ipsa iusto maiores, minus nesciunt, perspiciatis placeat quae quibusdam quis repellat repudiandae rerum sed sequi suscipit temporibus veniam vitae. Alias debitis earum incidunt nostrum veniam, voluptas. A consequatur consequuntur distinctio dolores ex excepturi id, iusto maxime numquam quae qui unde voluptates! Accusamus ad aut, blanditiis debitis deleniti eius eum facere ipsam laboriosam laborum magnam nesciunt odio quas repellendus rerum sequi, sit. Architecto ex hic necessitatibus, officia perferendis quae quidem sapiente.
+                                            </div>
+                                            <div id="color-messages" class="tab-pane">
+                                                Ab accusamus aperiam consequatur ducimus ea eos est, non omnis porro possimus praesentium, provident quam quibusdam quidem quo suscipit voluptate? Aperiam, dolorum eaque labore natus placeat sint totam. Cupiditate eos explicabo fugiat labore natus officia quidem sed ullam veniam voluptatibus. Consequatur, ducimus id, iste modi nesciunt nostrum obcaecati odit porro quaerat quibusdam quisquam, sequi similique vero. Adipisci aliquid at aut culpa cumque distinctio earum esse eveniet excepturi exercitationem harum illum in iste laudantium mollitia, nulla numquam perferendis perspiciatis porro qui, quo quod ratione similique suscipit temporibus ullam voluptas voluptates! Aperiam atque dolor excepturi illum in, magnam nemo quidem tempora vitae.
+                                            </div>
+                                            <div id="color-settings" class="tab-pane">
+                                                Aliquam distinctio eligendi eos iure maiores molestiae praesentium. Aliquam aliquid architecto at blanditiis dignissimos doloremque esse et eveniet ex excepturi expedita ipsam itaque iusto minima nisi nobis, numquam, odit omnis quae quaerat quas quisquam ratione sapiente, sint sit suscipit voluptas! Illum libero tempora velit. Accusamus animi aut beatae cupiditate dignissimos dolore eligendi exercitationem id maiores maxime necessitatibus, nisi non omnis quis quos reiciendis repellat vel. Aperiam asperiores at aut blanditiis consequatur consequuntur cumque ex exercitationem explicabo fuga impedit incidunt ipsam iusto libero minus nostrum nulla obcaecati omnis optio provident quae quaerat, quia quibusdam reiciendis sed, sunt tenetur? Hic tempora, vel!
+                                            </div>
+                                        </div>
+                                        <!-- // END Panes -->
+                                    </div>
+                                    <!-- // END Tabbable Widget -->
+                                    <h4 class="page-section-heading">Active With Background (Icons only)</h4>
+                                    <!-- Tabbable Widget -->
+                                    <div class="tabbable tabs-icons tabs-primary">
+                                        <!-- Tabs -->
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a href="#color-home-2" data-toggle="tab"><i class="fa fa-home"></i></a>
+                                            </li>
+                                            <li><a href="#color-profile-2" data-toggle="tab"><i class="fa fa-user"></i></a>
+                                            </li>
+                                            <li><a href="#color-messages-2" data-toggle="tab"><i class="fa fa-envelope"></i></a>
+                                            </li>
+                                            <li><a href="#color-settings-2" data-toggle="tab"><i class="fa fa-cog"></i></a>
+                                            </li>
+                                        </ul>
+                                        <!-- // END Tabs -->
+                                        <!-- Panes -->
+                                        <div class="tab-content">
+                                            <div id="color-home-2" class="tab-pane active">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aperiam aut, commodi consectetur cumque est exercitationem hic minima nulla officia perferendis quam quas repellendus rerum tempora totam voluptates! Aut et facere impedit inventore iure, magni vitae. Blanditiis, deserunt doloremque dolores in laborum magni minus nesciunt officiis pariatur quas qui, suscipit. A accusamus adipisci autem beatae delectus enim et harum illo ipsa ipsam iste itaque labore nesciunt odio odit pariatur perspiciatis placeat provident quas quasi qui quo quos ratione reiciendis repudiandae soluta suscipit, tempore tenetur ut voluptas? Accusamus commodi culpa distinctio explicabo illo, laborum, nemo, nulla omnis tenetur unde ut!
+                                            </div>
+                                            <div id="color-profile-2" class="tab-pane">
+                                                Adipisci commodi consequuntur ducimus enim est, et facilis nostrum nulla officiis pariatur quasi reiciendis, sed sunt. Accusantium aut autem consequatur cupiditate delectus dolore dolorem doloribus ducimus ex harum, illo impedit ipsa iusto maiores, minus nesciunt, perspiciatis placeat quae quibusdam quis repellat repudiandae rerum sed sequi suscipit temporibus veniam vitae. Alias debitis earum incidunt nostrum veniam, voluptas. A consequatur consequuntur distinctio dolores ex excepturi id, iusto maxime numquam quae qui unde voluptates! Accusamus ad aut, blanditiis debitis deleniti eius eum facere ipsam laboriosam laborum magnam nesciunt odio quas repellendus rerum sequi, sit. Architecto ex hic necessitatibus, officia perferendis quae quidem sapiente.
+                                            </div>
+                                            <div id="color-messages-2" class="tab-pane">
+                                                Ab accusamus aperiam consequatur ducimus ea eos est, non omnis porro possimus praesentium, provident quam quibusdam quidem quo suscipit voluptate? Aperiam, dolorum eaque labore natus placeat sint totam. Cupiditate eos explicabo fugiat labore natus officia quidem sed ullam veniam voluptatibus. Consequatur, ducimus id, iste modi nesciunt nostrum obcaecati odit porro quaerat quibusdam quisquam, sequi similique vero. Adipisci aliquid at aut culpa cumque distinctio earum esse eveniet excepturi exercitationem harum illum in iste laudantium mollitia, nulla numquam perferendis perspiciatis porro qui, quo quod ratione similique suscipit temporibus ullam voluptas voluptates! Aperiam atque dolor excepturi illum in, magnam nemo quidem tempora vitae.
+                                            </div>
+                                            <div id="color-settings-2" class="tab-pane">
+                                                Aliquam distinctio eligendi eos iure maiores molestiae praesentium. Aliquam aliquid architecto at blanditiis dignissimos doloremque esse et eveniet ex excepturi expedita ipsam itaque iusto minima nisi nobis, numquam, odit omnis quae quaerat quas quisquam ratione sapiente, sint sit suscipit voluptas! Illum libero tempora velit. Accusamus animi aut beatae cupiditate dignissimos dolore eligendi exercitationem id maiores maxime necessitatibus, nisi non omnis quis quos reiciendis repellat vel. Aperiam asperiores at aut blanditiis consequatur consequuntur cumque ex exercitationem explicabo fuga impedit incidunt ipsam iusto libero minus nostrum nulla obcaecati omnis optio provident quae quaerat, quia quibusdam reiciendis sed, sunt tenetur? Hic tempora, vel!
+                                            </div>
+                                        </div>
+                                        <!-- // END Panes -->
+                                    </div>
+                                    <!-- // END Tabbable Widget -->
+                                    <h4 class="page-section-heading">Stacked Icon &amp; Text</h4>
+                                    <!-- Tabbable Widget -->
+                                    <div class="tabbable tabs-blocks">
+                                        <!-- Tabs -->
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a href="#blocks-home-1" data-toggle="tab"><i class="fa fa-home"></i> Home</a>
+                                            </li>
+                                            <li><a href="#blocks-profile-1" data-toggle="tab"><i class="fa fa-user "></i> Profile</a>
+                                            </li>
+                                            <li><a href="#blocks-messages-1" data-toggle="tab"><i class="fa fa-envelope"></i> Messages</a>
+                                            </li>
+                                            <li><a href="#blocks-settings-1" data-toggle="tab"><i class="fa fa-cog"></i> Settings</a>
+                                            </li>
+                                        </ul>
+                                        <!-- // END Tabs -->
+                                        <!-- Panes -->
+                                        <div class="tab-content">
+                                            <div id="blocks-home-1" class="tab-pane active">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aperiam aut, commodi consectetur cumque est exercitationem hic minima nulla officia perferendis quam quas repellendus rerum tempora totam voluptates! Aut et facere impedit inventore iure, magni vitae. Blanditiis, deserunt doloremque dolores in laborum magni minus nesciunt officiis pariatur quas qui, suscipit. A accusamus adipisci autem beatae delectus enim et harum illo ipsa ipsam iste itaque labore nesciunt odio odit pariatur perspiciatis placeat provident quas quasi qui quo quos ratione reiciendis repudiandae soluta suscipit, tempore tenetur ut voluptas? Accusamus commodi culpa distinctio explicabo illo, laborum, nemo, nulla omnis tenetur unde ut!
+                                            </div>
+                                            <div id="blocks-profile-1" class="tab-pane">
+                                                Adipisci commodi consequuntur ducimus enim est, et facilis nostrum nulla officiis pariatur quasi reiciendis, sed sunt. Accusantium aut autem consequatur cupiditate delectus dolore dolorem doloribus ducimus ex harum, illo impedit ipsa iusto maiores, minus nesciunt, perspiciatis placeat quae quibusdam quis repellat repudiandae rerum sed sequi suscipit temporibus veniam vitae. Alias debitis earum incidunt nostrum veniam, voluptas. A consequatur consequuntur distinctio dolores ex excepturi id, iusto maxime numquam quae qui unde voluptates! Accusamus ad aut, blanditiis debitis deleniti eius eum facere ipsam laboriosam laborum magnam nesciunt odio quas repellendus rerum sequi, sit. Architecto ex hic necessitatibus, officia perferendis quae quidem sapiente.
+                                            </div>
+                                            <div id="blocks-messages-1" class="tab-pane">
+                                                Ab accusamus aperiam consequatur ducimus ea eos est, non omnis porro possimus praesentium, provident quam quibusdam quidem quo suscipit voluptate? Aperiam, dolorum eaque labore natus placeat sint totam. Cupiditate eos explicabo fugiat labore natus officia quidem sed ullam veniam voluptatibus. Consequatur, ducimus id, iste modi nesciunt nostrum obcaecati odit porro quaerat quibusdam quisquam, sequi similique vero. Adipisci aliquid at aut culpa cumque distinctio earum esse eveniet excepturi exercitationem harum illum in iste laudantium mollitia, nulla numquam perferendis perspiciatis porro qui, quo quod ratione similique suscipit temporibus ullam voluptas voluptates! Aperiam atque dolor excepturi illum in, magnam nemo quidem tempora vitae.
+                                            </div>
+                                            <div id="blocks-settings-1" class="tab-pane">
+                                                Aliquam distinctio eligendi eos iure maiores molestiae praesentium. Aliquam aliquid architecto at blanditiis dignissimos doloremque esse et eveniet ex excepturi expedita ipsam itaque iusto minima nisi nobis, numquam, odit omnis quae quaerat quas quisquam ratione sapiente, sint sit suscipit voluptas! Illum libero tempora velit. Accusamus animi aut beatae cupiditate dignissimos dolore eligendi exercitationem id maiores maxime necessitatibus, nisi non omnis quis quos reiciendis repellat vel. Aperiam asperiores at aut blanditiis consequatur consequuntur cumque ex exercitationem explicabo fuga impedit incidunt ipsam iusto libero minus nostrum nulla obcaecati omnis optio provident quae quaerat, quia quibusdam reiciendis sed, sunt tenetur? Hic tempora, vel!
+                                            </div>
+                                        </div>
+                                        <!-- // END Panes -->
+                                    </div>
+                                    <h4 class="page-section-heading">Stacked with active color and centered tabs</h4>
+                                    <!-- Tabbable Widget -->
+                                    <div class="tabbable tabs-blocks tabs-center-h tabs-primary">
+                                        <!-- Tabs -->
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a href="#blocks-home-2" data-toggle="tab"><i class="fa fa-home"></i> Home</a>
+                                            </li>
+                                            <li><a href="#blocks-profile-2" data-toggle="tab"><i class="fa fa-user "></i> Profile</a>
+                                            </li>
+                                            <li><a href="#blocks-messages-2" data-toggle="tab"><i class="fa fa-envelope"></i> Messages</a>
+                                            </li>
+                                            <li><a href="#blocks-settings-2" data-toggle="tab"><i class="fa fa-cog"></i> Settings</a>
+                                            </li>
+                                        </ul>
+                                        <!-- // END Tabs -->
+                                        <!-- Panes -->
+                                        <div class="tab-content">
+                                            <div id="blocks-home-2" class="tab-pane active">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aperiam aut, commodi consectetur cumque est exercitationem hic minima nulla officia perferendis quam quas repellendus rerum tempora totam voluptates! Aut et facere impedit inventore iure, magni vitae. Blanditiis, deserunt doloremque dolores in laborum magni minus nesciunt officiis pariatur quas qui, suscipit. A accusamus adipisci autem beatae delectus enim et harum illo ipsa ipsam iste itaque labore nesciunt odio odit pariatur perspiciatis placeat provident quas quasi qui quo quos ratione reiciendis repudiandae soluta suscipit, tempore tenetur ut voluptas? Accusamus commodi culpa distinctio explicabo illo, laborum, nemo, nulla omnis tenetur unde ut!
+                                            </div>
+                                            <div id="blocks-profile-2" class="tab-pane">
+                                                Adipisci commodi consequuntur ducimus enim est, et facilis nostrum nulla officiis pariatur quasi reiciendis, sed sunt. Accusantium aut autem consequatur cupiditate delectus dolore dolorem doloribus ducimus ex harum, illo impedit ipsa iusto maiores, minus nesciunt, perspiciatis placeat quae quibusdam quis repellat repudiandae rerum sed sequi suscipit temporibus veniam vitae. Alias debitis earum incidunt nostrum veniam, voluptas. A consequatur consequuntur distinctio dolores ex excepturi id, iusto maxime numquam quae qui unde voluptates! Accusamus ad aut, blanditiis debitis deleniti eius eum facere ipsam laboriosam laborum magnam nesciunt odio quas repellendus rerum sequi, sit. Architecto ex hic necessitatibus, officia perferendis quae quidem sapiente.
+                                            </div>
+                                            <div id="blocks-messages-2" class="tab-pane">
+                                                Ab accusamus aperiam consequatur ducimus ea eos est, non omnis porro possimus praesentium, provident quam quibusdam quidem quo suscipit voluptate? Aperiam, dolorum eaque labore natus placeat sint totam. Cupiditate eos explicabo fugiat labore natus officia quidem sed ullam veniam voluptatibus. Consequatur, ducimus id, iste modi nesciunt nostrum obcaecati odit porro quaerat quibusdam quisquam, sequi similique vero. Adipisci aliquid at aut culpa cumque distinctio earum esse eveniet excepturi exercitationem harum illum in iste laudantium mollitia, nulla numquam perferendis perspiciatis porro qui, quo quod ratione similique suscipit temporibus ullam voluptas voluptates! Aperiam atque dolor excepturi illum in, magnam nemo quidem tempora vitae.
+                                            </div>
+                                            <div id="blocks-settings-2" class="tab-pane">
+                                                Aliquam distinctio eligendi eos iure maiores molestiae praesentium. Aliquam aliquid architecto at blanditiis dignissimos doloremque esse et eveniet ex excepturi expedita ipsam itaque iusto minima nisi nobis, numquam, odit omnis quae quaerat quas quisquam ratione sapiente, sint sit suscipit voluptas! Illum libero tempora velit. Accusamus animi aut beatae cupiditate dignissimos dolore eligendi exercitationem id maiores maxime necessitatibus, nisi non omnis quis quos reiciendis repellat vel. Aperiam asperiores at aut blanditiis consequatur consequuntur cumque ex exercitationem explicabo fuga impedit incidunt ipsam iusto libero minus nostrum nulla obcaecati omnis optio provident quae quaerat, quia quibusdam reiciendis sed, sunt tenetur? Hic tempora, vel!
+                                            </div>
+                                        </div>
+                                        <!-- // END Panes -->
+                                    </div>
+                                    <h4 class="page-section-heading">Left Vertical Tabs</h4>
+                                    <!-- Tabbable Widget -->
+                                    <div class="tabbable tabs-vertical tabs-left">
+                                        <!-- Tabs -->
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a href="#home4" data-toggle="tab"><i class="fa fa-fw fa-home"></i> Home</a>
+                                            </li>
+                                            <li><a href="#profile4" data-toggle="tab"><i class="fa fa-fw fa-user"></i> Profile</a>
+                                            </li>
+                                            <li><a href="#messages4" data-toggle="tab"><i class="fa fa-fw fa-envelope"></i> Messages</a>
+                                            </li>
+                                        </ul>
+                                        <!-- // END Tabs -->
+                                        <!-- Panes -->
+                                        <div class="tab-content">
+                                            <div id="home4" class="tab-pane active">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aperiam aut, commodi consectetur cumque est exercitationem hic minima nulla officia perferendis quam quas repellendus rerum tempora totam voluptates! Aut et facere impedit inventore iure, magni vitae. Blanditiis, deserunt doloremque dolores in laborum magni minus nesciunt officiis pariatur quas qui, suscipit. A accusamus adipisci autem beatae delectus enim et harum illo ipsa ipsam iste itaque labore nesciunt odio odit pariatur perspiciatis placeat provident quas quasi qui quo quos ratione reiciendis repudiandae soluta suscipit, tempore tenetur ut voluptas? Accusamus commodi culpa distinctio explicabo illo, laborum, nemo, nulla omnis tenetur unde ut!
+                                            </div>
+                                            <div id="profile4" class="tab-pane">
+                                                Adipisci commodi consequuntur ducimus enim est, et facilis nostrum nulla officiis pariatur quasi reiciendis, sed sunt. Accusantium aut autem consequatur cupiditate delectus dolore dolorem doloribus ducimus ex harum, illo impedit ipsa iusto maiores, minus nesciunt, perspiciatis placeat quae quibusdam quis repellat repudiandae rerum sed sequi suscipit temporibus veniam vitae. Alias debitis earum incidunt nostrum veniam, voluptas. A consequatur consequuntur distinctio dolores ex excepturi id, iusto maxime numquam quae qui unde voluptates! Accusamus ad aut, blanditiis debitis deleniti eius eum facere ipsam laboriosam laborum magnam nesciunt odio quas repellendus rerum sequi, sit. Architecto ex hic necessitatibus, officia perferendis quae quidem sapiente.
+                                            </div>
+                                            <div id="messages4" class="tab-pane">
+                                                Ab accusamus aperiam consequatur ducimus ea eos est, non omnis porro possimus praesentium, provident quam quibusdam quidem quo suscipit voluptate? Aperiam, dolorum eaque labore natus placeat sint totam. Cupiditate eos explicabo fugiat labore natus officia quidem sed ullam veniam voluptatibus. Consequatur, ducimus id, iste modi nesciunt nostrum obcaecati odit porro quaerat quibusdam quisquam, sequi similique vero. Adipisci aliquid at aut culpa cumque distinctio earum esse eveniet excepturi exercitationem harum illum in iste laudantium mollitia, nulla numquam perferendis perspiciatis porro qui, quo quod ratione similique suscipit temporibus ullam voluptas voluptates! Aperiam atque dolor excepturi illum in, magnam nemo quidem tempora vitae.
+                                            </div>
+                                        </div>
+                                        <!-- // END Panes -->
+                                    </div>
+                                    <!-- // END Tabbable Widget -->
+                                    <h4 class="page-section-heading">Right Vertical Tabs</h4>
+                                    <!-- Tabbable Widget -->
+                                    <div class="tabbable tabs-vertical tabs-right">
+                                        <!-- Tabs -->
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a href="#home5" data-toggle="tab"><i class="fa fa-fw fa-home"></i> Home</a>
+                                            </li>
+                                            <li><a href="#profile5" data-toggle="tab"><i class="fa fa-fw fa-user"></i> Profile</a>
+                                            </li>
+                                            <li><a href="#messages5" data-toggle="tab"><i class="fa fa-fw fa-envelope"></i> Messages</a>
+                                            </li>
+                                        </ul>
+                                        <!-- // END Tabs -->
+                                        <!-- Panes -->
+                                        <div class="tab-content">
+                                            <div id="home5" class="tab-pane active">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aperiam aut, commodi consectetur cumque est exercitationem hic minima nulla officia perferendis quam quas repellendus rerum tempora totam voluptates! Aut et facere impedit inventore iure, magni vitae. Blanditiis, deserunt doloremque dolores in laborum magni minus nesciunt officiis pariatur quas qui, suscipit. A accusamus adipisci autem beatae delectus enim et harum illo ipsa ipsam iste itaque labore nesciunt odio odit pariatur perspiciatis placeat provident quas quasi qui quo quos ratione reiciendis repudiandae soluta suscipit, tempore tenetur ut voluptas? Accusamus commodi culpa distinctio explicabo illo, laborum, nemo, nulla omnis tenetur unde ut!
+                                            </div>
+                                            <div id="profile5" class="tab-pane">
+                                                Adipisci commodi consequuntur ducimus enim est, et facilis nostrum nulla officiis pariatur quasi reiciendis, sed sunt. Accusantium aut autem consequatur cupiditate delectus dolore dolorem doloribus ducimus ex harum, illo impedit ipsa iusto maiores, minus nesciunt, perspiciatis placeat quae quibusdam quis repellat repudiandae rerum sed sequi suscipit temporibus veniam vitae. Alias debitis earum incidunt nostrum veniam, voluptas. A consequatur consequuntur distinctio dolores ex excepturi id, iusto maxime numquam quae qui unde voluptates! Accusamus ad aut, blanditiis debitis deleniti eius eum facere ipsam laboriosam laborum magnam nesciunt odio quas repellendus rerum sequi, sit. Architecto ex hic necessitatibus, officia perferendis quae quidem sapiente.
+                                            </div>
+                                            <div id="messages5" class="tab-pane">
+                                                Ab accusamus aperiam consequatur ducimus ea eos est, non omnis porro possimus praesentium, provident quam quibusdam quidem quo suscipit voluptate? Aperiam, dolorum eaque labore natus placeat sint totam. Cupiditate eos explicabo fugiat labore natus officia quidem sed ullam veniam voluptatibus. Consequatur, ducimus id, iste modi nesciunt nostrum obcaecati odit porro quaerat quibusdam quisquam, sequi similique vero. Adipisci aliquid at aut culpa cumque distinctio earum esse eveniet excepturi exercitationem harum illum in iste laudantium mollitia, nulla numquam perferendis perspiciatis porro qui, quo quod ratione similique suscipit temporibus ullam voluptas voluptates! Aperiam atque dolor excepturi illum in, magnam nemo quidem tempora vitae.
+                                            </div>
+                                        </div>
+                                        <!-- // END Panes -->
+                                    </div>
+                                    <!-- // END Tabbable Widget -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /st-content-inner -->
+            </div>
+            <!-- /st-content -->
+        </div>
+        <!-- /st-pusher -->
+        <!-- Footer -->
+        <div class="footer">
+            <strong>ThemeKit</strong> v3.6.1 &copy; Copyright 2015
+        </div>
+        <!-- // Footer -->
+    </div>
+    <!-- /st-container -->
+    <!-- Inline Script for colors and config objects; used by various external scripts; -->
+    <script>
+    var colors = {
+        "danger-color": "#e74c3c",
+        "success-color": "#81b53e",
+        "warning-color": "#f0ad4e",
+        "inverse-color": "#2c3e50",
+        "info-color": "#2d7cb5",
+        "default-color": "#6e7882",
+        "default-light-color": "#cfd9db",
+        "purple-color": "#9D8AC7",
+        "mustard-color": "#d4d171",
+        "lightred-color": "#e15258",
+        "body-bg": "#f6f6f6"
+    };
+    var config = {
+        debug: true,
+        theme: "essential",
+        skins: {
+            "default": {
+                "primary-color": "#16ae9f"
+            }
+        }
+    };
+    </script>
+    <!-- Separate Vendor Script Bundles -->
+    <script src="js/vendor-core.min.js"></script>
+    <script src="js/vendor-tables.min.js"></script>
+    <script src="js/vendor-forms.min.js"></script>
+    <!-- <script src="js/vendor-media.min.js"></script> -->
+    <!-- <script src="js/vendor-player.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-all.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-flot.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-easy-pie.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-morris.min.js"></script> -->
+    <!-- <script src="js/vendor-charts-sparkline.min.js"></script> -->
+    <!-- <script src="js/vendor-maps.min.js"></script> -->
+    <script src="js/vendor-tree.min.js"></script>
+    <script src="js/vendor-nestable.min.js"></script>
+    <!-- Compressed Vendor Scripts Bundle
+    Includes all of the 3rd party JavaScript libraries above.
+    The bundle was generated using modern frontend development tools that are provided with the package
+    To learn more about the development process, please refer to the documentation.
+    Do not use it simultaneously with the separate bundles above. -->
+    <!-- <script src="js/vendor-bundle-all.min.js"></script> -->
+    <!-- Compressed App Scripts Bundle
+    Includes Custom Application JavaScript used for the current theme/module;
+    Do not use it simultaneously with the standalone modules below. -->
+    <!-- <script src="js/module-bundle-main.min.js"></script> -->
+    <!-- Standalone Modules
+    As a convenience, we provide the entire UI framework broke down in separate modules
+    Some of the standalone modules may have not been used with the current theme/module
+    but ALL the modules are 100% compatible -->
+    <script src="js/module-essentials.min.js"></script>
+    <script src="js/module-layout.min.js"></script>
+    <script src="js/module-sidebar.min.js"></script>
+    <script src="js/module-navbar.min.js"></script>
+    <!-- <script src="js/module-media.min.js"></script> -->
+    <!-- <script src="js/module-player.min.js"></script> -->
+    <!-- <script src="js/module-timeline.min.js"></script> -->
+    <!-- <script src="js/module-chat.min.js"></script> -->
+    <!-- <script src="js/module-maps.min.js"></script> -->
+    <!-- <script src="js/module-charts-all.min.js"></script> -->
+    <!-- <script src="js/module-charts-flot.min.js"></script> -->
+    <!-- <script src="js/module-charts-easy-pie.min.js"></script> -->
+    <!-- <script src="js/module-charts-morris.min.js"></script> -->
+    <!-- <script src="js/module-charts-sparkline.min.js"></script> -->
+</body>
+</html>

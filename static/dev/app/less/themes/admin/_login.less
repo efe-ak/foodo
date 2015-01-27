@@ -1,0 +1,62 @@
+.login {
+
+    margin: 0 auto;
+
+    .container-fluid {
+        text-align: center;
+        .panel {
+            margin-bottom:10px;
+
+        }
+        .forgot-pass {
+            color: @primary-color;
+            i {
+                margin: 3px;
+                color: lighten(@default-color,5%);
+            }
+            &:hover {
+                i {
+                    color: lighten(@default-color,5%);
+                }
+                color:@primary-color;
+                text-decoration: none;
+            }
+        }
+    }
+    .brand-logo {
+        display: inline-block;
+        background: darken(@grey-100,5%);
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+            width:100%;
+        }
+        i {
+            font-size: 30px;
+            color: @default-color;
+            vertical-align: middle;
+        }
+        margin: 20px 10px 10px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+
+        @media (min-width: @screen-sm) {
+            i {   font-size: 60px;}
+            margin: 40px 10px 0;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+        }
+    }
+    form .btn {
+        margin:10px;
+    }
+    h1 {
+        margin-bottom:20px;
+        @media (max-width: @screen-sm) {
+           .h3();
+            margin-top:0;
+        }
+    }
+}

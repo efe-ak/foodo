@@ -1,0 +1,56 @@
+<common> <!-- Common Styling used for all Themes -->
+├── <components>        <!-- Common components used throughout multiple themes -->
+├── <layout>            <!-- Holds the common styling for the content layout, navbars, sidebars and footer -->
+├── <mixins>            <!-- Common Mixins -->
+├── <variables>         <!-- Common variables used throughout multiple themes -->
+├── _helpers.less       <!-- Common Styling Helpers -->
+├── _scaffolding.less   <!-- Common Scaffolding -->
+├── _demo.less          <!-- A partial loader for styling used only for demo purposes -->
+├── _vendor.less        <!-- Loads the main Vendor styles (Bootstrap, Font Awesome, Bootstrap Select) -->
+├── common.less         <!-- The main common partial loader -->
+│
+<demo> <!-- Styling used for DEMO purposes (can be removed) -->
+├── skins.less          <!-- Styling used for the Skin Switcher -->
+├── demo.less           <!-- Other -->
+│
+<skins> <!-- Styling used for Skins -->
+<themes> <!-- Specific Theme Styling -->
+├── <1>
+│   ├── <layout>        <!-- Loads the common layout styles and holds custom theme layout styling,
+│   │                        layout fixes, navbars and sidebars -->
+│   │
+│   ├── _variables.less <!-- Custom Theme Variables -->
+│   └── default.less    <!-- Loads the required partials for theme 1 -->
+│
+├── <2>
+│   ├── <layout>        <!-- Loads the common layout styles and holds custom theme layout styling
+│   │                        for navbars and sidebars -->
+│   │
+│   ├── _chat.less      <!-- Custom Theme Chat -->
+│   ├── _cover.less     <!-- Custom Theme Cover -->
+│   ├── _variables.less <!-- Custom Theme Variables -->
+│   └── default.less    <!-- Loads the required partials for theme 2 -->
+│
+├── <3>
+│   ├── _fixes.less                 <!-- Custom Theme Layout Fixes -->
+│   ├── _navbar.less                <!-- Custom Theme Global Navbar Styling -->
+│   ├── _navbar_skin_default.less   <!-- Custom Theme Navbar styling for the default navbar skin -->
+│   ├── _scaffolding.less           <!-- Custom Theme Scaffolding -->
+│   └── default.less                <!-- Loads the required partials for theme 3 -->
+│
+├── <4>
+│   ├── _cover_overlay.less         <!-- Custom Theme Cover Overlay -->
+│   ├── _curriculum.less            <!-- Custom Theme Curriculum -->
+│   ├── _icons.less                 <!-- Custom Theme Icon Blocks -->
+│   ├── _media.less                 <!-- Custom Theme Media Elements -->
+│   ├── _navbar.less                <!-- Custom Theme Navbar Styling -->
+│   ├── _scaffolding.less           <!-- Custom Theme Scaffolding -->
+│   ├── _sidebar.less               <!-- Custom Theme Sidebar -->
+│   ├── _survey.less                <!-- Custom Theme Survey -->
+│   ├── _toggle-sidebar.less        <!-- Custom Toggle Sidebar -->
+│   ├── _vars.less                  <!-- Custom Theme Variables -->
+│   └── default.less                <!-- Loads the required partials for theme 4 -->
+│
+<vendor> <!-- 3rd Party Styling (this format is required for LESS to SASS conversion) -->
+├── <bootstrap>
+└── <bootstrap-select>

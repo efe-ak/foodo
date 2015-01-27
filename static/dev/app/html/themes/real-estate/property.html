@@ -1,0 +1,123 @@
+{% extends "app/html/themes/real-estate/_layout-property.html" %}
+
+{% block content %}
+
+    <div id="carousel-example-generic" class="carousel slide cover overlay overflow-hidden margin-bottom-none max-height-500" data-ride="carousel">
+        <div class="ribbon-mark large">
+            <span class="caret caret-primary"></span>
+            <span class="text">&euro;1,129,450</span>
+        </div>
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="images/photodune-3979102-superb-backyard-xs.jpg" alt="First slide" width="100%">
+            </div>
+            <div class="item">
+                <img src="images/photodune-3979102-superb-backyard-xs.jpg" alt="Second slide" width="100%">
+            </div>
+            <div class="item">
+                <img src="images/photodune-3979102-superb-backyard-xs.jpg" alt="Third slide" width="100%">
+            </div>
+        </div>
+        <div class="overlay overlay-bg-black">
+            <div class="v-bottom">
+                <div class="jumbotron bg-transparent margin-none">
+                    <h1 class="text-h1 margin-none">Hotel Lorensberg</h1>
+                    <p class="lead">Frana Supila 12, Ploce, 20000 Dubrovnik, Croatia</p>
+                </div>
+            </div>
+            <div class="v-bottom">
+                <div class="pull-left text-h5">
+                    <span class="fa fa-fw fa-star text-yellow-800"></span>
+                    <span class="fa fa-fw fa-star text-yellow-800"></span>
+                    <span class="fa fa-fw fa-star text-yellow-800"></span>
+                    <span class="fa fa-fw fa-star text-yellow-800"></span>
+                    <span class="fa fa-fw fa-star-o"></span>
+                </div>
+                <div class="pull-right text-h5">
+                    <i class="fa fa-fw fa-heart text-pink-500"></i> <span class="text-white">35 loved this</span>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="property-meta">
+        <ul>
+            <li class="property-meta-item"><i class="fa fa-fw icon icon-home-2"></i> House</li>
+            <li class="property-meta-item"><i class="fa fa-fw icon icon-bed"></i> 3 Bedrooms</li>
+            <li class="property-meta-item"><i class="fa fa-fw icon icon-toilet"></i> 1 Bathrooms</li>
+        </ul>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">Description</h4>
+            </div>
+            <div class="panel-body">
+                <div class="expandable expandable-indicator-white expandable-trigger">
+                    <div class="expandable-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolores nisi possimus temporibus. Aliquam assumenda consequuntur corporis, debitis eum eveniet excepturi fugit inventore iste libero nam nostrum nulla numquam, omnis quibusdam soluta tenetur velit veritatis. Impedit minus numquam praesentium sapiente! Harum laboriosam quam quibusdam recusandae?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias fuga in iste maiores nemo quisquam sapiente soluta suscipit ullam, veniam? Ab accusamus aliquam consequatur et expedita facere fugiat illum iure libero molestiae nesciunt nisi, officia quidem, reprehenderit rerum sunt tenetur unde velit veniam voluptates voluptatum?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias architecto asperiores blanditiis consequatur dignissimos distinctio dolores ducimus eaque, exercitationem facilis illum ipsum laudantium minima molestiae nam neque nesciunt nihil obcaecati officiis perspiciatis possimus praesentium quas quidem recusandae rem repellendus reprehenderit sint ut vero voluptates!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">Facilities</h4>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-6">
+                        <ul class="property-facilities">
+                            <li><i class="icon icon-wifi-2 primary"></i> Internet</li>
+                            <li><i class="icon icon-shovel"></i> Garden</li>
+                            <li><i class="md md-directions-car"></i> Garage</li>
+                            <li><i class="md md-directions-bus"></i> Bus</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-xs-6">
+                        <ul class="property-facilities">
+                            <li><i class="md md-local-mall"></i> Mall</li>
+                            <li><i class="md md-local-bar"></i> Restaurant</li>
+                            <li><i class="md md-local-laundry-service"></i> Washing</li>
+                            <li><i class="icon icon-no-smoking"></i> No Smoking</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 hidden-xs">
+                        <ul class="property-facilities">
+                            <li><i class="icon icon-shovel"></i> Garden</li>
+                            <li><i class="icon icon-wifi-2"></i> Internet</li>
+                            <li><i class="md md-directions-car"></i> Garage</li>
+                            <li><i class="md md-directions-bus"></i> Bus</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4>Comments</h4>
+        {% include "app/html/themes/real-estate/_comments.html" %}
+
+        <h4>Related properties</h4>
+        {% include "app/html/themes/real-estate/_carousel-related-properties.html" { dataItems: 4, dataItemsDesktop: 3 } %}
+
+    </div>
+
+{% endblock %}

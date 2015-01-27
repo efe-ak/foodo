@@ -1,0 +1,27 @@
+{% import "app/html/macros/utils.html" as utils %}
+
+<div class="panel panel-default user-box">
+    <div class="panel-body">
+        <div class="media">
+            <img src="images/people/50/guy-{{ utils.random(1,9) }}.jpg" alt="people" class="media-object img-circle pull-left"/>
+            <div class="media-body">
+                <a href="" class="username">Adrian D.</a>
+                <div class="profile-icons">
+                    <span><i class="fa fa-users"></i> 372</span> <span><i class="fa fa-photo"></i> 43</span> <span><i class="fa fa-video-camera"></i> 3 </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-body bordered">
+        <p class="common-friends">Common Friends</p>
+        <div class="user-friend-list">
+            <a href="#"><img src="images/people/50/guy-{{ utils.random(1,9) }}.jpg" alt="people" class="img-circle"/></a>
+            <a href="#"><img src="images/people/50/guy-{{ utils.random(1,9) }}.jpg" alt="people" class="img-circle"/></a>
+            <a href="#"><img src="images/people/50/woman-{{ utils.random(1,9) }}.jpg" alt="people" class="img-circle"/></a>
+            <a href="#"><img src="images/people/50/woman-{{ utils.random(1,9) }}.jpg" alt="people" class="img-circle"/></a>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <a href="#" class="btn btn-default btn-sm">Follow <i class="fa fa-share"></i></a>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+{% extends "app/html/themes/real-estate/_layout-map-full.html" %}
+
+{% block content %}
+
+    <div id="google-fs-realestate" data-toggle="google-maps" data-file="js/data/google_maps/markers-listing.json" data-zoom-position="LEFT_BOTTOM" class="maps-google-fs"></div>
+
+    {% include "app/html/themes/real-estate/_navbar-map-overlay-listing.html" %}
+
+    {% include "app/html/themes/real-estate/_map_popup_templates.html" %}
+
+{% endblock %}
